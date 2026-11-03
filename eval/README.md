@@ -52,3 +52,22 @@ How to read it:
 
 The gate's `tests/tools/test_evaluate.py` recomputes this table from the newest committed result
 and fails if they differ. A new run writes a new dated file; results are never overwritten.
+
+### Panelwise 2.0: on-device, through QVAC
+
+**2026-11-03**, Qwen3 1.7B Q4_0 (`fast`) and Qwen3 4B Q4_K_M (`reasoning`) through `qvac serve --openai`
+on a laptop (Intel Core Ultra 7 265U, 32 GB, Intel iGPU over Vulkan), no network call. One run a
+sample, so this is a first look, not yet a five-run figure. The run is in
+[`results/extraction-qvac-2026-11-03.json`](results/extraction-qvac-2026-11-03.json):
+
+| Sample | Runs (failed) | Faithfulness mean (min–max) | Recall mean (min–max) | Shots mean (min–max) | Every element once | Ungrounded kept |
+| --- | --- | --- | --- | --- | --- | --- |
+| `lost-property` | 1 (0) | 0.952 (0.952–0.952) | 0.909 (0.909–0.909) | 106.0 (106.0–106.0) | yes, every run | 0 |
+| `sipho-and-siphokazi` | 1 (0) | 0.400 (0.400–0.400) | 0.250 (0.250–0.250) | 54.0 (54.0–54.0) | yes, every run | 0 |
+| `the-red-kite` | 1 (0) | 1.000 (1.000–1.000) | 0.667 (0.667–0.667) | 43.0 (43.0–43.0) | yes, every run | 0 |
+| **All** | 3 (0) | 0.811 (30/37) | 0.722 (13/18) | 203 in all | yes, every run | 0 |
+
+Against Nemotron above: **the grounding guarantee held** (0 ungrounded kept: the code-side check
+drops whatever the small model makes up), but the small models find fewer of the speaking
+characters (recall 0.72 against 0.94), fall apart on `sipho-and-siphokazi` (0.40 / 0.25), and
+plan about twice as many shots. Each sample took 3.5–10 minutes against Nemotron's 5–18 s.

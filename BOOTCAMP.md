@@ -39,8 +39,10 @@ output, never trust the model. Running it locally adds the bootcamp's three reas
    | fast | Qwen3 1.7B Q4_0 | 40.2 s | 2.2 s | 17.3 | valid JSON, kept "(60s, oilskin coat)" in the name |
    | reasoning | Qwen3 4B Q4_K_M | 17.6 s | 3.3 s | 8.0 | valid JSON, clean ("Mara") |
 
-   Still to do: re-run the grounding and shot-planning evals (`eval/`) to **measure** faithfulness and recall against the
-   Nemotron numbers. Make the provider name neutral (`NEBIUS_*` → `LLM_*`) once the evals are in.
+   **First eval on local models** (2026-11-03, 1 run a sample, [eval/README.md](eval/README.md)): faithfulness 0.81
+   (Nemotron 0.90), recall 0.72 (0.94), **0 ungrounded kept** (the code check still catches every made-up quote), about 2×
+   the shots, 3.5–10 min a sample. Weakest on `sipho-and-siphokazi` (0.40 / 0.25). Next: find out why (names? the 1.7B
+   fast tier?), try `reasoning` on extraction, then 5 runs. Make the provider name neutral (`NEBIUS_*` → `LLM_*`) after.
    Note: `QWEN3_4B_INST` is an instruct-only build and does no thinking, so `reasoning` thinks less than Nemotron did.
    If the evals show it matters, try a thinking-capable Qwen3 build.
 4. **`QvacRenderer`**, then time a frame on this laptop (Intel iGPU, Vulkan). If it's too slow, drop the size or steps,

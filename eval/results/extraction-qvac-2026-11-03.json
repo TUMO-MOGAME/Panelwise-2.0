@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-03",
+  "models": [
+    "fast"
+  ],
+  "command": "uv run python -m tools.evaluate --runs 1 --out ../../eval/results/extraction-qvac-2026-11-03.json",
+  "runs": [
+    {
+      "sample": "lost-property",
+      "run": 1,
+      "error": null,
+      "faithfulness": 0.9523809523809523,
+      "entities_grounded": 20,
+      "entities_proposed": 21,
+      "quotes_located": 41,
+      "quotes_proposed": 41,
+      "recall": 0.9090909090909091,
+      "cues_found": 10,
+      "cues_total": 11,
+      "shots": 106,
+      "partitioned": true,
+      "ungrounded_kept": 0,
+      "names_dropped": 86,
+      "ranges_repaired": 3,
+      "tokens_in": 13398,
+      "tokens_out": 10495,
+      "seconds": 611.2
+    },
+    {
+      "sample": "sipho-and-siphokazi",
+      "run": 1,
+      "error": null,
+      "faithfulness": 0.4,
+      "entities_grounded": 4,
+      "entities_proposed": 10,
+      "quotes_located": 8,
+      "quotes_proposed": 18,
+      "recall": 0.25,
+      "cues_found": 1,
+      "cues_total": 4,
+      "shots": 54,
+      "partitioned": true,
+      "ungrounded_kept": 0,
+      "names_dropped": 32,
+      "ranges_repaired": 1,
+      "tokens_in": 10353,
+      "tokens_out": 4914,
+      "seconds": 266.3
+    },
+    {
+      "sample": "the-red-kite",
+      "run": 1,
+      "error": null,
+      "faithfulness": 1.0,
+      "entities_grounded": 6,
+      "entities_proposed": 6,
+      "quotes_located": 13,
+      "quotes_proposed": 13,
+      "recall": 0.6666666666666666,
+      "cues_found": 2,
+      "cues_total": 3,
+      "shots": 43,
+      "partitioned": true,
+      "ungrounded_kept": 0,
+      "names_dropped": 39,
+      "ranges_repaired": 0,
+      "tokens_in": 5983,
+      "tokens_out": 3901,
+      "seconds": 205.4
+    }
+  ]
+}
