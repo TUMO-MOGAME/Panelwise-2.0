@@ -57,6 +57,10 @@ there's no sign-in. An upload reads, extracts and plans on Qwen3; drawing waits 
    If the evals show it matters, try a thinking-capable Qwen3 build.
 4. **`QvacRenderer`**, then time a frame on this laptop (Intel iGPU, Vulkan). If it's too slow, drop the size or steps,
    or split the work across machines with QVAC RPC.
+   🔄 **Built (2026-11-03), not yet run live:** `app/storyboard/qvac.py` (`QvacRenderer`, alias `draw`), tested. Until a QVAC
+   vision path exists (step 5), a frame is shown as a warning with no checks. Model download: QVAC's P2P registry stalled
+   on this network, so the catalog files were fetched from their pinned source and checked against the catalog's
+   SHA-256 before entering `~/.qvac/models`. The text encoder is the cached `QWEN3_4B_INST_Q4_K_M`.
 4b. FLUX.2 [klein] needs two companions besides `FLUX_2_KLEIN_4B_Q4_0`: a Qwen3 4B text encoder (`QWEN3_4B_Q4_K_M`) and
    `FLUX_2_KLEIN_4B_VAE`. See the diffusion example in `../reference/qvac-llms-full.txt`.
 5. **Frame audit on a local VL model**, re-scored on the 109 hand-labelled frames. **`qvac serve`'s chat endpoint silently
