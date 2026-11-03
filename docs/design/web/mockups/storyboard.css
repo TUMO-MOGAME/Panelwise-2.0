@@ -1,0 +1,137 @@
+/* Storyboard screen: the lined script beside its frames (docs/design/web.md §4.3). */
+.job {
+  display: flex; align-items: center; gap: 16px; padding: 10px 24px;
+  background: var(--paper); border-bottom: 1px solid var(--rule); font-size: 14px; color: var(--ink-2);
+}
+.meter { flex: 0 0 220px; height: 6px; background: var(--desk-2); border-radius: 3px; overflow: hidden; }
+.meter span { display: block; height: 100%; background: var(--pencil); }
+
+.board {
+  display: grid; grid-template-columns: minmax(520px, 680px) 1fr; gap: 32px;
+  padding: 28px 24px 64px; max-width: 1600px; margin: 0 auto; align-items: start;
+}
+
+/* the lined script: the signature. Paper pages on the light table, shot lines in the gutter. */
+.lined { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; padding-bottom: 8px; }
+.lined > .eyebrow { margin: 0 0 12px; }
+.page {
+  position: relative; background: var(--paper); box-shadow: var(--shadow-page);
+  padding: 24px 20px 28px 76px; margin-bottom: 18px;
+}
+.pno { position: absolute; top: 10px; right: 16px; font: 12px var(--font-script); color: var(--ink-2); }
+.lines { font: 13px/var(--lh) var(--font-script); white-space: pre; color: var(--ink); }
+.lines div { height: var(--lh); overflow: hidden; }
+.lines i {
+  display: inline-block; width: 28px; margin-left: -34px; margin-right: 6px; text-align: right;
+  font-style: normal; font-size: 10px; color: #a3adb5;
+}
+.lines .hl { background: var(--pencil-soft); }
+.lanes { position: absolute; top: 24px; left: 12px; width: 60px; height: 0; }
+.shotline {
+  position: absolute; width: 22px; display: block; text-decoration: none;
+  border-left: 3px solid var(--c); margin-left: 9px;
+}
+.shotline.off { border-left: 0; }
+.shotline.off::before {
+  /* the script supervisor's wavy line: this shot's speaker is off screen */
+  content: ""; position: absolute; left: -3px; top: 0; bottom: 0; width: 8px;
+  background: radial-gradient(circle at 0 50%, transparent 3px, var(--c) 3px 4.5px, transparent 4.5px) 0 0 / 8px 8px repeat-y;
+}
+.shotline b {
+  position: absolute; top: -9px; left: -14px; min-width: 28px; padding: 1px 3px;
+  font: 700 10px/1.3 var(--font-body); color: var(--ink); text-align: center;
+  background: var(--paper); border: 1.5px solid var(--c); border-radius: 2px;
+}
+.shotline::after { content: ""; position: absolute; bottom: -1px; left: -8px; width: 13px; border-bottom: 3px solid var(--c); }
+.shotline.sel { border-left-width: 5px; }
+.shotline.sel b { background: var(--c); color: #fff; }
+/* a shot that runs over the page break: an open end on this page, a continued start on the next */
+.shotline.runs-on::after { border-bottom: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 7px solid var(--c); left: -7px; bottom: -8px; width: 0; }
+.shotline.continued b { opacity: 0.75; }
+.legend { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--ink-2); margin: 4px 0 0; }
+.legend span { display: inline-block; width: 3px; height: 16px; background: var(--ink-2); }
+.legend .wavy { width: 8px; background: radial-gradient(circle at 0 50%, transparent 3px, var(--ink-2) 3px 4.5px, transparent 4.5px) 0 0 / 8px 8px repeat-y; margin-left: 12px; }
+
+/* frames */
+.scene {
+  display: flex; align-items: baseline; gap: 12px; font-size: 20px; margin: 4px 0 14px;
+  padding-bottom: 8px; border-bottom: 2px solid var(--ink);
+}
+.scene span { font-size: 14px; color: var(--ink-2); }
+.scene ~ .scene { margin-top: 36px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 22px; }
+.card { background: var(--paper); box-shadow: var(--shadow-page); border-top: 4px solid var(--c); }
+.card.sel { outline: 2px solid var(--pencil); outline-offset: 3px; }
+.media { aspect-ratio: 16 / 9; background: #f1f3f1; border-bottom: 1px solid var(--rule); overflow: hidden; }
+.media svg { width: 100%; height: 100%; display: block; }
+.card header { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; padding: 10px 14px 0; }
+.card header > * { white-space: nowrap; }
+.sid { font: 800 20px/1 var(--font-display); }
+.cam { font-size: 13px; color: var(--ink-2); }
+.card .verdict { margin-left: auto; }
+.who { margin: 6px 14px 0; font-size: 13px; font-weight: 700; }
+.src { margin: 6px 14px 14px; font-size: 13px; color: var(--ink); }
+.src .span-ref { margin-left: 4px; }
+.note { margin: -8px 14px 14px; font-size: 13px; color: var(--warn); }
+
+.media-pending {
+  height: 100%; display: grid; place-content: center; justify-items: center; gap: 10px;
+  color: var(--ink-2); font-size: 14px;
+  background: repeating-linear-gradient(135deg, #f1f3f1 0 10px, #e9ecea 10px 20px);
+}
+.media-pending p { margin: 0; }
+.dots { width: 44px; height: 8px; background: radial-gradient(circle, var(--pencil) 3px, transparent 3.5px) 0 0 / 14px 8px repeat-x; animation: pulse 1.4s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: 0.35; } }
+
+.media-withheld {
+  height: 100%; padding: 16px 18px; display: flex; flex-direction: column; gap: 6px;
+  background: var(--paper); border: 1px dashed var(--withheld); border-bottom: 0;
+}
+.media-withheld p { margin: 0; }
+.media-withheld .why { color: var(--withheld); font-weight: 700; font-size: 13px; margin-top: auto; }
+.media-withheld .btn { align-self: flex-start; height: 30px; font-size: 13px; }
+.card:has(.media-withheld) .src { display: none; }
+
+@media (max-width: 1100px) {
+  .board { grid-template-columns: 1fr; }
+  .lined { display: none; }  /* phones: each card carries its own verbatim source */
+}
+@media (max-width: 640px) {
+  .job { padding: 10px 16px; flex-wrap: wrap; }
+  .meter { flex-basis: 100%; order: 3; }
+  .board { padding: 20px 16px 48px; }
+  .grid { grid-template-columns: 1fr; }
+}
+
+/* frame detail: a sheet over the board (web.md §4.3, "frame detail") */
+.scrim { position: fixed; inset: 0; background: rgb(26 34 44 / 0.35); }
+.sheet {
+  position: fixed; top: 0; right: 0; bottom: 0; width: min(520px, 100vw); overflow: auto;
+  background: var(--paper); box-shadow: -18px 0 40px -20px rgb(26 34 44 / 0.5);
+}
+.sheet > header { display: flex; align-items: center; gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--rule); }
+.sheet .sid { font-size: 28px; }
+.sheet .verdict { margin-left: auto; }
+.sheet .verdict + .close { margin-left: 0; }
+.sheet .close { margin-left: auto; border: 0; background: none; font-size: 26px; line-height: 1; color: var(--ink-2); cursor: pointer; padding: 0 4px; }
+.sheet .media { border-bottom: 1px solid var(--rule); }
+.sheet section { padding: 16px 20px; border-bottom: 1px solid var(--rule); }
+.sheet section .eyebrow { margin: 0 0 10px; }
+.quote.big { font-size: 15px; margin: 0 0 8px; padding-left: 12px; border-left: 3px solid var(--line-4); }
+.chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.chips li { font-weight: 700; font-size: 14px; padding: 3px 10px; background: var(--desk); border-radius: 12px; }
+.chips .pos { font-weight: 400; color: var(--ink-2); margin-left: 4px; }
+.why-shot { margin: 10px 0 0; font-size: 14px; color: var(--ink-2); }
+.attempts { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.attempts > li { padding: 12px 14px; border: 1px solid var(--rule); border-left: 4px solid var(--pass); }
+.attempts > li.fail { border-left-color: var(--withheld); }
+.attempts .head { display: flex; align-items: center; gap: 10px; }
+.attempts .head .span-ref { margin-left: auto; }
+.seen, .judged { margin: 8px 0 0; font-size: 14px; }
+.seen span, .judged span { font-weight: 700; margin-right: 6px; }
+.checks { margin: 8px 0 0; padding: 0; list-style: none; font-size: 13px; display: grid; gap: 3px; }
+.checks li::before { content: "✓"; color: var(--pass); font-weight: 700; margin-right: 6px; }
+.checks li.x::before { content: "✕"; color: var(--withheld); }
+.checks b { margin-right: 6px; }
+.models { margin: 12px 0 0; font-size: 12px; color: var(--ink-2); }
+.cue { margin: 0 0 4px 15px; font: 700 12px var(--font-script); color: var(--ink-2); }

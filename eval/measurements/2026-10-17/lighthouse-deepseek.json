@@ -1,0 +1,3105 @@
+{
+ "meta": {
+  "project": "78f8735f-91bc-49c6-b54c-cf26ee3c27c2",
+  "vision_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "vision_thinking": false,
+  "concurrency": 4,
+  "attempts": 26
+ },
+ "records": [
+  {
+   "target": "storyboard",
+   "scene": 0,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/d5b71645870aba6ff0e5e6dbc82a2fe5153c646fcb23ea7064df67695e7ad061.png",
+   "stored": "warn",
+   "secs": 20.58,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3674,
+    "completion_tokens": 3392,
+    "reasoning_tokens": 2901
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "pickup truck",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "license plate",
+      "category": "screen_or_sign",
+      "held": false
+     },
+     {
+      "name": "lighthouse",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "small building",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "rocks",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "bushes",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "grass tufts",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "sea",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "sandy track",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "has_text": true,
+    "text": [],
+    "signature": true
+   },
+   "judgement": {
+    "people": [],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "A white bakkie bounces along a dirt road between fynbos and sand dunes."
+     },
+     {
+      "object": 1,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 2,
+      "kind": "scripted_prop",
+      "support": "Ahead, on a headland of black rock, stands a red and white LIGHTHOUSE."
+     },
+     {
+      "object": 3,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 4,
+      "kind": "scripted_prop",
+      "support": "Ahead, on a headland of black rock, stands a red and white LIGHTHOUSE."
+     },
+     {
+      "object": 5,
+      "kind": "scripted_prop",
+      "support": "between fynbos and sand dunes."
+     },
+     {
+      "object": 6,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "COASTAL ROAD"
+     },
+     {
+      "object": 8,
+      "kind": "scripted_prop",
+      "support": "A white bakkie bounces along a dirt road between fynbos and sand dunes."
+     }
+    ]
+   },
+   "seen": [],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 1,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/1be4a4b17780b78baebb653b1e02cd3301538d8e0e35518233e93e41dab10eb9.png",
+   "stored": "warn",
+   "secs": 32.5,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3682,
+    "completion_tokens": 3906,
+    "reasoning_tokens": 3226
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "an adult with short dark hair, smiling, wearing a jacket and collared shirt, seated behind the steering wheel"
+     }
+    ],
+    "setting": "exterior",
+    "light": "unclear",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "pickup truck",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "steering wheel",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "headlight",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "grille",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "emblem badge",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "side mirror",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "license plate",
+      "category": "screen_or_sign",
+      "held": false
+     },
+     {
+      "name": "wheels",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "seats",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "door handle",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "fuel filler cap",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "truck bed",
+      "category": "vehicle",
+      "held": false
+     }
+    ],
+    "has_text": true,
+    "text": [
+     "BI-TURBO"
+    ],
+    "signature": false
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "BAKKIE: \"A white bakkie bounces along a dirt road between fynbos and sand dunes.\""
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 10,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 11,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     }
+    ]
+   },
+   "seen": [],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 1,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/9780b93887357f5ac562e43f023215f2fc2c27fb024650d948786a90f87ef63e.png",
+   "stored": "warn",
+   "secs": 16.57,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4519,
+    "completion_tokens": 1884,
+    "reasoning_tokens": 1428
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "an adult woman with short dark hair, looking off to the side"
+     }
+    ],
+    "setting": "exterior",
+    "light": "unclear",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "truck",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "flatbed",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "side mirror",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "wheels",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "license plate",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "grille",
+      "category": "vehicle",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "A white bakkie bounces along a dirt road between fynbos and sand dunes."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "A white bakkie bounces along a dirt road between fynbos and sand dunes."
+     },
+     {
+      "object": 2,
+      "kind": "scripted_prop",
+      "support": "A white bakkie bounces along a dirt road between fynbos and sand dunes."
+     },
+     {
+      "object": 3,
+      "kind": "scripted_prop",
+      "support": "A white bakkie bounces along a dirt road between fynbos and sand dunes."
+     },
+     {
+      "object": 4,
+      "kind": "scripted_prop",
+      "support": "A white bakkie bounces along a dirt road between fynbos and sand dunes."
+     },
+     {
+      "object": 5,
+      "kind": "scripted_prop",
+      "support": "A white bakkie bounces along a dirt road between fynbos and sand dunes."
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 1,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/cc1fa121912e174c7c1ec04e1f0bab822e8c2f3a4ceed0945471b96707006be0.png",
+   "stored": "warn",
+   "secs": 17.9,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3585,
+    "completion_tokens": 2835,
+    "reasoning_tokens": 2328
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [],
+    "setting": "exterior",
+    "light": "unclear",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "pickup truck",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "wheels",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "grille",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "headlights",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "side mirror",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "license plate",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "bed rails",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "steering wheel",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "seats",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "windscreen wipers",
+      "category": "vehicle",
+      "held": false
+     }
+    ],
+    "has_text": true,
+    "text": [
+     "unclear"
+    ],
+    "signature": false
+   },
+   "judgement": {
+    "people": [],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "WHITE BAKKIE"
+     }
+    ]
+   },
+   "seen": [],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 2,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/e221be206f75eff9a85e89c94b375f9eadd7b8fb25b5852ecb10006950761b2e.png",
+   "stored": "warn",
+   "secs": 16.81,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4511,
+    "completion_tokens": 2623,
+    "reasoning_tokens": 2328
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "an adult woman with her hair pulled back, wearing a suit jacket, trousers and heeled shoes, one arm reaching toward the door handle while she steps forward"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "door handle",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "number plate",
+      "category": "screen_or_sign",
+      "held": false
+     },
+     {
+      "name": "small wall panel",
+      "category": "screen_or_sign",
+      "held": false
+     },
+     {
+      "name": "grass tufts",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "has_text": true,
+    "text": [
+     "1103"
+    ],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "DOOR"
+     },
+     {
+      "object": 1,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "LIGHTHOUSE"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 2,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/f3525242222d7b70699d476413f6bd8dbb5c9cbfd6ff19019bc98e1cb2746729.png",
+   "stored": "warn",
+   "secs": 12.13,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4558,
+    "completion_tokens": 1845,
+    "reasoning_tokens": 1598
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "an old man with white hair and a white moustache, looking down, holding a mug"
+     }
+    ],
+    "setting": "exterior",
+    "light": "unclear",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "mug",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "bucket",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "plaque",
+      "category": "screen_or_sign",
+      "held": false
+     }
+    ],
+    "has_text": true,
+    "text": [
+     "HARR THOM",
+     "RUG"
+    ],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MR. FORTUIN",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "holds a mug of tea."
+     },
+     {
+      "object": 1,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MR. FORTUIN",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 2,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/5a8d8d817b6e21c60cee639dd51302bec664033ac4db80a4d7913b973d2b0bee.png",
+   "stored": "warn",
+   "secs": 13.38,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4446,
+    "completion_tokens": 1485,
+    "reasoning_tokens": 1263
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "an adult with shoulder-length wavy hair, wearing a tailored suit jacket over a collared shirt, standing facing the viewer"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "door handle",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "grass tufts",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - DOOR - DAY"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - DOOR - DAY"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 2,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/b8d557f9f7ed8504e8b5bb1cd507ba2a037c0da920f4c95b53a8ea74d205e9da.png",
+   "stored": "warn",
+   "secs": 10.83,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4548,
+    "completion_tokens": 1490,
+    "reasoning_tokens": 1126
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "an old man with receding grey hair, lined face and a serious expression, seen from the waist up"
+     }
+    ],
+    "setting": "exterior",
+    "light": "unclear",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "door",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "door surround",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "door handle",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "step",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "grass",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MR. FORTUIN",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - DOOR - DAY"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - DOOR - DAY"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - DOOR - DAY"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - DOOR - DAY"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - DOOR - DAY"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MR. FORTUIN",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 3,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/48b5ffbcbb16120033fe6f168dd6778b4307e348930bf52aad90163cc1168d5f.png",
+   "stored": "warn",
+   "secs": 13.68,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_person",
+     "hard"
+    ],
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 5571,
+    "completion_tokens": 1545,
+    "reasoning_tokens": 1318
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "adult woman with dark shoulder-length hair, in a suit jacket and trousers, one hand on the banister"
+     },
+     {
+      "position": "centre",
+      "appearance": "adult man with a beard, standing higher on the stairs with a hand on the railing"
+     },
+     {
+      "position": "right",
+      "appearance": "old man with thinning hair, hand raised to his mouth, wearing a sweater with small holes"
+     }
+    ],
+    "setting": "interior",
+    "light": "unclear",
+    "shot_size": "wide",
+    "objects": [],
+    "has_text": false,
+    "text": [],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "MR. FORTUIN",
+      "support": null
+     },
+     {
+      "person": 2,
+      "character": null,
+      "support": null
+     }
+    ],
+    "objects": []
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    },
+    {
+     "person": 1,
+     "character": "MR. FORTUIN",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 3,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/df4fbe12bf2be7ff7257c5b49d819ebb95bb05d57aa5978138a335683b373f4e.png",
+   "stored": "warn",
+   "secs": 13.73,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_person",
+     "hard"
+    ],
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4485,
+    "completion_tokens": 1936,
+    "reasoning_tokens": 1703
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an adult woman with short dark hair, in a suit jacket and trousers, one hand resting on the stair railing"
+     },
+     {
+      "position": "right",
+      "appearance": "an adult woman with shoulder-length wavy hair, in a suit jacket and trousers, standing with arms at her sides"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "handrail",
+      "category": "architecture",
+      "held": true
+     }
+    ],
+    "has_text": true,
+    "text": [
+     "Podcastiderest",
+     "Tove Ilcors"
+    ],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": null,
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "LIGHTHOUSE - STAIRWELL"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 3,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/7dba2636ed593c62a1533a2852bc4fad98ab3fa96aa95aaca618e4a95b1cc26d.png",
+   "stored": "warn",
+   "secs": 11.42,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4458,
+    "completion_tokens": 1274,
+    "reasoning_tokens": 1034
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "an old man with grey hair, lined face, wearing a zipped sweater with mended patches and light trousers, hands in his pockets"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "handrail",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "wall-mounted box",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MR. FORTUIN",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - STAIRWELL - CONTINUOUS"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - STAIRWELL - CONTINUOUS"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MR. FORTUIN",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 4,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/fb91e99ab307ae6b3e27c1456fe3f87d1e2812f5607a1a6ceb204b5b7a0764e6.png",
+   "stored": "warn",
+   "secs": 15.38,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 5550,
+    "completion_tokens": 1378,
+    "reasoning_tokens": 1173
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with grey hair, standing facing forward"
+     },
+     {
+      "position": "right",
+      "appearance": "an adult woman with dark bobbed hair, standing facing forward"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "hanging lamp",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "has_text": true,
+    "text": [],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MR. FORTUIN",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "MS. NAIDOO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "LAMP ROOM"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MR. FORTUIN",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 4,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/88d183fb1034c9ff01644f9ad84f272cfc9a3c878026349e6c861a5637d7bb75.png",
+   "stored": "pass",
+   "secs": 15.87,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 5518,
+    "completion_tokens": 2231,
+    "reasoning_tokens": 1921
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an adult woman with dark wavy shoulder-length hair, looking forward with a slight smile"
+     },
+     {
+      "position": "right",
+      "appearance": "an old man with white hair and a white beard, standing with his hands in his pockets"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "hanging lamp",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "desk",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "machine on desk",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": false
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "MR. FORTUIN",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "LIGHTHOUSE - LAMP ROOM"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "LIGHTHOUSE - LAMP ROOM"
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    },
+    {
+     "person": 1,
+     "character": "MR. FORTUIN",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 4,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/95e31b0c74d9ff8e384216ac4819f4c3b0ff3544113a5dba6cb20f75124a0b3d.png",
+   "stored": "warn",
+   "secs": 10.9,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4426,
+    "completion_tokens": 1381,
+    "reasoning_tokens": 1203
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "an old man with thinning white hair, deep-lined face and a serious expression, seen from the chest up"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "lantern",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "has_text": true,
+    "text": [
+     "WHAT.",
+     "SOOO",
+     "WHAT."
+    ],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MR. FORTUIN",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "LIGHTHOUSE - LAMP ROOM"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MR. FORTUIN",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 5,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/4533f7441e5a86949d52856316a98438dbf824a3ba5b2c576e031a62f3565b18.png",
+   "stored": "warn",
+   "secs": 13.7,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "missing_character",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4582,
+    "completion_tokens": 1997,
+    "reasoning_tokens": 1561
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an adult woman with shoulder-length dark hair, standing on the lighthouse balcony with one hand on the railing, looking out to the right"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "lighthouse lantern",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "railing",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "sea",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "waves",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "clouds",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "grass",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": false
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 5,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/377e1efe3b22a85911e09a66a8234f3b69a51cb9014626a90f7ebb45e193cf41.png",
+   "stored": "pass",
+   "secs": 18.52,
+   "raw": "pass",
+   "hosted": "pass",
+   "failed": [],
+   "usage": {
+    "prompt_tokens": 5537,
+    "completion_tokens": 2807,
+    "reasoning_tokens": 2388
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an adult woman with short wavy hair, looking toward the man"
+     },
+     {
+      "position": "right",
+      "appearance": "an old man with thinning grey hair, holding binoculars to his eyes"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "lighthouse",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "binoculars",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "sailboat",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "sea",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "grass",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": false
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "MR. FORTUIN",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "Mr. Fortuin takes the binoculars."
+     },
+     {
+      "object": 2,
+      "kind": "scripted_prop",
+      "support": "Far out, a small fishing boat rolls in the swell."
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    },
+    {
+     "person": 1,
+     "character": "MR. FORTUIN",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 5,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/94666fa402a4efda9798b7a22698dc0500685a19db4ae6de7b2aabfc0f8e2cc1.png",
+   "stored": "warn",
+   "secs": 12.97,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4476,
+    "completion_tokens": 1644,
+    "reasoning_tokens": 1208
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "an old man with white thinning hair, deep-lined face and a calm expression, shown from the chest up"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "lighthouse",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "small house",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "fence",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "rocks",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "grass",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "path",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "has_text": true,
+    "text": [
+     "AA ACID."
+    ],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MR. FORTUIN",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "EXT. LIGHTHOUSE - GALLERY - DUSK"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MR. FORTUIN",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 6,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/a233a274371cd1f93438efa363fd07df2cc1396ba8c506fadc725ec08a336e1a.png",
+   "stored": "warn",
+   "secs": 15.07,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3663,
+    "completion_tokens": 2360,
+    "reasoning_tokens": 1968
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with white hair, seen from behind and in profile, leaning forward"
+     }
+    ],
+    "setting": "interior",
+    "light": "dawn_or_dusk",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "gears",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "wheel valve",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "telescope tube",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "control panel with knobs",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "sea",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "waves",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "grass",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": false
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "FORTUIN",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "Gears clank."
+     },
+     {
+      "object": 1,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 3,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "LIGHTHOUSE"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "LIGHTHOUSE"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "LIGHTHOUSE"
+     }
+    ]
+   },
+   "seen": [],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 6,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/f866cffb434fa41b58412761eb727a234c4022b2f3b6de91f77ff00ed53e4852.png",
+   "stored": "warn",
+   "secs": 14.76,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 5558,
+    "completion_tokens": 2151,
+    "reasoning_tokens": 1823
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with white hair, smiling, wearing a sweater over a collared shirt"
+     },
+     {
+      "position": "right",
+      "appearance": "an adult woman with short hair, wearing a suit jacket and collared shirt, holding a telephone handset"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "telephone handset",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "wall telephone",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "framed picture",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "has_text": true,
+    "text": [
+     "Mark Stevens"
+    ],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MR. FORTUIN",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "MS. NAIDOO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "Ms. Naidoo grabs the handset from the wall."
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "LIGHTHOUSE - LAMP ROOM"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "LIGHTHOUSE - LAMP ROOM"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MR. FORTUIN",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 6,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/a172631f6fe20a304cd914f967021719fa65975e7fa6fcd54216850fa2b24dbc.png",
+   "stored": "warn",
+   "secs": 18.55,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_person",
+     "hard"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4485,
+    "completion_tokens": 2765,
+    "reasoning_tokens": 2483
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an adult woman with short swept-back hair, looking toward the viewer"
+     },
+     {
+      "position": "right",
+      "appearance": "an adult woman with shoulder-length wavy hair, looking slightly off to the side"
+     }
+    ],
+    "setting": "interior",
+    "light": "unclear",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "lantern",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "low table",
+      "category": "furniture",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": false
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": null,
+      "support": "Rescue station, rescue station, this is the lighthouse."
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - LAMP ROOM - CONTINUOUS"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - LAMP ROOM - CONTINUOUS"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 6,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/976103405c254ed3eed7f797d9e620059429809956953a077727c14fccc77142.png",
+   "stored": "warn",
+   "secs": 10.6,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3485,
+    "completion_tokens": 1594,
+    "reasoning_tokens": 1338
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [],
+    "setting": "interior",
+    "light": "night",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "stool",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "long pole",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bench",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "bench",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "moon",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "has_text": true,
+    "text": [
+     "Gosi Boel"
+    ],
+    "signature": true
+   },
+   "judgement": {
+    "people": [],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": null
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": null
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": null
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": null
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": null
+     }
+    ]
+   },
+   "seen": [],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 6,
+   "shot": 5,
+   "attempt": 1,
+   "asset": "frames/304a781ebc12f32bf1562cb3ee5ad5df325aa19e67c63845469943161a8bd8d3.png",
+   "stored": "warn",
+   "secs": 12.71,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3631,
+    "completion_tokens": 2127,
+    "reasoning_tokens": 1813
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old woman with short white hair, seen in profile facing right, wearing a knitted sweater with a torn, frayed sleeve"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "lantern",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pump handle",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "table",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "sailboat",
+      "category": "vehicle",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "FORTUIN",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "Mr. Fortuin cranks a small handle on the side of the lamp."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "Mr. Fortuin cranks a small handle on the side of the lamp."
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "LAMP ROOM"
+     },
+     {
+      "object": 3,
+      "kind": "scripted_prop",
+      "support": "The beam slows and holds on the boat."
+     }
+    ]
+   },
+   "seen": [],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 7,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/cdd791bc94f87123a5f93ba0c7b70decc5ba5a6f6e2dc9cb96dfadf91b34b092.png",
+   "stored": "warn",
+   "secs": 17.63,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_person",
+     "hard"
+    ],
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3559,
+    "completion_tokens": 3056,
+    "reasoning_tokens": 2555
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "an adult standing in a small boat, holding a line or rope, wearing a hat and jacket"
+     }
+    ],
+    "setting": "exterior",
+    "light": "night",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "lighthouse",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "light beam",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "lantern room",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "railing",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "boat",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "mast",
+      "category": "vehicle",
+      "held": false
+     },
+     {
+      "name": "rope",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "waves",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "rocks",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "hills",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "has_text": true,
+    "text": [],
+    "signature": true
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": null,
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "SEA"
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "lighthouse beam"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "SEA"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "SEA"
+     },
+     {
+      "object": 4,
+      "kind": "scripted_prop",
+      "support": "little fishing boat"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "SEA"
+     },
+     {
+      "object": 6,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "SEA"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "SEA"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "SEA"
+     }
+    ]
+   },
+   "seen": [],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 8,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/3caaba2439b917de5082c4b258ac8f16c4dfd29c9b80b8b6f9f2e2f1604cc1c1.png",
+   "stored": "warn",
+   "secs": 21.87,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4718,
+    "completion_tokens": 3607,
+    "reasoning_tokens": 2904
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "an adult woman with short wavy hair, smiling, in a suit jacket and trousers"
+     }
+    ],
+    "setting": "interior",
+    "light": "night",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "table",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "tablecloth",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "mug",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "mug",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "mug",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "clipboard with paper",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "kitchen cabinets",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "sink",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "faucet",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "kettle",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensil holder",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "lighthouse model",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bench",
+      "category": "furniture",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": false
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "Two mugs of tea on an oilcloth table."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "Two mugs of tea on an oilcloth table."
+     },
+     {
+      "object": 2,
+      "kind": "scripted_prop",
+      "support": "Two mugs of tea on an oilcloth table."
+     },
+     {
+      "object": 3,
+      "kind": "scripted_prop",
+      "support": "Two mugs of tea on an oilcloth table."
+     },
+     {
+      "object": 4,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 5,
+      "kind": "scripted_prop",
+      "support": "Ms. Naidoo's clipboard lies beside them."
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 9,
+      "kind": "scripted_prop",
+      "support": "The kettle has only just boiled."
+     },
+     {
+      "object": 10,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 11,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 12,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 8,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/7ae3749f550c2dab7c2be8e24963779c43f359556fb8dcb25462c0e4b366783e.png",
+   "stored": "warn",
+   "secs": 13.72,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_object",
+     "hard"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4508,
+    "completion_tokens": 1959,
+    "reasoning_tokens": 1416
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "an adult woman with shoulder-length hair, smiling, wearing a blazer over a collared shirt and an earring"
+     }
+    ],
+    "setting": "interior",
+    "light": "night",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "kettle",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pot of utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "mug",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "knife",
+      "category": "weapon",
+      "held": false
+     },
+     {
+      "name": "stove",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "potted plant",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "cabinet",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "sink",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": false
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MS. NAIDOO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - KITCHEN - NIGHT"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - KITCHEN - NIGHT"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - KITCHEN - NIGHT"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - KITCHEN - NIGHT"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - KITCHEN - NIGHT"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - KITCHEN - NIGHT"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - KITCHEN - NIGHT"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "INT. LIGHTHOUSE - KITCHEN - NIGHT"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MS. NAIDOO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 8,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/831552344da85f704986d7bebb068a53a019fe76201f2c201adffaf6d46bca10.png",
+   "stored": "warn",
+   "secs": 14.85,
+   "raw": "pass",
+   "hosted": "pass",
+   "failed": [],
+   "usage": {
+    "prompt_tokens": 4515,
+    "completion_tokens": 2370,
+    "reasoning_tokens": 1832
+   },
+   "models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "an old man with white hair, standing facing the viewer"
+     }
+    ],
+    "setting": "interior",
+    "light": "unclear",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "cabinets",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "stove",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "oven",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pot",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pan",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "kettle",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "cutting board",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "jars",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bottles",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "has_text": false,
+    "text": [],
+    "signature": false
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MR. FORTUIN",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 5,
+      "kind": "scripted_prop",
+      "support": "The kettle has only just boiled."
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "KITCHEN"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MR. FORTUIN",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  }
+ ]
+}

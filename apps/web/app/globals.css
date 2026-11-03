@@ -1,0 +1,74 @@
+/* Panelwise tokens: ported from docs/design/web/mockups/tokens.css (web.md §2), which stays the
+   source of truth; change a value there first, then here. Light theme only (web.md §8). */
+@import "tailwindcss";
+
+@theme {
+  /* surfaces: a light table, and the script paper on it */
+  --color-desk: #dce2e5;
+  --color-desk-2: #cfd7db;
+  --color-paper: #fafaf7;
+  --color-ink: #1a222c;
+  --color-ink-2: #56616d;
+  --color-rule: #c5cdd2;
+  /* the one accent: a storyboard artist's non-photo-blue pencil, deepened to pass AA on paper */
+  --color-pencil: #2c6e9e;
+  --color-pencil-soft: #d6e7f2;
+  /* audit verdicts */
+  --color-pass: #2f7a55;
+  --color-warn: #9a620f;
+  --color-withheld: #a23a2f;
+  --color-withheld-soft: #f7e8e6;
+  /* the app bar, on ink */
+  --color-bar-text: #e8edf0;
+  --color-bar-muted: #b9c3ca;
+  --color-bar-dim: #6c7883;
+  --color-bar-current: #2b3642;
+
+  --radius-paper: 3px;
+  --shadow-page: 0 1px 0 #b8c1c6, 0 12px 28px -18px rgb(26 34 44 / 0.45);
+}
+
+/* Shot lines cycle through the WGA revision-page colours, so neighbours never match. `static`:
+   the storyboard picks one by index at run time (lineColour), so no class names them and Tailwind
+   would otherwise leave them out of the page. */
+@theme static {
+  --color-line-1: #6f9fd8;
+  --color-line-2: #dd8aa3;
+  --color-line-3: #c9ab22;
+  --color-line-4: #6aab5e;
+  --color-line-5: #cf8f1f;
+  --color-line-6: #b8505b;
+}
+
+@theme inline {
+  /* next/font sets these variables on <html> (app/layout.tsx). */
+  --font-display: var(--font-big-shoulders), "Arial Narrow", sans-serif;
+  --font-body: var(--font-atkinson), system-ui, sans-serif;
+  --font-script: var(--font-courier-prime), "Courier New", monospace;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    background: var(--color-desk);
+    color: var(--color-ink);
+    font: 15px/1.5 var(--font-body);
+  }
+  a {
+    color: var(--color-pencil);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-pencil);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

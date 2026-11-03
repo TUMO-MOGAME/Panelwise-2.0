@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Script (states) — Panelwise</title>
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="script.css">
+<style>
+  /* Two screens script.png doesn't draw (web.md §4.2): a project whose job failed, and the
+     not-found page. Same tokens; the screens are stacked here, separated by a rule. */
+  .screen { min-height: 450px; }
+  .screen + .screen { border-top: 6px solid var(--ink-2); }
+  .failed-page { max-width: 1440px; margin: 0 auto; padding: 32px 24px 64px 324px; }
+  .failed-page .intro h1 { margin: 6px 0 8px; font-size: 48px; }
+  .failed { max-width: 640px; margin-top: 24px; background: var(--paper); box-shadow: var(--shadow-page); padding: 18px 20px; border-left: 4px solid var(--withheld); }
+  .failed p { margin: 10px 0 0; }
+  .failed .stage { font-size: 14px; color: var(--ink-2); }
+  .failed .btn { margin-top: 16px; }
+  .missing { display: grid; place-items: center; padding: 72px 16px; }
+  .missing .card { width: min(440px, 100%); background: var(--paper); box-shadow: var(--shadow-page); padding: 28px; border-top: 4px solid var(--line-1); }
+  .missing h1 { font-size: 30px; }
+  .missing p { margin: 10px 0 0; color: var(--ink-2); }
+  .missing .btn { margin-top: 20px; }
+</style></head>
+<body>
+<div class="screen">
+  <header class="bar">
+    <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+    <span class="project">saltpan-draft-3</span>
+    <nav aria-label="Project"><a href="script.html" aria-current="page">Script</a><a aria-disabled="true" title="The storyboard isn't built yet">Storyboard</a><a aria-disabled="true" title="Comic pages aren't built yet">Comic</a></nav>
+    <span class="spacer"></span>
+    <span class="who">judge@panelwise.demo</span>
+  </header>
+  <main class="failed-page">
+    <section class="intro">
+      <p class="eyebrow">Read from the script</p>
+      <h1>saltpan-draft-3</h1>
+    </section>
+    <section class="failed" aria-label="This run failed">
+      <span class="verdict withheld">Couldn't read the script</span>
+      <p>Reading the script failed at scene 12A. Nothing was saved from this run. Upload the script again to retry.</p>
+      <p class="stage">It stopped while reading the script.</p>
+      <a class="btn quiet" href="projects.html">Back to your screenplays</a>
+    </section>
+  </main>
+</div>
+
+<div class="screen">
+  <header class="bar">
+    <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+    <span class="spacer"></span>
+    <span class="who">judge@panelwise.demo</span>
+  </header>
+  <main class="missing">
+    <section class="card">
+      <h1>This screenplay isn't here</h1>
+      <p>It may have been deleted, or it belongs to another account.</p>
+      <a class="btn quiet" href="projects.html">Back to your screenplays</a>
+    </section>
+  </main>
+</div>
+</body></html>

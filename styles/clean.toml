@@ -1,0 +1,9 @@
+# Ported from FrameFlow's storyboard_styles.py (`clean`). In its same-seed A/B (2026-09-13) it kept
+# the wide shot as one panel inside the location; close subjects could come out photographic.
+label = "Clean sketch"
+description = "Pencil storyboard. Keeps a wide shot as one panel inside the location; close subjects can come out looking photographic."
+medium = "storyboard sketch, pencil drawing"
+finish = "grayscale, monochrome, loose linework, plain background"
+negative = ""
+grayscale = true
+default = true

@@ -1,0 +1,2045 @@
+[
+ {
+  "script": "final-whistle",
+  "shot": "1.4",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "unscripted_person",
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "final-whistle",
+  "shot": "2.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "final-whistle",
+  "shot": "2.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "final-whistle",
+  "shot": "2.3",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "absent"
+  ],
+  "note": "no crowd",
+  "source": "L021 what-if (2026-10-14): no_character real",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "unscripted_person",
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "final-whistle",
+  "shot": "3.3",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "absent"
+  ],
+  "note": "the referee isn't drawn as the script's referee",
+  "source": "L021 what-if (2026-10-14): no_character real",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "final-whistle",
+  "shot": "4.3",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "absent"
+  ],
+  "note": "Lindi drawn, not Palesa",
+  "source": "L021 what-if (2026-10-14): no_character real",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "final-whistle",
+  "shot": "5.3",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "final-whistle",
+  "shot": "6.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "PALESA and LINDI, two look-alike girls: not a copy",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "final-whistle",
+  "shot": "6.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "load-shedding",
+  "shot": "2.1",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "absent"
+  ],
+  "note": "an empty classroom (an adult from behind, taken for LUCKY)",
+  "source": "L021 what-if (2026-10-14): no_character real",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "load-shedding",
+  "shot": "5.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "2.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "unscripted_person",
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "2.2",
+  "attempt": 2,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "3.2",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "Priya drawn as a man (present, the wrong sex)",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "5.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "an INT covered platform, open-looking",
+  "source": "L021 what-if (2026-10-14): setting false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person",
+   "setting"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "5.3",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "a police baton on an officer's belt",
+  "source": "L021 what-if (2026-10-14): unscripted_object false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "7.3",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_twice"
+  ],
+  "note": "an INT covered platform, open-looking; TEBOGO drawn twice (KOOS is the 70s night cleaner)",
+  "source": "L021 what-if (2026-10-14): setting false alarm; T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person",
+   "setting"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "7.4",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "absent"
+  ],
+  "note": "one man, no Tebogo or officer",
+  "source": "L021 what-if (2026-10-14): no_character real",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "unscripted_person",
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "9.1",
+  "attempt": 3,
+  "label": "wrong",
+  "faults": [
+   "drawn_twice"
+  ],
+  "note": "PRIYA drawn twice (the judge matched one to TEBOGO)",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "9.2",
+  "attempt": 3,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "9.4",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "absent",
+   "split_panels"
+  ],
+  "note": "split panel, no Priya",
+  "source": "L021 what-if (2026-10-14): no_character real; T104 split",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "9.4",
+  "attempt": 2,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "9.6",
+  "attempt": 2,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "unscripted_person",
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "11.5",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person",
+   "unscripted_object"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "11.5",
+  "attempt": 2,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "11.5",
+  "attempt": 3,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "12.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "an EXT platform with a roof",
+  "source": "L021 what-if (2026-10-14): setting false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person",
+   "setting"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "lost-property",
+  "shot": "12.2",
+  "attempt": 2,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "market-day",
+  "shot": "2.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "market-day",
+  "shot": "3.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "market-day",
+  "shot": "4.2",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "market-day",
+  "shot": "5.2",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "sipho-and-siphokazi",
+  "shot": "2.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "an open bait shack",
+  "source": "L021 what-if (2026-10-14): setting false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person",
+   "setting"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "sipho-and-siphokazi",
+  "shot": "2.1",
+  "attempt": 2,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "MAMA THEMBI drawn as an old man",
+  "source": "T102 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person",
+   "setting"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "sipho-and-siphokazi",
+  "shot": "2.3",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "sipho-and-siphokazi",
+  "shot": "7.1",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "sipho-and-siphokazi",
+  "shot": "7.1",
+  "attempt": 3,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "setting"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "sipho-and-siphokazi",
+  "shot": "9.2",
+  "attempt": 3,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "stormwater",
+  "shot": "2.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "pass",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "stormwater",
+  "shot": "3.1",
+  "attempt": 2,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "two boys for SIBUSISO and REFILWE: Refilwe drawn as a boy",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person",
+   "unscripted_object"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "stormwater",
+  "shot": "5.1",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "absent"
+  ],
+  "note": "only the dog; the tunnels",
+  "source": "L021 what-if (2026-10-14): no_character real; L021 what-if (2026-10-14): setting false alarm",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "setting",
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "stormwater",
+  "shot": "6.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "stormwater",
+  "shot": "6.4",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "age"
+  ],
+  "note": "Mr. Van der Merwe drawn young (present, the wrong age)",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "unscripted_person",
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "1.1",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "NALEDI (12) drawn as a boy",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "1.2",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "NALEDI (12) drawn as a boy",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "drawn_sex"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "1.3",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "NALEDI (12) drawn as a boy",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "drawn_sex"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "2.1",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "NALEDI (12) drawn as a boy",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "drawn_sex"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "2.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the shopkeeper and his newspaper",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "2.3",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "NALEDI (12) drawn as a boy",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "3.1",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "NALEDI (12) drawn as a boy",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "drawn_sex"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "3.2",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "NALEDI (12) drawn as a boy",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "drawn_sex"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "3.3",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the puddle",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "4.1",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "NALEDI (12) drawn as a boy",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "drawn_sex"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "4.2",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "extra_person"
+  ],
+  "note": "a naked adult man for \"They sit up\" (no figure in the prompt)",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "4.3",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "NALEDI (12) drawn as a boy",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "drawn_sex"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "5.1",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex",
+   "extra_person"
+  ],
+  "note": "NALEDI drawn as a boy; extra children",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "unscripted_person",
+   "drawn_sex"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "5.2",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex",
+   "drawn_twice"
+  ],
+  "note": "NALEDI (12) drawn as a boy; two children for NALEDI alone, both drawn as boys",
+  "source": "L023 held-out run (2026-10-14); T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "5.4",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-borrowed-bicycle",
+  "shot": "5.5",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "empty_frame"
+  ],
+  "note": "an empty yard for a line",
+  "source": "L023 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-bread-van",
+  "shot": "1.2",
+  "attempt": 3,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-bread-van",
+  "shot": "1.3",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-bread-van",
+  "shot": "1.3",
+  "attempt": 2,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-bread-van",
+  "shot": "2.2",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "setting"
+  ],
+  "note": "an EXT scene drawn indoors",
+  "source": "L021 what-if (2026-10-14): setting real",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "setting"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-bread-van",
+  "shot": "2.4",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "setting"
+  ],
+  "note": "the cast is drawn; the judge didn't match them; an EXT scene drawn indoors",
+  "source": "L021 what-if (2026-10-14): no_character false alarm; L021 what-if (2026-10-14): setting real",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person",
+   "setting"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-bread-van",
+  "shot": "3.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-bread-van",
+  "shot": "3.3",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-bread-van",
+  "shot": "4.1",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "absent"
+  ],
+  "note": "no taxi driver; Betty not on the step",
+  "source": "L021 what-if (2026-10-14): no_character real",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-bread-van",
+  "shot": "4.4",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_twice"
+  ],
+  "note": "the cast is drawn; the judge didn't match them; three boys for THEO alone",
+  "source": "L021 what-if (2026-10-14): no_character false alarm; T104 measurement (2026-10-16)",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "unscripted_person",
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-bread-van",
+  "shot": "4.5",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "setting"
+  ],
+  "note": "an EXT scene drawn indoors",
+  "source": "L021 what-if (2026-10-14): setting real",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person",
+   "setting"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "1.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "2.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "2.2",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "missing_prop",
+   "missing_action"
+  ],
+  "note": "props or actions missing",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "2.3",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "empty_frame"
+  ],
+  "note": "a heard-only speaker's line",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "3.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "3.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "3.3",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "3.4",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "4.1",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "extra_person"
+  ],
+  "note": "an extra man on the stairs",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "4.2",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "drawn_twice"
+  ],
+  "note": "Ms. Naidoo drawn twice (two women in suits); T104's question misses it",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "4.3",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "5.1",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "missing_prop"
+  ],
+  "note": "the lens room without its lens",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "5.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "pass",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "5.3",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "6.1",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "missing_prop",
+   "missing_action"
+  ],
+  "note": "props or actions missing",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "6.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "pass",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "6.3",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "7.1",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "unclear_sex"
+  ],
+  "note": "an old person of unclear sex for the bare FORTUIN (T101 folds it into MR. FORTUIN)",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "7.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "7.3",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "drawn_twice"
+  ],
+  "note": "Ms. Naidoo drawn twice; T104's question misses it",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "7.4",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "empty_frame"
+  ],
+  "note": "a heard-only speaker's line",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "7.5",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_sex"
+  ],
+  "note": "Mr. Fortuin drawn as an old woman; found by the presence agent, now asked its sex (T102)",
+  "source": "L022 held-out run (2026-10-14); T102",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "unscripted_person",
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "8.1",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "missing_prop"
+  ],
+  "note": "no rescue boat",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "9.1",
+  "attempt": 1,
+  "label": "weak",
+  "faults": [
+   "missing_prop",
+   "missing_action"
+  ],
+  "note": "props or actions missing",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "9.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_object"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-lighthouse-inspector",
+  "shot": "9.3",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "",
+  "source": "L022 held-out run (2026-10-14)",
+  "verdict": "pass",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-night-taxi",
+  "shot": "1.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-night-taxi",
+  "shot": "1.2",
+  "attempt": 3,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-night-taxi",
+  "shot": "1.4",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_twice"
+  ],
+  "note": "THABO drawn three times",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-night-taxi",
+  "shot": "2.1",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-night-taxi",
+  "shot": "2.3",
+  "attempt": 2,
+  "label": "wrong",
+  "faults": [
+   "missing_action",
+   "unclear_sex"
+  ],
+  "note": "a child at the taxi's wheel; THABO at the window reads as a girl (arguable)",
+  "source": "T102 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-night-taxi",
+  "shot": "2.4",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "the cast is drawn; the judge didn't match them",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-night-taxi",
+  "shot": "5.1",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-night-taxi",
+  "shot": "5.1",
+  "attempt": 2,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-night-taxi",
+  "shot": "5.4",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "age"
+  ],
+  "note": "BONGANI (50s) drawn a teenager, UNCLE SIZWE (30s) old",
+  "source": "L021 what-if (2026-10-14): no_character false alarm",
+  "verdict": "fail",
+  "withheld": true,
+  "failed": [
+   "unscripted_person",
+   "no_character"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-night-taxi",
+  "shot": "6.3",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-night-taxi",
+  "shot": "6.3",
+  "attempt": 2,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-red-kite",
+  "shot": "2.2",
+  "attempt": 1,
+  "label": "right",
+  "faults": [],
+  "note": "a knife on the workbench",
+  "source": "L021 what-if (2026-10-14): unscripted_object false alarm",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-red-kite",
+  "shot": "4.1",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "drawn_twice"
+  ],
+  "note": "LERATO drawn twice in the alley",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "warn",
+  "withheld": false,
+  "failed": [
+   "unscripted_person"
+  ],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ },
+ {
+  "script": "the-red-kite",
+  "shot": "5.2",
+  "attempt": 1,
+  "label": "wrong",
+  "faults": [
+   "split_panels"
+  ],
+  "note": "two or more panels",
+  "source": "T104 measurement (2026-10-16)",
+  "verdict": "pass",
+  "withheld": false,
+  "failed": [],
+  "models": [
+   "deepseek-ai/DeepSeek-V4.1-Flash",
+   "nvidia/nemotron-3-super-120b-a12b"
+  ]
+ }
+]

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comic (states) — Panelwise</title>
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="storyboard.css"><link rel="stylesheet" href="comic.css">
+<style>
+  /* The screens comic.png doesn't draw (web.md §4.5), stacked and separated by a rule: the plan
+     isn't ready; planned but the storyboard still running (T026's rendering stage); no comic and
+     no renderer on this server (every deployment before T026); no comic yet, ready to make; being
+     made; the last attempt failed; failed with no renderer. */
+  .screen + .screen { border-top: 6px solid var(--ink-2); }
+  .empty { max-width: 1440px; margin: 0 auto; padding: 32px 24px 56px; }
+  .empty h1 { margin: 6px 0 8px; font-size: 48px; }
+  .cnote {
+    max-width: 640px; margin-top: 20px; background: var(--paper); box-shadow: var(--shadow-page);
+    padding: 18px 20px; border-left: 4px solid var(--rule);
+  }
+  .cnote.failed { border-left-color: var(--withheld); }
+  .cnote p { margin: 0 0 10px; }
+  .cnote p:last-child { margin-bottom: 0; }
+  .cnote .why { font-size: 14px; color: var(--ink-2); }
+  .cnote .btn { margin-top: 6px; }
+  .cnote .btn[disabled] { opacity: 0.55; cursor: not-allowed; }
+</style></head>
+<body>
+<div class="screen">
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="project">the-red-kite</span>
+  <nav aria-label="Project"><a href="script.html">Script</a><a href="storyboard.html">Storyboard</a><a href="comic.html" aria-current="page">Comic</a></nav>
+  <span class="spacer"></span>
+  <span class="who">judge@panelwise.demo</span>
+</header>
+<div class="job"><span>Planning shots · 52%</span><span class="meter"><span style="width:52%"></span></span></div>
+<main class="empty">
+  <p class="eyebrow">Comic</p>
+  <h1>the-red-kite</h1>
+  <div class="cnote">
+    <p>The comic is made from the shot plan, which isn't ready yet.</p>
+    <p class="why">This page updates when planning finishes.</p>
+  </div>
+</main>
+</div>
+
+<div class="screen">
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="project">the-red-kite</span>
+  <nav aria-label="Project"><a href="script.html">Script</a><a href="storyboard.html">Storyboard</a><a href="comic.html" aria-current="page">Comic</a></nav>
+  <span class="spacer"></span>
+  <span class="who">judge@panelwise.demo</span>
+</header>
+<div class="job"><span>Rendering frames · 74%</span><span class="meter"><span style="width:74%"></span></span></div>
+<main class="empty">
+  <p class="eyebrow">Comic</p>
+  <h1>the-red-kite</h1>
+  <div class="cnote">
+    <p>The comic can be made once the storyboard is finished.</p>
+    <p class="why">This page updates when it is.</p>
+  </div>
+</main>
+</div>
+
+<div class="screen">
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="project">the-red-kite</span>
+  <nav aria-label="Project"><a href="script.html">Script</a><a href="storyboard.html">Storyboard</a><a href="comic.html" aria-current="page">Comic</a></nav>
+  <span class="spacer"></span>
+  <span class="who">judge@panelwise.demo</span>
+</header>
+<main class="empty">
+  <p class="eyebrow">Comic</p>
+  <h1>the-red-kite</h1>
+  <div class="cnote">
+    <p>No comic yet.</p>
+    <p class="why">Making one draws each of the 21 shots again at its panel's size, audits every drawing against the script, and letters the panels with the script's own dialogue.</p>
+    <p class="why">Drawing isn't set up on this server yet, so a comic can't be made here.</p>
+    <button class="btn" disabled>Make the comic</button>
+  </div>
+</main>
+</div>
+
+<div class="screen">
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="project">the-red-kite</span>
+  <nav aria-label="Project"><a href="script.html">Script</a><a href="storyboard.html">Storyboard</a><a href="comic.html" aria-current="page">Comic</a></nav>
+  <span class="spacer"></span>
+  <span class="who">judge@panelwise.demo</span>
+</header>
+<main class="empty">
+  <p class="eyebrow">Comic</p>
+  <h1>the-red-kite</h1>
+  <div class="cnote">
+    <p>No comic yet.</p>
+    <p class="why">Making one draws each of the 21 shots again at its panel's size, audits every drawing against the script, and letters the panels with the script's own dialogue.</p>
+    <button class="btn">Make the comic</button>
+  </div>
+</main>
+</div>
+
+<div class="screen">
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="project">the-red-kite</span>
+  <nav aria-label="Project"><a href="script.html">Script</a><a href="storyboard.html">Storyboard</a><a href="comic.html" aria-current="page">Comic</a></nav>
+  <span class="spacer"></span>
+  <span class="who">judge@panelwise.demo</span>
+</header>
+<div class="job"><span>Making the comic · 43%</span><span class="meter"><span style="width:43%"></span></span></div>
+<main class="empty">
+  <p class="eyebrow">Comic</p>
+  <h1>the-red-kite</h1>
+  <div class="cnote">
+    <p>Drawing and auditing the panels. The pages appear here when the comic is done.</p>
+  </div>
+</main>
+</div>
+
+<div class="screen">
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="project">the-red-kite</span>
+  <nav aria-label="Project"><a href="script.html">Script</a><a href="storyboard.html">Storyboard</a><a href="comic.html" aria-current="page">Comic</a></nav>
+  <span class="spacer"></span>
+  <span class="who">judge@panelwise.demo</span>
+</header>
+<main class="empty">
+  <p class="eyebrow">Comic</p>
+  <h1>the-red-kite</h1>
+  <div class="cnote failed">
+    <p>A panel couldn't be drawn, so the comic stopped.</p>
+    <p class="why">Panels the audit already accepted are reused when you make it again.</p>
+    <button class="btn">Make the comic again</button>
+  </div>
+</main>
+</div>
+<div class="screen">
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="project">the-red-kite</span>
+  <nav aria-label="Project"><a href="script.html">Script</a><a href="storyboard.html">Storyboard</a><a href="comic.html" aria-current="page">Comic</a></nav>
+  <span class="spacer"></span>
+  <span class="who">judge@panelwise.demo</span>
+</header>
+<main class="empty">
+  <p class="eyebrow">Comic</p>
+  <h1>the-red-kite</h1>
+  <div class="cnote failed">
+    <p>A panel couldn't be drawn, so the comic stopped.</p>
+    <p class="why">Panels the audit already accepted are reused when you make it again.</p>
+    <p class="why">Drawing isn't set up on this server yet, so a comic can't be made here.</p>
+    <button class="btn" disabled>Make the comic again</button>
+  </div>
+</main>
+</div>
+</body></html>

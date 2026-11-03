@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+npm-debug.log*
+pnpm-debug.log*
+
+# Environment & secrets — never commit a real one; .env.example is the shared template
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.DS_Store
+.idea/
+*.swp
+
+# Next.js
+.next/
+out/
+
+# Generated media -- rendered frames, portraits and comic pages are rebuilt, never committed
+/storage/
+services/api/storage/
+*.sqlite3
+
+# Private style packs live OUTSIDE this repo (PANELWISE_PRIVATE_STYLES); belt and braces:
+styles/private/
+services/api/styles/private/
+
+# Screenplays: only samples/ is tracked, and only public-domain or self-written scripts
+*.pdf
+!samples/**/*.pdf
+!docs/**/*.pdf
+
+# Agent worktrees (Claude Code isolation) live inside the repo; never commit them
+.claude/worktrees/

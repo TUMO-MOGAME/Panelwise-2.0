@@ -1,0 +1,9 @@
+# Ported from FrameFlow's storyboard_styles.py (`pencil`), without its draw-small-and-upscale mode
+# (storyboard.md §8). In the A/B it was best at keeping a character alone.
+label = "Pencil study"
+description = "A strongly drawn pencil study. Best at keeping a character alone; wide shots can drift outdoors and close shots into face studies."
+medium = "pencil sketch, graphite drawing"
+finish = "grayscale, monochrome, loose linework"
+emphasis = 1.3
+negative = ""
+grayscale = true

@@ -1,0 +1,8 @@
+market-day:2.1 frames/377a8fdbd28f06c724ba00008df500b3c55e8b433e6e137d2f3aefca0c3cb683.png
+market-day:3.2 frames/af5d2c670d47e3c7c276e2d8594cd999bffef9d24174d8f9c5dd3701bc0dca31.png
+market-day:5.2 frames/2831fa3bce9cdb1fe9a9d1b39b216cc40ce03d825872bfcbc69be22f153319fb.png
+the-borrowed-bicycle:5.5 frames/2e2ef2901b8ccb2e1b81084e8cc806ead69cf0c6f2f10ec5a1077d6069c92794.png
+the-lighthouse-inspector:8.1 frames/cdd791bc94f87123a5f93ba0c7b70decc5ba5a6f6e2dc9cb96dfadf91b34b092.png
+the-night-taxi:1.1 frames/2b0eef2a3321eb7cfead7f8e5376273b0794d38cc27382389e8de7a1577a8fc6.png
+rooftop-tomatoes:comic6.1a1 frames/d05833290fec4b98dda23ab75761e3ac891adc5b98f564eac31d6bd4fae0af18.png
+sipho-and-siphokazi:2.1 frames/651fbdaaddc2dd3a2c500407c13bbae257ad05d2e1af16b8e6d5a575c01c9812.png  (first probe only)

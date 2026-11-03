@@ -1,0 +1,98 @@
+ Container panelwise-api-run-7888f1720052 Creating 
+ Container panelwise-api-run-7888f1720052 Created 
+511 audits in 11 runs; presence agent would run on 77
+presence agent on AUNTIE BETTY failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on SIPHO failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on OFFICER MOLOI failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on MR. DUBE failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on MR. DUBE failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on AMAHLE failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on PRIYA failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on OFFICER VAN WYK failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on DANIEL failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+sex agent failed on AUNTIE BETTY: LLMEmptyResponse
+sex agent failed on AUNTIE BETTY: LLMEmptyResponse
+presence agent on SIBUSISO failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+sex agent failed on THABO: LLMEmptyResponse
+presence agent on BONGANI failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+sex agent failed on THABO: LLMEmptyResponse
+sex agent failed on THABO: LLMEmptyResponse
+sex agent failed on THABO: LLMEmptyResponse
+-     final-whistle    1.4   a1 present=[] asks=[]
+-     final-whistle    1.4   a2 present=[] asks=[]
+-     final-whistle    1.4   a3 present=['COACH DLAMINI'] asks=[]
+-     final-whistle    2.1   a1 present=['EAGLES', 'STRIKER'] asks=[]
+asked final-whistle    2.2   a1 present=['LINDI'] asks=[('LINDI', 0, 'female', 'female')]
+asked final-whistle    2.2   a2 present=['LINDI'] asks=[('LINDI', 0, 'female', 'female')]
+-     final-whistle    2.3   a1 present=[] asks=[]
+-     final-whistle    2.3   a2 present=[] asks=[]
+asked final-whistle    2.4   a3 present=['LINDI'] asks=[('LINDI', 0, 'female', 'female')]
+-     final-whistle    3.3   a1 present=['REFEREE'] asks=[]
+-     final-whistle    4.3   a1 present=[] asks=[]
+-     final-whistle    5.3   a1 present=['CROWD'] asks=[]
+asked final-whistle    6.2   a1 present=['PALESA'] asks=[('PALESA', 0, 'female', 'female')]
+asked load-shedding    2.1   a1 present=['LUCKY'] asks=[('LUCKY', 0, 'male', 'unclear')]
+asked load-shedding    5.2   a1 present=['JABU', 'PIETER'] asks=[('JABU', 0, 'male', 'male'), ('PIETER', 0, 'male', 'male')]
+-     lost-property    2.1   a1 present=[] asks=[]
+asked lost-property    2.1   a2 present=['ZANELE'] asks=[('ZANELE', 0, 'female', 'female')]
+asked lost-property    2.3   a3 present=['ZANELE'] asks=[('ZANELE', 0, 'female', 'female')]
+-     lost-property    3.2   a1 present=[] asks=[]
+asked lost-property    4.4   a2 present=['MR. DUBE'] asks=[('MR. DUBE', 0, 'male', 'male')]
+-     lost-property    5.1   a2 present=[] asks=[]
+-     lost-property    5.1   a3 present=['KOOS'] asks=[]
+asked lost-property    6.1   a3 present=['MR. DUBE'] asks=[('MR. DUBE', 0, 'male', 'male')]
+-     lost-property    6.5   a2 present=[] asks=[]
+-     lost-property    6.5   a3 present=[] asks=[]
+-     lost-property    7.4   a1 present=[] asks=[]
+-     lost-property    7.4   a2 present=[] asks=[]
+asked lost-property    8.4   a2 present=['ZANELE'] asks=[('ZANELE', 0, 'female', 'female')]
+asked lost-property    9.4   a1 present=['MR. DUBE'] asks=[('MR. DUBE', 2, 'male', 'male')]
+-     lost-property    9.5   a2 present=['OFFICER VAN WYK'] asks=[]
+-     lost-property    9.5   a3 present=[] asks=[]
+-     lost-property    9.6   a2 present=[] asks=[]
+-     market-day       2.1   a1 present=[] asks=[]
+asked market-day       3.2   a1 present=['KAMO'] asks=[('KAMO', 0, 'male', 'unclear')]
+FLAG  sipho-and-siphok 2.1   a2 present=['MAMA THEMBI'] asks=[('MAMA THEMBI', 0, 'female', 'male')]
+-     sipho-and-siphok 2.3   a1 present=['SIPHOKAZI'] asks=[]
+-     sipho-and-siphok 5.3   a3 present=[] asks=[]
+-     sipho-and-siphok 7.1   a3 present=[] asks=[]
+asked stormwater       2.2   a1 present=['MR. VAN DER MERWE'] asks=[('MR. VAN DER MERWE', 0, 'male', 'male')]
+asked stormwater       2.2   a2 present=['MR. VAN DER MERWE'] asks=[('MR. VAN DER MERWE', 1, 'male', 'male')]
+-     stormwater       3.1   a2 present=['REFILWE'] asks=[]
+-     stormwater       5.1   a1 present=[] asks=[]
+asked stormwater       5.1   a2 present=['MR. VAN DER MERWE'] asks=[('MR. VAN DER MERWE', 0, 'male', 'male')]
+-     stormwater       5.1   a3 present=[] asks=[]
+-     stormwater       6.1   a1 present=['SIBUSISO'] asks=[]
+-     stormwater       6.1   a2 present=[] asks=[]
+-     stormwater       6.1   a3 present=[] asks=[]
+-     stormwater       6.4   a1 present=[] asks=[]
+-     stormwater       6.4   a2 present=[] asks=[]
+-     stormwater       6.4   a3 present=[] asks=[]
+-     the-borrowed-bic 1.4   a1 present=[] asks=[]
+FLAG  the-borrowed-bic 4.1   a1 present=['NALEDI', 'TSHEPO'] asks=[('NALEDI', 0, 'female', 'male'), ('TSHEPO', 1, 'male', 'male')]
+asked the-bread-van    2.4   a1 present=['DANIEL'] asks=[('DANIEL', 0, 'male', 'male')]
+-     the-bread-van    3.1   a1 present=['THEO'] asks=[]
+-     the-bread-van    3.2   a3 present=['THEO'] asks=[]
+-     the-bread-van    3.3   a1 present=['THEO'] asks=[]
+-     the-bread-van    3.3   a2 present=['THEO'] asks=[]
+-     the-bread-van    4.1   a1 present=[] asks=[]
+asked the-bread-van    4.1   a2 present=['AUNTIE BETTY'] asks=[('AUNTIE BETTY', 0, 'female', 'female')]
+-     the-bread-van    4.2   a3 present=[] asks=[]
+asked the-bread-van    4.3   a2 present=['AUNTIE BETTY'] asks=[('AUNTIE BETTY', 0, 'female', 'female')]
+asked the-bread-van    4.3   a3 present=['AUNTIE BETTY'] asks=[('AUNTIE BETTY', 0, 'female', 'failed')]
+-     the-bread-van    4.4   a1 present=['THEO'] asks=[]
+-     the-bread-van    4.4   a2 present=['THEO'] asks=[]
+asked the-bread-van    4.5   a2 present=['AUNTIE BETTY', 'THEO'] asks=[('AUNTIE BETTY', 0, 'female', 'failed')]
+-     the-lighthouse-i 7.5   a1 present=['FORTUIN'] asks=[]
+asked the-night-taxi   1.1   a1 present=['THABO'] asks=[('THABO', 1, 'male', 'male')]
+asked the-night-taxi   1.1   a2 present=['BONGANI', 'THABO'] asks=[('BONGANI', 0, 'male', 'male'), ('THABO', 1, 'male', 'failed')]
+asked the-night-taxi   1.2   a2 present=['THABO'] asks=[('THABO', 1, 'male', 'male')]
+asked the-night-taxi   2.1   a1 present=['THABO'] asks=[('THABO', 0, 'male', 'failed')]
+asked the-night-taxi   2.1   a2 present=['THABO'] asks=[('THABO', 0, 'male', 'male')]
+asked the-night-taxi   2.3   a2 present=['THABO'] asks=[('THABO', 1, 'male', 'failed')]
+asked the-night-taxi   2.4   a1 present=['THABO'] asks=[('THABO', 0, 'male', 'failed')]
+-     the-night-taxi   5.4   a1 present=[] asks=[]
+asked the-night-taxi   6.3   a2 present=['BONGANI'] asks=[('BONGANI', 1, 'male', 'male')]
+asked the-red-kite     1.1   a2 present=['LERATO'] asks=[('LERATO', 0, 'female', 'female')]
+asked the-red-kite     1.1   a3 present=['LERATO'] asks=[('LERATO', 0, 'female', 'female')]
+frames 77; found-and-present with a script sex asked: 36; flagged 2

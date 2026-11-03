@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storyboard (states) — Panelwise</title>
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="script.css"><link rel="stylesheet" href="storyboard.css">
+<style>
+  /* Three screens storyboard.png doesn't draw (web.md §4.3): a planned project with no frames
+     rows (every project before T021 and T026), one still being read, and one whose job failed.
+     Same tokens; the screens are stacked, separated by a rule. */
+  .screen + .screen { border-top: 6px solid var(--ink-2); }
+  .screen.short { min-height: 300px; }
+  .wait { max-width: 1440px; margin: 0 auto; padding: 32px 24px; }
+  .failed-page { max-width: 1440px; margin: 0 auto; padding: 32px 24px 64px; }
+  .failed-page .intro h1 { margin: 6px 0 8px; font-size: 48px; }
+  .failed { max-width: 640px; margin-top: 24px; background: var(--paper); box-shadow: var(--shadow-page); padding: 18px 20px; border-left: 4px solid var(--withheld); }
+  .failed p { margin: 10px 0 0; }
+  .failed .stage { font-size: 14px; color: var(--ink-2); }
+  .failed .btn { margin-top: 16px; }
+</style></head>
+<body>
+<div class="screen">
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="project">The Keeper's Light</span>
+  <nav aria-label="Project"><a href="script.html">Script</a><a href="storyboard.html" aria-current="page">Storyboard</a><a aria-disabled="true" title="Comic pages aren't built yet">Comic</a></nav>
+  <span class="spacer"></span>
+  <button class="btn quiet" disabled title="The PDF export isn&#x27;t built yet">Export PDF</button>
+  <span class="who">judge@panelwise.demo</span>
+</header>
+<main class="board">
+  <aside class="lined" aria-label="Lined script">
+    <p class="eyebrow">Lined script</p>
+    <section class="page" aria-label="Script page 1">
+  <span class="pno">1.</span>
+  <div class="lanes"><a class="shotline" href="#shot-1.1" style="--c:var(--line-1);top:134px;height:40px;left:0px" aria-label="Shot 1.1, p.1 l.7–8"><b>1.1</b></a><a class="shotline" href="#shot-1.2" style="--c:var(--line-2);top:200px;height:18px;left:30px" aria-label="Shot 1.2, p.1 l.10"><b>1.2</b></a><a class="shotline" href="#shot-1.3" style="--c:var(--line-3);top:288px;height:18px;left:0px" aria-label="Shot 1.3, p.1 l.14"><b>1.3</b></a><a class="shotline off" href="#shot-1.4" style="--c:var(--line-4);top:354px;height:40px;left:30px" aria-label="Shot 1.4, p.1 l.17–18"><b>1.4</b></a><a class="shotline" href="#shot-2.1" style="--c:var(--line-5);top:508px;height:18px;left:0px" aria-label="Shot 2.1, p.1 l.24"><b>2.1</b></a><a class="shotline runs-on" href="#shot-2.2" style="--c:var(--line-6);top:574px;height:84px;left:30px" aria-label="Shot 2.2, p.1 l.27–33"><b>2.2</b></a></div>
+  <div class="lines" style="--lh:22px"><div><i>1</i>                            THE KEEPER&#x27;S LIGHT</div><div><i>2</i>&nbsp;</div><div><i>3</i>          FADE IN:</div><div><i>4</i>&nbsp;</div><div><i>5</i>    1     INT. LIGHTHOUSE KITCHEN - NIGHT                         1</div><div><i>6</i>&nbsp;</div><div><i>7</i>          Rain hammers the window. NANDI (60s, oilskin coat)</div><div><i>8</i>          pours tea into two chipped mugs.</div><div><i>9</i>&nbsp;</div><div><i>10</i>          DOORS SLAM.</div><div><i>11</i>&nbsp;</div><div><i>12</i>                                NANDI</div><div><i>13</i>                          (without turning)</div><div><i>14</i>                    You came back.</div><div><i>15</i>&nbsp;</div><div><i>16</i>                                THABO (O.S.)</div><div><i>17</i>                    The boat didn&#x27;t. I walked the last</div><div><i>18</i>                    mile along the cliff.</div><div><i>19</i>&nbsp;</div><div><i>20</i>                                                       CUT TO:</div><div><i>21</i>&nbsp;</div><div><i>22</i>    2     EXT. LIGHTHOUSE GALLERY -- CONTINUOUS                   2</div><div><i>23</i>&nbsp;</div><div><i>24</i>          THABO steps out into the wind, holding a torn map.</div><div><i>25</i>&nbsp;</div><div><i>26</i>                                THABO</div><div><i>27</i>                    It&#x27;s gone.</div><div><i>28</i>                          (beat)</div><div><i>29</i>                    All of it.</div><div><i>30</i>                                (MORE)</div></div>
+</section>
+    <section class="page" aria-label="Script page 2">
+  <span class="pno">2.</span>
+  <div class="lanes"><a class="shotline continued" href="#shot-2.2" style="--c:var(--line-6);top:2px;height:62px;left:30px" aria-label="Shot 2.2, p.1 l.27–33"><b>2.2</b></a><a class="shotline" href="#shot-3.1" style="--c:var(--line-1);top:134px;height:18px;left:0px" aria-label="Shot 3.1, p.2 l.37"><b>3.1</b></a></div>
+  <div class="lines" style="--lh:22px"><div><i>31</i>                                                                  2.</div><div><i>32</i>                                THABO (CONT&#x27;D)</div><div><i>33</i>                    The whole coast.</div><div><i>34</i>&nbsp;</div><div><i>35</i>    3     INT. LIGHTHOUSE STAIRWELL                               3</div><div><i>36</i>&nbsp;</div><div><i>37</i>          Silence.</div></div>
+</section>
+    <p class="legend"><span class="solid"></span> speaker on screen <span class="wavy"></span> speaker off screen</p>
+  </aside>
+  <section class="frames" aria-label="Frames"><h2 class="scene"><span>1</span>INT. LIGHTHOUSE KITCHEN - NIGHT</h2><div class="grid"><article class="card" id="shot-1.1" style="--c:var(--line-1)">
+  <div class="media"><div class="media-pending"><p>Not rendered yet</p></div></div>
+  <header><span class="sid">1.1</span><span class="cam">Wide · Static</span></header>
+  <p class="who">NANDI · oilskin coat · two chipped mugs</p>
+  <p class="src quote">“Rain hammers the window. NANDI (60s, oilskin coat) pours tea into two chipped mugs.” <span class="span-ref">p.1 l.7–8</span></p>
+</article><article class="card" id="shot-1.2" style="--c:var(--line-2)">
+  <div class="media"><div class="media-pending"><p>Not rendered yet</p></div></div>
+  <header><span class="sid">1.2</span><span class="cam">Insert · Static</span></header>
+  <p class="who">No one in frame</p>
+  <p class="src quote">“DOORS SLAM.” <span class="span-ref">p.1 l.10</span></p>
+</article><article class="card" id="shot-1.3" style="--c:var(--line-3)">
+  <div class="media"><div class="media-pending"><p>Not rendered yet</p></div></div>
+  <header><span class="sid">1.3</span><span class="cam">Close-up · Static</span></header>
+  <p class="who">NANDI</p>
+  <p class="src quote">“You came back.” <span class="span-ref">p.1 l.14</span></p>
+</article><article class="card" id="shot-1.4" style="--c:var(--line-4)">
+  <div class="media"><div class="media-pending"><p>Not rendered yet</p></div></div>
+  <header><span class="sid">1.4</span><span class="cam">Medium · Static</span></header>
+  <p class="who">NANDI</p>
+  <p class="src quote">“The boat didn't. I walked the last mile along the cliff.” <span class="span-ref">p.1 l.17–18</span></p>
+</article></div><h2 class="scene"><span>2</span>EXT. LIGHTHOUSE GALLERY -- CONTINUOUS</h2><div class="grid"><article class="card" id="shot-2.1" style="--c:var(--line-5)">
+  <div class="media"><div class="media-pending"><p>Not rendered yet</p></div></div>
+  <header><span class="sid">2.1</span><span class="cam">Wide · Tracking</span></header>
+  <p class="who">THABO · torn map</p>
+  <p class="src quote">“THABO steps out into the wind, holding a torn map.” <span class="span-ref">p.1 l.24</span></p>
+</article><article class="card" id="shot-2.2" style="--c:var(--line-6)">
+  <div class="media"><div class="media-pending"><p>Not rendered yet</p></div></div>
+  <header><span class="sid">2.2</span><span class="cam">Close-up · Static</span></header>
+  <p class="who">THABO</p>
+  <p class="src quote">“It's gone.<br>All of it.<br>The whole coast.” <span class="span-ref">p.1 l.27–33</span></p>
+</article></div><h2 class="scene"><span>3</span>INT. LIGHTHOUSE STAIRWELL</h2><div class="grid"><article class="card" id="shot-3.1" style="--c:var(--line-1)">
+  <div class="media"><div class="media-pending"><p>Not rendered yet</p></div></div>
+  <header><span class="sid">3.1</span><span class="cam">Wide · Static</span></header>
+  <p class="who">No one in frame</p>
+  <p class="src quote">“Silence.” <span class="span-ref">p.2 l.37</span></p>
+</article></div></section>
+</main>
+</div>
+<div class="screen short">
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="project">the-red-kite</span>
+  <nav aria-label="Project"><a href="script.html">Script</a><a href="storyboard.html" aria-current="page">Storyboard</a><a aria-disabled="true" title="Comic pages aren't built yet">Comic</a></nav>
+  <span class="spacer"></span>
+  <button class="btn quiet" disabled title="The PDF export isn&#x27;t built yet">Export PDF</button>
+  <span class="who">judge@panelwise.demo</span>
+</header>
+<div class="job" role="status"><span class="eyebrow">Reading the script</span><span class="meter"><span style="width:18%"></span></span></div>
+</div>
+<div class="screen short">
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="project">saltpan-draft-3</span>
+  <nav aria-label="Project"><a href="script.html">Script</a><a href="storyboard.html" aria-current="page">Storyboard</a><a aria-disabled="true" title="Comic pages aren't built yet">Comic</a></nav>
+  <span class="spacer"></span>
+  <button class="btn quiet" disabled title="The PDF export isn&#x27;t built yet">Export PDF</button>
+  <span class="who">judge@panelwise.demo</span>
+</header>
+<main class="failed-page">
+  <section class="intro"><p class="eyebrow">Storyboard</p><h1>saltpan-draft-3</h1></section>
+  <section class="failed" aria-label="This run failed">
+    <span class="verdict withheld">Couldn't read the script</span>
+    <p>Reading the script failed at scene 12A. Nothing was saved from this run. Upload the script again to retry.</p>
+    <p class="stage">It stopped while reading the script.</p>
+    <a class="btn quiet" href="projects.html">Back to your screenplays</a>
+  </section>
+</main>
+</div>
+</body></html>

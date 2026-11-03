@@ -1,0 +1,6021 @@
+{
+ "meta": {
+  "project": "28a0476c-bd8a-497d-ac1e-e885a6c45927",
+  "vision_model": "nvidia/Nemotron-3.5-Super-VL",
+  "vision_thinking": false,
+  "concurrency": 4,
+  "attempts": 44
+ },
+ "records": [
+  {
+   "target": "comic",
+   "scene": 0,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/e72e956b370939518f14ffb76b99cda8b612171a83dfd561af2a57445b8c5dbe.png",
+   "stored": "warn",
+   "secs": 21.24,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_person",
+     "hard"
+    ],
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 9066,
+    "completion_tokens": 1439,
+    "reasoning_tokens": 1006
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with short hair, wearing a dress, standing in front of a doorway"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "house",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "fence",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "power lines",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utility pole",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bushes",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": null,
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "A flat tin roof above a row of small brick houses."
+     },
+     {
+      "object": 1,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 3,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 4,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": [
+    {
+     "character": "LERATO",
+     "person": 0,
+     "reason": "The drawing shows a young girl in a dress standing before a house, matching the script's description of Lerato as a 10-year-old female; the missing red kite and braids are details the drawing leaves out and do not rule her out."
+    }
+   ]
+  },
+  {
+   "target": "comic",
+   "scene": 0,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/3227b361daf818d89fbb970c46e2f2d220d8b99a5502df9cc3538da3955db299.png",
+   "stored": "pass",
+   "secs": 16.23,
+   "raw": "pass",
+   "hosted": "pass",
+   "failed": [],
+   "usage": {
+    "prompt_tokens": 4266,
+    "completion_tokens": 2037,
+    "reasoning_tokens": 1751
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "a child with braided hair, wearing a short-sleeved top and a skirt, holding a kite string"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "kite",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "kite string",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "post",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "A gust tears the kite out of her hands."
+     },
+     {
+      "object": 1,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 0,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/198157076a2f645a8199b0132144d5052e593515fbc1120536268d4959e25f47.png",
+   "stored": "warn",
+   "secs": 13.19,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "missing_character",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4290,
+    "completion_tokens": 846,
+    "reasoning_tokens": 555
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with braided hair and a short-sleeved shirt"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "building",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "railing",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "platform",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "EXT. FLAT ROOF - DAY"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "EXT. FLAT ROOF - DAY"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "EXT. FLAT ROOF - DAY"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 0,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/d1f5e2721036972ab39b33a51ffdf6d36f467ab1483a6b9bb6f3a7ef5b414532.png",
+   "stored": "warn",
+   "secs": 22.03,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_person",
+     "hard"
+    ],
+    [
+     "missing_character",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 7627,
+    "completion_tokens": 1876,
+    "reasoning_tokens": 1628
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "a child with braided hair in a t-shirt, shown in profile"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "railing",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": null,
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "FLAT ROOF"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": [
+    {
+     "character": "LERATO",
+     "person": 0,
+     "reason": "The drawing shows a young girl with braided hair in a t-shirt, matching the script's description of Lerato (10, female, braids tied back). The shot text is just an exclamation and does not introduce another character, so the child fits Lerato."
+    }
+   ]
+  },
+  {
+   "target": "comic",
+   "scene": 1,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/18b71bde2393bd3888f1dd5321cf0039477ef3cfa942a3f41c2329129a2379e1.png",
+   "stored": "pass",
+   "secs": 36.83,
+   "raw": "pass",
+   "hosted": "pass",
+   "failed": [],
+   "usage": {
+    "prompt_tokens": 9538,
+    "completion_tokens": 2540,
+    "reasoning_tokens": 1719
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "an old man with a mustache wearing a button-up shirt"
+     },
+     {
+      "position": "right",
+      "appearance": "a child with braided hair wearing a t-shirt and skirt"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "shelf",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "light bulb",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "window",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "staircase",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 2,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 3,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 4,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 5,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 6,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 7,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 8,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 9,
+      "kind": "scripted_prop",
+      "support": "One bare bulb."
+     },
+     {
+      "object": 10,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 11,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 1,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/e67fed80c2dcebec0f0163419331ae9f576f806031adc167de61630c8a82e3ba.png",
+   "stored": "warn",
+   "secs": 28.65,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 11102,
+    "completion_tokens": 3379,
+    "reasoning_tokens": 2628
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with glasses and white hair, wearing a button-up shirt"
+     },
+     {
+      "position": "right",
+      "appearance": "a child with braided hair, wearing a t-shirt and pants"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "iron",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "iron",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "mug",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "spools of thread",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "drawer",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "cabinet",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "window",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "light fixture",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "Cri4"
+    ],
+    "has_text": true,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "He sets the iron in its stand"
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "He sets the iron in its stand"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 1,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/c3b3526b63fc184be2c542df01264ff8c62c14bd139b80b1a7356d6549152ae8.png",
+   "stored": "warn",
+   "secs": 15.9,
+   "raw": "pass",
+   "hosted": "pass",
+   "failed": [],
+   "usage": {
+    "prompt_tokens": 6495,
+    "completion_tokens": 1602,
+    "reasoning_tokens": 862
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with glasses and a beard, wearing a collared shirt"
+     },
+     {
+      "position": "right",
+      "appearance": "a child with long hair in two braids, wearing a t-shirt"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "cutting board",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "knife",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "shelves",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "jars",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "hanging utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "wrenches",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "cups",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "containers with utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "counter",
+      "category": "furniture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "Mokgosi",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "Lerato",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 1,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/a432a2779f9614146bcc146e42600f982a3417c1d06e25a81d1ecfd35089caf9.png",
+   "stored": "warn",
+   "secs": 15.22,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "framing",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3174,
+    "completion_tokens": 2206,
+    "reasoning_tokens": 1301
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [],
+    "setting": "interior",
+    "light": "unclear",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "shelf",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "container",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pitcher",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "cup",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "handle",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "box",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "cabinet",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "cylinder",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "drawer",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "cup",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "shelf",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "cup",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "container",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "rope",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "SNEIR"
+    ],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "On the shelf, a radio crackles to life."
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 5,
+      "kind": "scripted_prop",
+      "support": "On the shelf, a radio crackles to life."
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 10,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 11,
+      "kind": "scripted_prop",
+      "support": "On the shelf, a radio crackles to life."
+     },
+     {
+      "object": 12,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 13,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 14,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     }
+    ]
+   },
+   "seen": [],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 1,
+   "shot": 5,
+   "attempt": 1,
+   "asset": "frames/66de55e027fb576c1927188fbc8be27ede0f49fe7a5d015db1a3b3ccdd347f9a.png",
+   "stored": "warn",
+   "secs": 41.34,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 5713,
+    "completion_tokens": 3036,
+    "reasoning_tokens": 2274
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with braided hair and a round-neck shirt"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "clock",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "wrenches",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "spoons",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "jars",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "cups",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bowls",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bottles",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "rolling pins",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "plant",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "bucket",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "books",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pictures",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "J. Eubred"
+    ],
+    "has_text": true,
+    "text": [
+     "J. Eubred"
+    ]
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 4,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 5,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 7,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 10,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 11,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 2,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/fc311bb95cacfb01f2659ab10530e05d6ff94ea45ba9882ceb4a723bbf5836c5.png",
+   "stored": "warn",
+   "secs": 16.82,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_object",
+     "hard"
+    ],
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 6218,
+    "completion_tokens": 1296,
+    "reasoning_tokens": 987
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "a child with braided hair, wearing a t-shirt and pants, holding a kite string"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "kite",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "kite string",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "bird",
+      "category": "animal",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "The red kite is high now, a bright speck against clouds turning the colour of ash. The blue string hums in the wind."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "The blue string hums in the wind."
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 2,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/255eaa2e9ae6efbefc0d868db9ff4c4b409febab72d78d0bffe0f9523caca59f.png",
+   "stored": "warn",
+   "secs": 20.01,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 6299,
+    "completion_tokens": 2498,
+    "reasoning_tokens": 2048
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "a child with braided hair, wearing a short-sleeved shirt and a skirt, holding a kite string"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "kite string",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "kite",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "lightning",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "clouds",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "houses",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "rooftop railing",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "The string goes tight, then tighter."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "The red kite is high now, a bright speck against clouds turning the colour of ash."
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "FLAT ROOF"
+     },
+     {
+      "object": 4,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "FLAT ROOF"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 2,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/44fe865c28240c49d91da2477d2ee2d6f992a34440bc029b441b0eae9b35d5ce.png",
+   "stored": "warn",
+   "secs": 10.87,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "framing",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3371,
+    "completion_tokens": 1765,
+    "reasoning_tokens": 1433
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "kite",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "houses",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "trees",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "rooftop",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "street",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "SNAP."
+    ],
+    "has_text": true,
+    "text": [
+     "SNAP."
+    ]
+   },
+   "judgement": {
+    "people": [],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "The kite drifts away over the houses, trailing its yellow ribbons, and is gone."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "over the houses"
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 3,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 4,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 2,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/79b2a9659d7316c57733e18deacf6e55418d6079f548949caa1a08fbf607ecb8.png",
+   "stored": "warn",
+   "secs": 7.42,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "framing",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3880,
+    "completion_tokens": 568,
+    "reasoning_tokens": 377
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with braided hair, wearing a short-sleeved shirt, holding a spool"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "spool",
+      "category": "other",
+      "held": true
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "the empty spool in her hands"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 3,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/c53489d33bd9bf04802af3d6b9b4c47c7189c108dc429abe54536dbddee489ac.png",
+   "stored": "warn",
+   "secs": 16.88,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 6544,
+    "completion_tokens": 1934,
+    "reasoning_tokens": 1478
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with long braided hair, wearing a sweatshirt and pants, holding a flashlight"
+     }
+    ],
+    "setting": "exterior",
+    "light": "night",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "flashlight",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "street lamp",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "door",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "window",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "power lines",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "GLOMAA"
+    ],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "Lerato walks alone with a TORCH, its beam sweeping over walls and gutters."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "the red kite hangs from a STREETLIGHT, torn and dripping, its yellow ribbons stirring in the last of the wind."
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 3,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/f0752cacbbd84c0c251e5dda8e89c8a672cd082081f725f0919401221d7a71c7.png",
+   "stored": "warn",
+   "secs": 14.17,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4316,
+    "completion_tokens": 1593,
+    "reasoning_tokens": 1221
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with long hair in two braids, wearing a short-sleeved shirt and shorts"
+     }
+    ],
+    "setting": "exterior",
+    "light": "night",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "door",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "window",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "pipe",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "moon",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "Breehgsun"
+    ],
+    "has_text": true,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 3,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/9c72b4c9ced49251f88f896735e0284dd8421d75f64bf98992ea898a79999ec5.png",
+   "stored": "warn",
+   "secs": 31.77,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_person",
+     "hard"
+    ],
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 6549,
+    "completion_tokens": 3476,
+    "reasoning_tokens": 2860
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "a child with braided hair, wearing a short-sleeved shirt and shorts"
+     },
+     {
+      "position": "centre",
+      "appearance": "an old man with glasses, wearing a long-sleeved shirt and trousers"
+     },
+     {
+      "position": "right",
+      "appearance": "an old man holding an umbrella, wearing a jacket and trousers"
+     },
+     {
+      "position": "centre",
+      "appearance": "a person in the background walking away, wearing a jacket and trousers"
+     }
+    ],
+    "setting": "exterior",
+    "light": "night",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "umbrella",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "door",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "sign",
+      "category": "screen_or_sign",
+      "held": false
+     },
+     {
+      "name": "umbrella",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "HINNLS",
+     "2015"
+    ],
+    "has_text": true,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "MOKGOSI",
+      "support": null
+     },
+     {
+      "person": 2,
+      "character": null,
+      "support": "Mokgosi hurries around the corner under a black umbrella, his slippers soaked through."
+     },
+     {
+      "person": 3,
+      "character": null,
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "Mokgosi hurries around the corner under a black umbrella, his slippers soaked through."
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     },
+     {
+      "object": 3,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    },
+    {
+     "person": 1,
+     "character": "MOKGOSI",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 3,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/195bb8c11953af18b708f7622f340fde3f0a6df4530308a3947441f9ba319c3b.png",
+   "stored": "warn",
+   "secs": 13.84,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 6748,
+    "completion_tokens": 1168,
+    "reasoning_tokens": 810
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "a child with braided hair"
+     },
+     {
+      "position": "right",
+      "appearance": "an old man with glasses and combed-back hair"
+     }
+    ],
+    "setting": "exterior",
+    "light": "night",
+    "shot_size": "close",
+    "objects": [
+     {
+      "name": "glasses",
+      "category": "clothing",
+      "held": false
+     },
+     {
+      "name": "street lamp",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "GANER"
+    ],
+    "has_text": true,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "MOKGOSI",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "reading glasses pushed up on his forehead"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    },
+    {
+     "person": 1,
+     "character": "MOKGOSI",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 3,
+   "shot": 5,
+   "attempt": 1,
+   "asset": "frames/055735683f29cb3f09c1f542c63c0acd73fbbefd3508587ac696a808ddb477dd.png",
+   "stored": "warn",
+   "secs": 12.59,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4036,
+    "completion_tokens": 1570,
+    "reasoning_tokens": 1192
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with glasses, wearing a jacket and trousers, holding an umbrella"
+     }
+    ],
+    "setting": "exterior",
+    "light": "night",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "umbrella",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "door",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "window",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "street",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "HANSEN"
+    ],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "Mokgosi hooks the handle of the umbrella over the kite's tail and gently pulls it free."
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 4,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/ac19d56545fc3fd0602eec927611e01ef213ef91f34024f8a18bb7d1f962e90a.png",
+   "stored": "warn",
+   "secs": 23.01,
+   "raw": "pass",
+   "hosted": "pass",
+   "failed": [],
+   "usage": {
+    "prompt_tokens": 9541,
+    "completion_tokens": 2366,
+    "reasoning_tokens": 1769
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with glasses and an apron"
+     },
+     {
+      "position": "right",
+      "appearance": "a child with braided hair"
+     }
+    ],
+    "setting": "interior",
+    "light": "unclear",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "light bulb",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "shelves",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "jars",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "basket",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "table",
+      "category": "furniture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "The bare bulb is on."
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 4,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/70de72b2a1138d0f02c82e350b5f1c5b4c685def81073d07c8211cfacf0cbefb.png",
+   "stored": "pass",
+   "secs": 19.98,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "light",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 11113,
+    "completion_tokens": 1717,
+    "reasoning_tokens": 746
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with white hair, glasses, and a white beard, wearing a collared shirt with a pocket"
+     },
+     {
+      "position": "right",
+      "appearance": "a child with long hair in two braids, wearing a t-shirt"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "shelf",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "pot",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pan",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "ladle",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "spoon",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "table",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "utensil holder",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bucket",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "cabinet",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "light fixture",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "door",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "Mokgosi",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "Lerato",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 10,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 11,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 4,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/fdd02bbe92b32c48d4eb32131014f7690d5c477440f73a5ade3949dcb279a045.png",
+   "stored": "warn",
+   "secs": 15.1,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 8023,
+    "completion_tokens": 1571,
+    "reasoning_tokens": 835
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "an old man with glasses, white hair, wearing a button-up shirt and trousers, seated"
+     }
+    ],
+    "setting": "interior",
+    "light": "unclear",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "shelves",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "jars",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bottles",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "hanging utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "work tables",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "buckets",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "chair",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "door",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "window",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "moon",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "K. K. K."
+    ],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 9,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "comic",
+   "scene": 4,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/1149282e976492b45b4174a56c6c87a5fafe3001b25ee357c8d978c1ff16cee9.png",
+   "stored": "warn",
+   "secs": 13.26,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 6926,
+    "completion_tokens": 1919,
+    "reasoning_tokens": 1455
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "an old man with glasses, a mustache, and a collared shirt, holding a soldering iron"
+     }
+    ],
+    "setting": "interior",
+    "light": "unclear",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "soldering iron",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "jars",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "shelf",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "pan",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "ladle",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "JM"
+    ],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "He switches off the soldering iron."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "On the shelf, the radio plays soft music."
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 3,
+      "kind": "scripted_prop",
+      "support": "On the shelf, the radio plays soft music."
+     },
+     {
+      "object": 4,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 5,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 0,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/b2e5029c1b80267e936862cc85e28a42e9af3c6e3c24dff13768df471a94948a.png",
+   "stored": "warn",
+   "secs": 22.54,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_person",
+     "hard"
+    ],
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 7552,
+    "completion_tokens": 1671,
+    "reasoning_tokens": 1219
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with long dark hair, wearing a dress, holding hands with another child"
+     },
+     {
+      "position": "centre",
+      "appearance": "a child with short dark hair, wearing a dress, holding hands with another child"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "potted plant",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "clothes",
+      "category": "clothing",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": null,
+      "support": "LERATO (10), braids tied back, grips a RED KITE almost as tall as she is."
+     },
+     {
+      "person": 1,
+      "character": null,
+      "support": "LERATO (10), braids tied back, grips a RED KITE almost as tall as she is."
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "FLAT ROOF"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": [
+    {
+     "character": "LERATO",
+     "person": 0,
+     "reason": "The drawing shows a child with long dark hair in a dress, matching the script's description of LERATO as a 10-year-old girl with braids tied back; the other child has short hair and does not fit the description."
+    }
+   ]
+  },
+  {
+   "target": "storyboard",
+   "scene": 0,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/b15f5d908cc549fa462218909a9ed8c396610056ea553aea70e91a02bd68a783.png",
+   "stored": "warn",
+   "secs": 16.01,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4649,
+    "completion_tokens": 2126,
+    "reasoning_tokens": 1726
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "a child with a braid, wearing a dress and shoes"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "kite",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "kite string",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "clothesline",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "clothes",
+      "category": "clothing",
+      "held": false
+     },
+     {
+      "name": "pole",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "A gust tears the kite out of her hands."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "Its tail is a string of knotted yellow ribbons."
+     },
+     {
+      "object": 2,
+      "kind": "scripted_prop",
+      "support": "It climbs, swoops, and dives straight into the washing line."
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "FLAT ROOF"
+     },
+     {
+      "object": 4,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 0,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/df964ede558289471c2e6038499270e087159a2fc9302d717b661f3e51d5cc87.png",
+   "stored": "warn",
+   "secs": 11.91,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "missing_character",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4667,
+    "completion_tokens": 1387,
+    "reasoning_tokens": 1104
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with braided hair and a pocketed shirt"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "building",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "platform",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "antenna",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "EXT. FLAT ROOF"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "EXT. FLAT ROOF"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "EXT. FLAT ROOF"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 0,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/07e03906ebe040d7343a37c8f86655700155287f91db82edd0cecb209be0cd4d.png",
+   "stored": "warn",
+   "secs": 6.37,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4456,
+    "completion_tokens": 417,
+    "reasoning_tokens": 265
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with long hair in two braids, wearing a round-neck shirt"
+     }
+    ],
+    "setting": "unclear",
+    "light": "unclear",
+    "shot_size": "medium",
+    "objects": [],
+    "signature": true,
+    "signature_text": [
+     "HATAP"
+    ],
+    "has_text": true,
+    "text": [
+     "HATAP"
+    ]
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "Lerato",
+      "support": null
+     }
+    ],
+    "objects": []
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 1,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/b7eb95c2aa904e3befed915e3815075bf24937970b2cd7605d81098861473ae6.png",
+   "stored": "warn",
+   "secs": 19.99,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 7321,
+    "completion_tokens": 2734,
+    "reasoning_tokens": 1707
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "an old man with white hair, wearing a button-up shirt and trousers"
+     },
+     {
+      "position": "right",
+      "appearance": "a child with long hair in two braids, wearing a short-sleeved shirt"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "shelf",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "shelf",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "table",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "light bulb",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "window",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "Baker..."
+    ],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 2,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 3,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 4,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 5,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 6,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 7,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 8,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 9,
+      "kind": "scripted_prop",
+      "support": "Shelves of old radios with their backs off, wires spilling out like roots."
+     },
+     {
+      "object": 10,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 11,
+      "kind": "scripted_prop",
+      "support": "One bare bulb."
+     },
+     {
+      "object": 12,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 1,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/1bc730188543e26bb6262eee11a403f2dff538bbcebdb144962b740c64f797f7.png",
+   "stored": "warn",
+   "secs": 22.83,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 7381,
+    "completion_tokens": 3571,
+    "reasoning_tokens": 2610
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with glasses and white hair, wearing a collared shirt"
+     },
+     {
+      "position": "right",
+      "appearance": "a child with braided hair, wearing a collared shirt"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "iron",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "spool of thread",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "thread",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "table",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "drawer",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "mug",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "spool of thread",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "spool of thread",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "knife",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "jar",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "cup",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bucket",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "picture frame",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "ladle",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "switch",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "He sets the iron in its stand"
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "lifts out a SPOOL OF BLUE STRING"
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 4,
+      "kind": "scripted_prop",
+      "support": "opens a drawer"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 10,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 11,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 12,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 13,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 14,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 15,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 1,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/c2432c3bf9f5db8c5d72512dc88c0ec10af0ea6c51568f41ee3d1b457fd06782.png",
+   "stored": "warn",
+   "secs": 16.26,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 7244,
+    "completion_tokens": 2001,
+    "reasoning_tokens": 1136
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with glasses and a beard, wearing a collared shirt"
+     },
+     {
+      "position": "right",
+      "appearance": "a child with braided hair, wearing a shirt"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "pan",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "jar",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bottle",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bowl",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "stool",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "cup",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bucket",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pencil",
+      "category": "other",
+      "held": true
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "J.H.A."
+    ],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "Mokgosi",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "Lerato",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - CONTINUOUS"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 1,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/58d1e0ce275ddb62e8b5b21d1a43b63b191662c3117d9edd48f486ab3e77b269.png",
+   "stored": "warn",
+   "secs": 12.93,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "framing",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3353,
+    "completion_tokens": 1877,
+    "reasoning_tokens": 928
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [],
+    "setting": "interior",
+    "light": "unclear",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "radio",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "wrench",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "ladle",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "spoon",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "wrench",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pliers",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "box",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "screwdriver",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "screwdriver",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "screwdriver",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "screwdriver",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "screwdriver",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "can",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "can",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "can",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "smoke",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "RAB POWERS"
+    ],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "On the shelf, a radio crackles to life."
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 10,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 11,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 12,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 13,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 14,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 15,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 1,
+   "shot": 5,
+   "attempt": 1,
+   "asset": "frames/2dd346b2ba5907df12d754cca3f2c0063900b91051b18714a6130563615f0380.png",
+   "stored": "warn",
+   "secs": 19.83,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "missing_character",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4825,
+    "completion_tokens": 2579,
+    "reasoning_tokens": 1781
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with braided hair, wearing a short-sleeved shirt and tied trousers"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "shelf",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "jars",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "hanging utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "counter",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "rolling pin",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bowl",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "door",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "window",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "utensil holder",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "towel",
+      "category": "clothing",
+      "held": false
+     },
+     {
+      "name": "bread box",
+      "category": "furniture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 10,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     },
+     {
+      "object": 11,
+      "kind": "set_dressing",
+      "support": "MOKGOSI'S WORKSHOP"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 2,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/a9df01e98c89223996ca06c121a0a2d7230823e926b7e80f12e336e2d8c7af30.png",
+   "stored": "pass",
+   "secs": 17.43,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_person",
+     "hard"
+    ],
+    [
+     "missing_character",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 6167,
+    "completion_tokens": 2443,
+    "reasoning_tokens": 2050
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "a child with pigtails, wearing a long-sleeved top and pants, holding a kite string"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "kite",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "kite string",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "railing",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": null,
+      "support": "Lerato leans back against the pull, grinning."
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "The red kite is high now, a bright speck against clouds turning the colour of ash."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "The blue string hums in the wind."
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "FLAT ROOF"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": [
+    {
+     "character": "LERATO",
+     "person": 0,
+     "reason": "The drawing shows a young girl with braided hair holding a kite string, matching the script's description of Lerato (10, female, braids tied back, gripping a red kite). The shot text describes her leaning back against the pull and grinning, which fits the child in the drawing."
+    }
+   ]
+  },
+  {
+   "target": "storyboard",
+   "scene": 2,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/641f4a852fbc383d30b837779a0843a6f5be9dc7344758ca13842cf99639dd9f.png",
+   "stored": "warn",
+   "secs": 19.78,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4688,
+    "completion_tokens": 3099,
+    "reasoning_tokens": 2738
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "a child with braided hair wearing a short-sleeved shirt and pants"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "kite",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "kite string",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "house roof",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "cross",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "TRUIS"
+    ],
+    "has_text": true,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "The red kite is high now, a bright speck against clouds turning the colour of ash. The blue string hums in the wind."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "The string goes tight, then tighter."
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "FLAT ROOF"
+     },
+     {
+      "object": 3,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 2,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/5420a43873ae5a287eb94ddb9fb94971dd7e14966f7dbd3970c55f2d0244bb23.png",
+   "stored": "warn",
+   "secs": 9.6,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "framing",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 3476,
+    "completion_tokens": 1746,
+    "reasoning_tokens": 1288
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "kite",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "kite tail",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "streetlight",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "tree",
+      "category": "nature",
+      "held": false
+     },
+     {
+      "name": "house",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "fence",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "carport",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [],
+    "has_text": true,
+    "text": [
+     "SNAP.",
+     "SLAP & NAPE."
+    ]
+   },
+   "judgement": {
+    "people": [],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "The kite drifts away over the houses, trailing its yellow ribbons, and is gone."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "The kite drifts away over the houses, trailing its yellow ribbons, and is gone."
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 3,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 4,
+      "kind": "scripted_prop",
+      "support": "The kite drifts away over the houses, trailing its yellow ribbons, and is gone."
+     },
+     {
+      "object": 5,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 6,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 2,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/8ec03fa79c35fd280c9ec332462b7444e077dfd42397cc747fb409cd46062d4c.png",
+   "stored": "warn",
+   "secs": 13.35,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "framing",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4506,
+    "completion_tokens": 1453,
+    "reasoning_tokens": 1173
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "a child with long hair in two braids, wearing a t-shirt, holding a spool on a plate"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "spool of thread",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "plate",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "chimney",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 1,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "FLAT ROOF"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 3,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/627ac6a54172890868299dda5646270a684027175527a2a968715716e82b53ab.png",
+   "stored": "warn",
+   "secs": 16.6,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_person",
+     "hard"
+    ],
+    [
+     "missing_character",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 6163,
+    "completion_tokens": 2036,
+    "reasoning_tokens": 1561
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with pigtails, wearing a light top and trousers, holding a flashlight"
+     }
+    ],
+    "setting": "exterior",
+    "light": "night",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "flashlight",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "streetlamp",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "sign",
+      "category": "screen_or_sign",
+      "held": false
+     },
+     {
+      "name": "pipe",
+      "category": "architecture",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "J. J. J. U. 0 9. C. B."
+    ],
+    "has_text": true,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": null,
+      "support": "Lerato walks alone with a TORCH, its beam sweeping over walls and gutters."
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "Lerato walks alone with a TORCH, its beam sweeping over walls and gutters."
+     },
+     {
+      "object": 1,
+      "kind": "scripted_prop",
+      "support": "the red kite hangs from a STREETLIGHT, torn and dripping, its yellow ribbons stirring in the last of the wind."
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": [
+    {
+     "character": "LERATO",
+     "person": 0,
+     "reason": "The drawing shows a child with braids/pigtails holding a flashlight, walking alone on a wet street at night, matching the script's description of Lerato (10, female) with a torch after the storm."
+    }
+   ]
+  },
+  {
+   "target": "storyboard",
+   "scene": 3,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/29f99a858987ae70e44f37b928cb75848f0a635b69d803f5a456745747536a5a.png",
+   "stored": "warn",
+   "secs": 11.64,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "missing_character",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4703,
+    "completion_tokens": 1237,
+    "reasoning_tokens": 820
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "a child with braided hair, wearing a short-sleeved shirt and shorts"
+     }
+    ],
+    "setting": "exterior",
+    "light": "night",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "street lamp",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "door",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "window",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "pipe",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "switch panel",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "EXT. NARROW STREET - NIGHT"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 3,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/c4134235d424af4b9948edaf815fac4f93ba8c157e5981235794bb8c90090eb4.png",
+   "stored": "pass",
+   "secs": 20.24,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "light",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 7172,
+    "completion_tokens": 1887,
+    "reasoning_tokens": 1318
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "a child with pigtails wearing a sweater and pants"
+     },
+     {
+      "position": "right",
+      "appearance": "an old man with glasses and a beard wearing a jacket and pants"
+     }
+    ],
+    "setting": "exterior",
+    "light": "day",
+    "shot_size": "wide",
+    "objects": [
+     {
+      "name": "umbrella",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "door",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "door",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "street lamp",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "sign",
+      "category": "screen_or_sign",
+      "held": false
+     },
+     {
+      "name": "sign",
+      "category": "screen_or_sign",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": true,
+    "text": [
+     "1"
+    ]
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "MOKGOSI",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "under a black umbrella"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    },
+    {
+     "person": 1,
+     "character": "MOKGOSI",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 3,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/2d9de00901de94e10ce286a60cc5e3abb4d371363669134ee0b527432f3bc7c9.png",
+   "stored": "warn",
+   "secs": 16.71,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 7089,
+    "completion_tokens": 1546,
+    "reasoning_tokens": 1150
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "a child with braided hair"
+     },
+     {
+      "position": "right",
+      "appearance": "an old man with glasses and a mustache"
+     }
+    ],
+    "setting": "exterior",
+    "light": "night",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "glasses",
+      "category": "clothing",
+      "held": false
+     },
+     {
+      "name": "street lamp",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "moon",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "M. P. P. O. D."
+    ],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "LERATO",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "MOKGOSI",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "reading glasses pushed up on his forehead"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "LERATO",
+     "sex": "female"
+    },
+    {
+     "person": 1,
+     "character": "MOKGOSI",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 3,
+   "shot": 5,
+   "attempt": 1,
+   "asset": "frames/0cd1d9cf437fd6cb5160c0a2d4eb60b113c71b3a750e8e64645bcf8c59e3722e.png",
+   "stored": "warn",
+   "secs": 19.21,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "unscripted_person",
+     "hard"
+    ],
+    [
+     "signature",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 5921,
+    "completion_tokens": 2589,
+    "reasoning_tokens": 2182
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with glasses, white hair, wearing a collared shirt and belted trousers"
+     },
+     {
+      "position": "right",
+      "appearance": "a person's arm and hand, wearing a bracelet, holding the umbrella"
+     }
+    ],
+    "setting": "exterior",
+    "light": "night",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "umbrella",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "street lamp",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "moon",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "Dapol L"
+    ],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": null,
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "the umbrella"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "NARROW STREET"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 4,
+   "shot": 1,
+   "attempt": 1,
+   "asset": "frames/dbd2a02978769c9b4a4fd2d34d59141d433eff889635fde1497e2119fda61f63.png",
+   "stored": "warn",
+   "secs": 87.62,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "light",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 7358,
+    "completion_tokens": 2170,
+    "reasoning_tokens": 1513
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with glasses on his forehead and in his eyes, wearing a collared shirt"
+     },
+     {
+      "position": "right",
+      "appearance": "a child with braided hair, wearing a t-shirt"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "light bulb",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "clock",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "picture frame",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "plate",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pot",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "shelves",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "cabinets",
+      "category": "furniture",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "The bare bulb is on."
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 2,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 3,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 4,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 5,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 4,
+   "shot": 2,
+   "attempt": 1,
+   "asset": "frames/f3b8cfad66f9b2737e73a13190ac5dd49d01c356ee480b8e4698f67f11e04f48.png",
+   "stored": "pass",
+   "secs": 146.82,
+   "raw": "fail",
+   "hosted": "warn",
+   "failed": [
+    [
+     "split_panels",
+     "hard"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 7267,
+    "completion_tokens": 1984,
+    "reasoning_tokens": 1144
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "left",
+      "appearance": "an old man with glasses and a mustache, wearing a short-sleeved collared shirt"
+     },
+     {
+      "position": "right",
+      "appearance": "a child with braided hair, wearing a striped shirt"
+     }
+    ],
+    "setting": "interior",
+    "light": "unclear",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "glasses",
+      "category": "clothing",
+      "held": false
+     },
+     {
+      "name": "shelves",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "jars",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pot",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "table",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "cups",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "bucket",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "towel",
+      "category": "clothing",
+      "held": false
+     },
+     {
+      "name": "picture frames",
+      "category": "other",
+      "held": false
+     }
+    ],
+    "signature": false,
+    "signature_text": [],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     },
+     {
+      "person": 1,
+      "character": "LERATO",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "reading glasses pushed up on his forehead"
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 8,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    },
+    {
+     "person": 1,
+     "character": "LERATO",
+     "sex": "female"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 4,
+   "shot": 3,
+   "attempt": 1,
+   "asset": "frames/b9dd60b65cc81b394d6fdccaee7fa3c767e38fbfb7efc2473e6656f0e18ab70a.png",
+   "stored": "warn",
+   "secs": 77.32,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "text_in_frame",
+     "soft"
+    ],
+    [
+     "light",
+     "soft"
+    ],
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4553,
+    "completion_tokens": 2574,
+    "reasoning_tokens": 1741
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "centre",
+      "appearance": "an old man with glasses, a mustache, and a collared shirt, adjusting his glasses with his right hand"
+     }
+    ],
+    "setting": "interior",
+    "light": "day",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "glasses",
+      "category": "clothing",
+      "held": true
+     },
+     {
+      "name": "shelves",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "jars",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pots",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "pans",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "utensils",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "counter",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "window",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "teapot",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "box",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "cup",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "chair",
+      "category": "furniture",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "P-16"
+    ],
+    "has_text": true,
+    "text": [
+     "P-16"
+    ]
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 1,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 4,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 6,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 7,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 8,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 9,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     },
+     {
+      "object": 10,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 11,
+      "kind": "set_dressing",
+      "support": "INT. MOKGOSI'S WORKSHOP - NIGHT"
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  },
+  {
+   "target": "storyboard",
+   "scene": 4,
+   "shot": 4,
+   "attempt": 1,
+   "asset": "frames/eaac2fa9966fe3abb62de8893d3138861e2e04b03a9c91ccc8fd58d737c93713.png",
+   "stored": "warn",
+   "secs": 121.33,
+   "raw": "warn",
+   "hosted": "warn",
+   "failed": [
+    [
+     "signature",
+     "soft"
+    ],
+    [
+     "background_object",
+     "soft"
+    ]
+   ],
+   "usage": {
+    "prompt_tokens": 4491,
+    "completion_tokens": 2050,
+    "reasoning_tokens": 1561
+   },
+   "models": [
+    "nvidia/Nemotron-3.5-Super-VL",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "description": {
+    "people": [
+     {
+      "position": "right",
+      "appearance": "an old man with glasses and white hair, wearing a collared shirt"
+     }
+    ],
+    "setting": "interior",
+    "light": "night",
+    "shot_size": "medium",
+    "objects": [
+     {
+      "name": "soldering iron",
+      "category": "other",
+      "held": true
+     },
+     {
+      "name": "television",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "mugs",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "jars",
+      "category": "other",
+      "held": false
+     },
+     {
+      "name": "shelves",
+      "category": "furniture",
+      "held": false
+     },
+     {
+      "name": "window",
+      "category": "architecture",
+      "held": false
+     },
+     {
+      "name": "moon",
+      "category": "nature",
+      "held": false
+     }
+    ],
+    "signature": true,
+    "signature_text": [
+     "Mulder"
+    ],
+    "has_text": false,
+    "text": []
+   },
+   "judgement": {
+    "people": [
+     {
+      "person": 0,
+      "character": "MOKGOSI",
+      "support": null
+     }
+    ],
+    "objects": [
+     {
+      "object": 0,
+      "kind": "scripted_prop",
+      "support": "He switches off the soldering iron."
+     },
+     {
+      "object": 1,
+      "kind": "unscripted",
+      "support": null
+     },
+     {
+      "object": 2,
+      "kind": "set_dressing",
+      "support": "WORKSHOP"
+     },
+     {
+      "object": 3,
+      "kind": "set_dressing",
+      "support": "WORKSHOP"
+     },
+     {
+      "object": 4,
+      "kind": "scripted_prop",
+      "support": "On the shelf, the radio plays soft music."
+     },
+     {
+      "object": 5,
+      "kind": "set_dressing",
+      "support": "WORKSHOP"
+     },
+     {
+      "object": 6,
+      "kind": "unscripted",
+      "support": null
+     }
+    ]
+   },
+   "seen": [
+    {
+     "person": 0,
+     "character": "MOKGOSI",
+     "sex": "male"
+    }
+   ],
+   "found": []
+  }
+ ]
+}

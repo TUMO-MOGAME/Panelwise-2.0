@@ -1,0 +1,10 @@
+# Ported from FrameFlow's storyboard_styles.py (`ink`), without its draw-small-and-upscale mode
+# (storyboard.md §8: every render draws at up to 1 MP on fal.ai). The same medium as
+# `clean`, weighted 1.3 (not applied on fal.ai): in the A/B it was best on close subjects.
+label = "Storyboard ink"
+description = "A strongly drawn storyboard. Best on close subjects; a wide, empty shot can split into several panels."
+medium = "storyboard sketch, pencil drawing"
+finish = "grayscale, monochrome, loose linework"
+emphasis = 1.3
+negative = ""
+grayscale = true

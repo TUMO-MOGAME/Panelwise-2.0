@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Screenplays (states) — Panelwise</title>
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="projects.css">
+<style>
+  /* The states projects.png doesn't draw (web.md §4.1a): a chosen file with its title and an
+     upload error, and the job states before rendering. Same screen, same tokens. */
+  .chosen { cursor: default; }
+  .chosen .file { font: 700 16px var(--font-body); }
+  .chosen .size { color: var(--ink-2); font-size: 14px; }
+  .chosen .again { font: 700 14px var(--font-body); color: var(--pencil); text-decoration: underline; background: none; border: 0; padding: 0; cursor: pointer; }
+  .title-field label { display: block; font-weight: 700; font-size: 14px; margin: 20px 0 6px; }
+  .title-field input { width: 100%; height: 40px; padding: 0 12px; font: 15px var(--font-body); color: var(--ink); background: #fff; border: 1px solid var(--rule); border-radius: var(--radius); }
+  .upload .error { margin: 16px 0 0; padding: 10px 12px; font-size: 14px; color: var(--withheld); background: #f7e8e6; border-left: 3px solid var(--withheld); }
+  .upload .btn { width: 100%; justify-content: center; margin-top: 16px; height: 42px; }
+</style></head>
+<body>
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="spacer"></span>
+  <span class="who">judge@panelwise.demo</span>
+  <a class="btn quiet" href="#">Sign out</a>
+</header>
+<main class="projects">
+  <section class="upload" aria-labelledby="upload-title">
+    <h1 id="upload-title">Board your script</h1>
+    <p>Upload a screenplay and Panelwise draws one frame for every shot. Each frame shows only what the lines it cites say.</p>
+    <div class="drop chosen">
+      <span class="sheet-icon" aria-hidden="true"><span>INT. KITCHEN - NIGHT</span></span>
+      <span class="file">the-keepers-light.pdf</span>
+      <span class="size">84 KB</span>
+      <button class="again" type="button">Choose a different file</button>
+    </div>
+    <div class="title-field">
+      <label for="title">Title</label>
+      <input id="title" value="the-keepers-light" maxlength="200">
+    </div>
+    <div class="error" role="alert">This PDF is larger than this demo accepts. Upload a smaller file.</div>
+    <button class="btn" type="submit">Board this script</button>
+  </section>
+
+  <section class="list" aria-labelledby="list-title">
+    <h2 id="list-title">Your screenplays</h2>
+    <ul>
+      <li class="project running">
+        <h3>harbour-lights-v2</h3>
+        <p class="facts">Uploaded 6 Oct, 09:14</p>
+        <p class="state"><span class="verdict pending">Queued</span></p>
+        <span class="meter"><span style="width:0%"></span></span>
+      </li>
+      <li class="project running">
+        <h3>The Red Kite</h3>
+        <p class="facts">5 pages · 5 scenes</p>
+        <p class="state"><span class="verdict pending">Reading the script</span></p>
+        <span class="meter"><span style="width:22%"></span></span>
+      </li>
+      <li class="project running">
+        <h3>Lost Property</h3>
+        <p class="facts">9 pages · 12 scenes</p>
+        <p class="state"><span class="verdict pending">Planning shots</span></p>
+        <span class="meter"><span style="width:40%"></span></span>
+      </li>
+      <li class="project done">
+        <h3>Sipho and Siphokazi</h3>
+        <p class="facts">4 pages · 6 scenes · 19 shots</p>
+        <p class="state"><span class="verdict pass">Shots planned</span> No frames rendered yet</p>
+      </li>
+    </ul>
+  </section>
+</main>
+</body></html>

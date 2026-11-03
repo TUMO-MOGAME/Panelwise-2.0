@@ -1,0 +1,100 @@
+/* Panelwise web tokens: the source of truth docs/design/web.md §2 names. T009 ports these values
+   to apps/web (Tailwind theme + shadcn/ui overrides); change them here first. */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Atkinson+Hyperlegible+Next:wght@400;500;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  /* surfaces: a light table, and the script paper on it */
+  --desk: #dce2e5;
+  --desk-2: #cfd7db;
+  --paper: #fafaf7;
+  --ink: #1a222c;
+  --ink-2: #56616d;
+  --rule: #c5cdd2;
+  /* the one accent: a storyboard artist's non-photo-blue pencil, deepened to pass AA on paper */
+  --pencil: #2c6e9e;
+  --pencil-soft: #d6e7f2;
+  /* shot lines cycle through the WGA revision-page colours, so neighbours never match */
+  --line-1: #6f9fd8; /* blue */
+  --line-2: #dd8aa3; /* pink */
+  --line-3: #c9ab22; /* yellow */
+  --line-4: #6aab5e; /* green */
+  --line-5: #cf8f1f; /* goldenrod */
+  --line-6: #b8505b; /* cherry */
+  /* audit verdicts */
+  --pass: #2f7a55;
+  --warn: #9a620f;
+  --withheld: #a23a2f;
+  --radius: 3px;
+  --shadow-page: 0 1px 0 #b8c1c6, 0 12px 28px -18px rgb(26 34 44 / 0.45);
+  --font-display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --font-body: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  --font-script: "Courier Prime", "Courier New", monospace;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--desk); color: var(--ink);
+  font: 15px/1.5 var(--font-body);
+}
+a { color: var(--pencil); }
+:focus-visible { outline: 2px solid var(--pencil); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* app bar */
+.bar {
+  display: flex; align-items: center; gap: 24px; padding: 0 24px; height: 56px;
+  background: var(--ink); color: #e8edf0;
+}
+.wordmark {
+  font: 800 22px/1 var(--font-display); letter-spacing: 0.06em; text-transform: uppercase;
+  color: #fff; text-decoration: none;
+}
+.wordmark span { color: var(--line-1); }
+.bar .project { font: 500 14px var(--font-body); color: #b9c3ca; }
+.bar .project b { color: #fff; font-weight: 700; }
+.bar nav { display: flex; gap: 4px; margin-left: 8px; }
+.bar nav a {
+  color: #b9c3ca; text-decoration: none; padding: 6px 12px; border-radius: var(--radius);
+  font: 700 13px var(--font-body); letter-spacing: 0.02em;
+}
+.bar nav a[aria-current="page"] { background: #2b3642; color: #fff; }
+.bar nav a[aria-disabled="true"] { color: #6c7883; }
+.bar .spacer { flex: 1; }
+.bar .who { font-size: 13px; color: #b9c3ca; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px;
+  border: 1px solid var(--pencil); border-radius: var(--radius); background: var(--pencil);
+  color: #fff; font: 700 14px var(--font-body); text-decoration: none; cursor: pointer;
+}
+.btn.quiet { background: transparent; color: var(--pencil); }
+.bar .btn.quiet { color: #fff; border-color: #6c7883; }
+
+.eyebrow {
+  font: 600 13px/1 var(--font-display); letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--ink-2);
+}
+h1, h2 { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.03em; margin: 0; }
+h1 { font-size: 40px; line-height: 1; }
+h2 { font-size: 22px; line-height: 1.1; }
+
+.span-ref { font: 400 12px var(--font-body); color: var(--ink-2); white-space: nowrap; } /* body face: tells l from 1 */
+.quote { font: 400 14px/1.45 var(--font-script); }
+
+.verdict {
+  display: inline-flex; align-items: center; gap: 6px; font: 700 12px/1 var(--font-body);
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.verdict::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+.verdict.pass { color: var(--pass); }
+.verdict.warn { color: var(--warn); }
+.verdict.withheld { color: var(--withheld); }
+.verdict.pending { color: var(--ink-2); }
+
+@media (max-width: 640px) {
+  /* phones: the project tabs drop to a second row of the bar; who's signed in moves to the menu */
+  .bar { flex-wrap: wrap; height: auto; gap: 12px; padding: 12px 16px 8px; }
+  .bar .who, .bar .project { display: none; }
+  .bar nav { order: 5; width: 100%; margin: 0 0 0 -12px; }
+}

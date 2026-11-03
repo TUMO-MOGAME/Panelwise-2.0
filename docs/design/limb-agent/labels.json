@@ -1,0 +1,2137 @@
+{
+ "_about": "T111's labels, by eye (Katlego, 2026-10-18), on the labels page (an Artifact with its own database), read back by Claude. Every drawing shown alone: no script, shot, source or model answer. verdict: normal | defect | unclear; faults: what is wrong (where was never filled in, so faults are matched per drawing). source: labelled-109 (Tumo's labelled frames), probe-14oct (T097's probe drawings), hunt (picked by Claude from the 1,382 drawings in the dev bucket; scored apart, limb-agent.md \u00a73). framing: the shot plan's, or the describer's shot_size marked (describer); none for a hunted drawing outside the local runs.",
+ "labels": [
+  {
+   "asset": "frames/04bc908bbc6ae221ff3e3f21186ab68279f6ad69e7b2a8896297a86fdf440383.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/1008fbcad0f906f80211695bfccd88f0a108327e859a28c3f2b4d2165aeb68dd.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_leg"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/249660e1551658564d9592255638085b0c0c0f869b7494e47f3401744b78b029.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "two_heads"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/24f4f6e0b5b8df0a01709954b8cab658828e519a5d632bfabbb7a38739ba9d67.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "unclear",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/2ae24ab626b438e54b0f420d044b4743db27643e78bb106c396f713a8c7737d6.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [],
+   "note": "extra head out of nowhere"
+  },
+  {
+   "asset": "frames/2c7a54ad9ab5da4aa6dd756ecaad92435bb9e0f0ed2f9c4426d0d43506512900.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": "two people saluting"
+  },
+  {
+   "asset": "frames/315677c8759f51e3aa8181e35dcf6fd90342a0d2c8a8f839f118d399f888a352.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "unclear",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/3be984f8ce1ca9189b0ffcf70fea442c3c596e3cd8550909198f074c4c9cd9dc.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "fused_bodies"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/3f2f5074e856112b36edc3670bdc5ab29c3e455ca40ab54d80cbad4ac85b6107.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [],
+   "note": "dog and human fu"
+  },
+  {
+   "asset": "frames/468c9b0e5c82178d3a8e65a313044eeec33ad28fb51b17cda6fdd8955e74b369.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [],
+   "note": "human and animal fusion"
+  },
+  {
+   "asset": "frames/472c1030633f8d3b194f26b1caba7e2bc699b58eebfc592284d55248512840b8.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/49bb0650deeac4802ca72b83b344fd84f2d760dc1939c6abadfa1e321cd7da12.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/4a350da7c6f0e93842b18ab838b431dee77885ad07c8470d581c3b3eefa3af1a.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_leg"
+    }
+   ],
+   "note": "head sticking out of car"
+  },
+  {
+   "asset": "frames/4c118c986256449556c5140c8e7223de67e4c78e10ad1fd1a8177330ac75c9dc.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "impossible_twist"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/4ed8e4521c81904d00ed66afdd496a319bcbd8b463482f808ea0f51d4debc13d.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_leg"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/4fa9f3d57342a88dd082f850c95a117e98073e5553781a73203b9b3b5734b791.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_leg"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/5361113c76b93445323003a896c107879adc2a910a1f0f9329d644aa9c230d97.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "fused_bodies"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/557079797a9f56ca3a1eaebceeb9f804e14cb90673636287071e2c4e92f047c2.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "fused_bodies"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/64ccbb0b03a93f73d269c26dd844091905b3aa6574b1655f83e86fadeac08ca6.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/69275b189333ab34ba4e6855f9ff5add2b9c49edbdae1810c7c6fbb00d0ccd17.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/7189821db6b0439c3a22ed07453e31ebccee35d59def947c0990083ebe728429.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [],
+   "note": "Animal head from nowhere"
+  },
+  {
+   "asset": "frames/75fa1bf09cde4e187fca8b958cbd670713e70c1a95898db70ef7ab48c262c512.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/7a4f773d3f7894f02747b670f52b7cb8997c148406ac39e0cc601cb3688c9bb7.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "impossible_twist"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/7f60f2be809c59dee50ee328d667c1b060f1aed5bddfc0abe17e770351ee84f6.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/8182f201583d64fee1e18ecc61e1bbf1313f6652771d734401de895a9c431ba4.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [],
+   "note": "extra fingers"
+  },
+  {
+   "asset": "frames/830370583e090af94b2a46ef5c180afd269d8b3bfc94ed65404059d2cdf9b538.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "fused_bodies"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/83d0f1aaa8d2785f2f4942ce6125b2e35b9165a3913d6e16dcde0957ad871d4c.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/940c3525db6b7695d6b5c94a23ca66fb09435d00b1be77f9665ea76ccbef839a.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/9d353158350db692c41b51fd44e2e4d341b47f28f6142ee8573eb00604615417.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "missing_limb"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/a02759c116bc515eec16a9476f295cce01ff5c5015d75dbb1158107b5bdc45fa.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/a5515367a0c8619f70a3b966c9233257b8460d9634765b89cc1701cb226bbdf3.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/a6170740105aa95c6e3e168545dfef6941547d26c1d1e6f412d7a178b0f49b71.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/a6ff6e46bc81001935906cf5e3ab02417d902f3344f4ea0a003df51d774bb29a.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/b1b1613eff06cbf6c041a35a8e2d38262be714dc88f373ab9f399a880aa42da2.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/c2a73781445dabb159465e5f99c252e0d504b41c733eb8beef2eff77a32641b4.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_leg"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/c569b5b4c325cf79637b195390e2d9daea5fe3598c9ba6e94d19c6358f8e6479.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/c8bf79e93a9f8ed7595dfcdfb77a1eba3ca56bf651c3ae884c307ccc2018206f.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_leg"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/db5ba0744c614c8b1391b23fb385b7d2210163c762753db13e7abdee16bf5335.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/ddebe5d425ff201415478b24116fa5812ba36943e7f68f5f781fbf6e03c1e725.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/e4c4b396ecdb9bef7061d563e7838c24672d5ab13db89ad64a27caa05751474c.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "fused_bodies"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/e5fb66bfbe4802b2e491d279c7dae8c58055cc55b72fe5cfc2e708bebf05345d.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [],
+   "note": "deformed body"
+  },
+  {
+   "asset": "frames/ef19e6d64a950cc97afc43918aa78c400296a8b36535177c9af9b7ddc3e462a2.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "unclear",
+   "faults": [],
+   "note": "deformation...looks like bottom half and a hand behind a sewing machine"
+  },
+  {
+   "asset": "frames/f399458f534ae63b11f4039f421996b800f4426c10d10513a18627746034aa0c.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "fused_bodies"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/f3d6383339954f79776ebc768dfac5a4e3bb79c91f8c07edeefc1bb5fd68c12c.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "unclear",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/f9fd425fd14a294d729f61efc472dcfb02b87e512767b09616f26b5b00a9479e.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "fused_bodies"
+    },
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/fc311bb95cacfb01f2659ab10530e05d6ff94ea45ba9882ceb4a723bbf5836c5.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/fe89cf462ca37b975dca7ecb3a9cb1fc13f02c82cf49fe1bc4a8a083abed1970.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/ff026ed8049ac775258ef38bf07a9c1fe30819c23176e0724f4abf0fb9cb2d50.png",
+   "source": "hunt",
+   "script": null,
+   "shot": null,
+   "attempt": null,
+   "framing": null,
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "two_heads"
+    },
+    {
+     "where": null,
+     "defect": "deformed_hands"
+    }
+   ],
+   "note": "extra head on the little boy's shoulder and a the older lady's hand morphs into the boy too"
+  },
+  {
+   "asset": "frames/082b48b582a0e52f3dac996aee42a2e0b538f074a2e87ac15757d7267120070e.png",
+   "source": "labelled-109",
+   "script": "the-night-taxi",
+   "shot": "6.3",
+   "attempt": 2,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/0de1f2b7633e6327ac2b5f51beefb72ed1d29dfb233546c80421f03ef4d94e25.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "7.4",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/147de8ef36c51ad13d98f0867521ff5bf04853da189ab2663d87dac547e4e0ba.png",
+   "source": "labelled-109",
+   "script": "final-whistle",
+   "shot": "2.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/15c714cf0045a574fc994de5ee853bbf3a92cf5a8beed4a12060f585830f1411.png",
+   "source": "labelled-109",
+   "script": "final-whistle",
+   "shot": "6.1",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/18721a78e43c978921a6ed247a76d98bb35a6d0f45dfae229d349b785e46ced4.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "5.3",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/1bc730188543e26bb6262eee11a403f2dff538bbcebdb144962b740c64f797f7.png",
+   "source": "labelled-109",
+   "script": "the-red-kite",
+   "shot": "2.2",
+   "attempt": 1,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/1be4a4b17780b78baebb653b1e02cd3301538d8e0e35518233e93e41dab10eb9.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "2.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/1c969d3bf2a420d14ba40f06fb05673eada2e1c81d4066ae86d7220e55119679.png",
+   "source": "labelled-109",
+   "script": "final-whistle",
+   "shot": "2.3",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/1dfa19fb5b6737e2b1ff1ed034d6537a54358126e0c09f9cf5ffed28a0313e4d.png",
+   "source": "labelled-109",
+   "script": "stormwater",
+   "shot": "6.1",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/2244e3b490e78aeaa377556dd7ad6aa1c8627146736f080b4c516cb6e48aa956.png",
+   "source": "labelled-109",
+   "script": "the-night-taxi",
+   "shot": "2.3",
+   "attempt": 2,
+   "framing": "wide (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/22e732f4f1c30c74e2c343cf9a56bc2b0d505f782d436660b41767e9b77a5b3f.png",
+   "source": "labelled-109",
+   "script": "the-bread-van",
+   "shot": "2.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/262d940bcdc1dfcee6f7438098c209a79ba1132e91a556b9b0b5a9347d106db9.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "9.1",
+   "attempt": 3,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/266ce2c9009f2707425f62d67d36f841f4e99e83a5e8361bc9431fb6c5212620.png",
+   "source": "labelled-109",
+   "script": "the-night-taxi",
+   "shot": "1.4",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "two_heads"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/2831fa3bce9cdb1fe9a9d1b39b216cc40ce03d825872bfcbc69be22f153319fb.png",
+   "source": "labelled-109",
+   "script": "market-day",
+   "shot": "5.2",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/2994e70f31ee674d73b72530f97deca1befda70359b7dd92f42b29591db87b02.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "2.2",
+   "attempt": 2,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/2b0eef2a3321eb7cfead7f8e5376273b0794d38cc27382389e8de7a1577a8fc6.png",
+   "source": "labelled-109",
+   "script": "the-night-taxi",
+   "shot": "1.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/2e2ef2901b8ccb2e1b81084e8cc806ead69cf0c6f2f10ec5a1077d6069c92794.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "5.5",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/2feb54bb43457daa42056448671291f96bbb9605e92a37307a550f6ade40021e.png",
+   "source": "labelled-109",
+   "script": "the-bread-van",
+   "shot": "1.2",
+   "attempt": 3,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/304a781ebc12f32bf1562cb3ee5ad5df325aa19e67c63845469943161a8bd8d3.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "7.5",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/32dd35325dbaa463219c888b68bc6e81e607876b1e77c7228545d4ff65e8fc49.png",
+   "source": "labelled-109",
+   "script": "the-night-taxi",
+   "shot": "6.3",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/377a8fdbd28f06c724ba00008df500b3c55e8b433e6e137d2f3aefca0c3cb683.png",
+   "source": "labelled-109",
+   "script": "market-day",
+   "shot": "2.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/377e1efe3b22a85911e09a66a8234f3b69a51cb9014626a90f7ebb45e193cf41.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "6.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/3855c68f97aa0e14885e6e9c0ee9f0a332a8707ad19e25c154ce0620aebc1192.png",
+   "source": "labelled-109",
+   "script": "load-shedding",
+   "shot": "5.2",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/38defbb244783f5b8b66b700e1b0de569cca54d3886ea439689e0a4a4003817f.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "11.5",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": "extra arm in the second frame"
+  },
+  {
+   "asset": "frames/3970707e4f52b9b1d7566a7c60bdef91e33195e43646596271e4772d0f1f8581.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "1.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/39b38b3309493059b1b88dbb9e4f4fef18f1e068cb8e20d986b25331857f00c6.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "3.3",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/3ad0b91e02335a738064f1bdffd2443c25f5a126cbd4ba70917b41de3a0df7b1.png",
+   "source": "labelled-109",
+   "script": "final-whistle",
+   "shot": "3.3",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/3caaba2439b917de5082c4b258ac8f16c4dfd29c9b80b8b6f9f2e2f1604cc1c1.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "9.1",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/420df6aa83f217b14aa16a8e87d219b970c27beb760151c80a70a553bfbc4a80.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "3.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/4533f7441e5a86949d52856316a98438dbf824a3ba5b2c576e031a62f3565b18.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "6.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/460b7cd0e811100460c1b4a26fbf1f916da0f38236a5a11eb198325eeaea45bb.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "9.4",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/48b5ffbcbb16120033fe6f168dd6778b4307e348930bf52aad90163cc1168d5f.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "4.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/4ba461468207322c30ff80e6614a2db7526647e6ae2ed6e1220a064172c55b2c.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "2.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/50af985f9faaf3fb0fdabc2c0f3501d78d4c08dd8c1f196d99a5a8fa25c5813a.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "4.3",
+   "attempt": 1,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/517cf21acecf8b4fb8af547f65a93ab8e8d71305f19bcf66ff0176e61dd11f73.png",
+   "source": "labelled-109",
+   "script": "stormwater",
+   "shot": "3.1",
+   "attempt": 2,
+   "framing": "wide",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "missing_limb"
+    }
+   ],
+   "note": "object fused into boy"
+  },
+  {
+   "asset": "frames/549b95bf1b91388be46b65ee140b95f58a780ae288114c4519c5df154a21a015.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "2.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/56ba1080249cf2b0fa95abfce0e3f7d1a7bc4da9528ec4d6c77ee12ed73c8684.png",
+   "source": "labelled-109",
+   "script": "sipho-and-siphokazi",
+   "shot": "7.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/5707ca6e0504c942483bb5b58ec8d7e2a8b0db072fe189e2227249c6181fb42e.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "1.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/57568e89039dc3c8debf87bd15827435169b917fe15eaf26b8ccc9185deb06fe.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "4.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/5a8d8d817b6e21c60cee639dd51302bec664033ac4db80a4d7913b973d2b0bee.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "3.3",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/5eb0435233f7b366d6ab3376f54138485e5fb686557256babe150101484b56ab.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "5.4",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/60c5b1d8fc969310ab7dd09897201ee16601bdae093e36d6516510d54ebe6feb.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "5.2",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/62e995cb2b83c23a3adcff770db7c8cbd3cc5c9dc8546d68cb087b6f9e4cefcb.png",
+   "source": "labelled-109",
+   "script": "the-bread-van",
+   "shot": "4.5",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/64a51b4fbaf2e1fcebd0a52cabd4eae1485f7b7783543402711d1855b42ce9cd.png",
+   "source": "labelled-109",
+   "script": "final-whistle",
+   "shot": "5.3",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/64d1ed16135613a5c98f8f11170dda0e7b9c9e114ff5cd1b2d6da1f3cbdab4db.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "11.5",
+   "attempt": 2,
+   "framing": "wide",
+   "verdict": "defect",
+   "faults": [],
+   "note": "A extra hand holding the stick in the second frame, the stick also seems to be attached to the human"
+  },
+  {
+   "asset": "frames/651fbdaaddc2dd3a2c500407c13bbae257ad05d2e1af16b8e6d5a575c01c9812.png",
+   "source": "labelled-109",
+   "script": "sipho-and-siphokazi",
+   "shot": "2.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/65287ac9d1d83e53698cea2a49a59dc6e04b979e71dcc87f2501efa4bb7be0ce.png",
+   "source": "labelled-109",
+   "script": "stormwater",
+   "shot": "6.4",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/6735d3536200cfe985ce3c5103e0e639877b88eac0bb9247b5515fe275429731.png",
+   "source": "labelled-109",
+   "script": "the-night-taxi",
+   "shot": "5.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/744b9e685c3e9ce9cfa9dc6fe76e96f6e02f2c428c8027f781b083f94a797247.png",
+   "source": "labelled-109",
+   "script": "the-bread-van",
+   "shot": "1.3",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/79a27d6f9052fddef86f8cff9f2af8c3f248ac6d34065a51d18c5678c0a66380.png",
+   "source": "labelled-109",
+   "script": "the-bread-van",
+   "shot": "3.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/7ae3749f550c2dab7c2be8e24963779c43f359556fb8dcb25462c0e4b366783e.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "9.2",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/7dba2636ed593c62a1533a2852bc4fad98ab3fa96aa95aaca618e4a95b1cc26d.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "4.3",
+   "attempt": 1,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/7dc8607eb80bd7cecaca5ad421a2d192dd4a1f10672ba353b1b86434868fc93f.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "3.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/7f1aff95022e106093aaf4a33e7e4a251a713411ada96d04c08d57c590e5f8ed.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "5.1",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_leg"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/819455c32cd90272bbfff80acaa05b5f2922237ce69920131d0dc9b7b7d78392.png",
+   "source": "labelled-109",
+   "script": "the-bread-van",
+   "shot": "4.4",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "missing_limb"
+    }
+   ],
+   "note": "the missing limb turned out to be a tail"
+  },
+  {
+   "asset": "frames/831552344da85f704986d7bebb068a53a019fe76201f2c201adffaf6d46bca10.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "9.3",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/86d520a2f8fa5f5c32e57003d8f7dc70cfd00b72a369a80aae374b6163f5293b.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "12.2",
+   "attempt": 2,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/8768dc81aee2386835414eb6ab47da01254f12c5b0d624fb0fbd6b818b359229.png",
+   "source": "labelled-109",
+   "script": "final-whistle",
+   "shot": "1.4",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/88d183fb1034c9ff01644f9ad84f272cfc9a3c878026349e6c861a5637d7bb75.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "5.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/91f5cce5c25b77c65daacc27ae7e68993acfbd93b8b1cb0f52fca8cd7e2a6135.png",
+   "source": "labelled-109",
+   "script": "the-red-kite",
+   "shot": "4.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/9432653a503119224a3c58765bfab6e0a0a20d9ef527aa6664790787fada7a68.png",
+   "source": "labelled-109",
+   "script": "the-bread-van",
+   "shot": "4.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/94438cfe94a35ad65026b0be12d6cf0b65c517216773f1690068d37db5be9e1e.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "2.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_leg"
+    },
+    {
+     "where": null,
+     "defect": "two_heads"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/945ed6e3b8c20f4d39268c5dac2b8e6102bb80b4a4c00d0477c8271efd4ced3f.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "9.4",
+   "attempt": 2,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/94666fa402a4efda9798b7a22698dc0500685a19db4ae6de7b2aabfc0f8e2cc1.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "6.3",
+   "attempt": 1,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/95e31b0c74d9ff8e384216ac4819f4c3b0ff3544113a5dba6cb20f75124a0b3d.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "5.3",
+   "attempt": 1,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/976103405c254ed3eed7f797d9e620059429809956953a077727c14fccc77142.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "7.4",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/9780b93887357f5ac562e43f023215f2fc2c27fb024650d948786a90f87ef63e.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "2.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/98620aec9cf9783d66416cd9bf78b1056d1387c8941fe3da99d9a18cace65e6e.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "7.3",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/a172631f6fe20a304cd914f967021719fa65975e7fa6fcd54216850fa2b24dbc.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "7.3",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/a233a274371cd1f93438efa363fd07df2cc1396ba8c506fadc725ec08a336e1a.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "7.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/a3ac50e433ab8efc4430c3d13510073d62407a0ad164c58e502eca1725233231.png",
+   "source": "labelled-109",
+   "script": "load-shedding",
+   "shot": "2.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/a7ad26340da5a5124e5ba61c7f3003a665d11ed76bc33ee1260112313385718d.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "5.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/a9de0670e423bae1a44a704a37101121d2c39e58ecc5ed7bd3e32a59e7cde144.png",
+   "source": "labelled-109",
+   "script": "sipho-and-siphokazi",
+   "shot": "2.3",
+   "attempt": 1,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/aef35390f581da77ecdf3af0cc3def40535988c8691c3ca2c85cae13e41f3775.png",
+   "source": "labelled-109",
+   "script": "the-night-taxi",
+   "shot": "2.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/af5d2c670d47e3c7c276e2d8594cd999bffef9d24174d8f9c5dd3701bc0dca31.png",
+   "source": "labelled-109",
+   "script": "market-day",
+   "shot": "3.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/b01be177cdfb43c03be0294e979462c6203c1d4b6742f1063fd8066cf50a027b.png",
+   "source": "labelled-109",
+   "script": "the-night-taxi",
+   "shot": "2.4",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/b29850e9303a87fe4ed6368be700708d5ff286de3a87fa3d6b03881f212727c2.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "9.6",
+   "attempt": 2,
+   "framing": "wide (describer)",
+   "verdict": "unclear",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/b581abae5e48b71c213a3628c7a2cc5178018dcb15923f1b496c8e80517d2d8b.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "4.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "defect",
+   "faults": [],
+   "note": "random leg in the image"
+  },
+  {
+   "asset": "frames/b658fcd68f22033e585eb8c5c8498c12c39dec92d26a8d746fb1e163dc831ab6.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "11.5",
+   "attempt": 3,
+   "framing": "wide",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_leg"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/b884f6f6366800e3adecfd853fa215b7c0a3a747be409980c3b94afdd89d75ba.png",
+   "source": "labelled-109",
+   "script": "the-night-taxi",
+   "shot": "1.2",
+   "attempt": 3,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/b8d557f9f7ed8504e8b5bb1cd507ba2a037c0da920f4c95b53a8ea74d205e9da.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "3.4",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/ba6fee9c5dc6443eec7e31e327329065c813aeff1feb53a36f7f405217986584.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "9.2",
+   "attempt": 3,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/bb317c583d2d2f78acbab21937716c845bc27bb1403dd6827f9d16f2d78fca92.png",
+   "source": "labelled-109",
+   "script": "market-day",
+   "shot": "4.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/bfd9a45ff89331992b17f458c8756db37a76eca0747fecf29dc998ca83c496b4.png",
+   "source": "labelled-109",
+   "script": "the-bread-van",
+   "shot": "3.3",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/c0fc2eecee50e9b317bc9d90217878ba2f721fe5e270f7a14d6607cb3028b793.png",
+   "source": "labelled-109",
+   "script": "final-whistle",
+   "shot": "4.3",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/c25187a30ab6346b001bdc2e1f18854e23949d1e4296748161719f821238ca07.png",
+   "source": "labelled-109",
+   "script": "final-whistle",
+   "shot": "2.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/c53bf31d0150898f463c7b990face304c8a3f2f0ca2e125e0977883234f3b4dd.png",
+   "source": "labelled-109",
+   "script": "final-whistle",
+   "shot": "6.2",
+   "attempt": 1,
+   "framing": "wide (describer)",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/c705d313595a06140cf0c6632890a19e0fb52ac287003cc3f12538e53bd7380c.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "3.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/cc1fa121912e174c7c1ec04e1f0bab822e8c2f3a4ceed0945471b96707006be0.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "2.3",
+   "attempt": 1,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/cdd791bc94f87123a5f93ba0c7b70decc5ba5a6f6e2dc9cb96dfadf91b34b092.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "8.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/d146ecfd2c342848f6acff464d9116314931b2b6474fceb356fcafd3f78c6bc6.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "1.3",
+   "attempt": 1,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/d17464291043a84af31cabce77b95c0f278af5cafba5384e3c6773ae8ddd8088.png",
+   "source": "labelled-109",
+   "script": "lost-property",
+   "shot": "12.2",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/d5150ac613094514561a11d76f794df1dcf74e97017ad099a787fa974fc72454.png",
+   "source": "labelled-109",
+   "script": "sipho-and-siphokazi",
+   "shot": "7.1",
+   "attempt": 3,
+   "framing": "wide",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/d5745ec2a1748a64d1324d6e41f53aaaac9d633269224e7b3190246d4d80597a.png",
+   "source": "labelled-109",
+   "script": "sipho-and-siphokazi",
+   "shot": "2.1",
+   "attempt": 2,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/d5b71645870aba6ff0e5e6dbc82a2fe5153c646fcb23ea7064df67695e7ad061.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "1.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/d8f86b352f7a49aca3d8d065a5a19400d261ba584cd9200e90aeb3e1ba40a9c6.png",
+   "source": "labelled-109",
+   "script": "stormwater",
+   "shot": "2.2",
+   "attempt": 1,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/da8dbf7e000f5786e7407422fd1f21271fa8aab7eeafa3e7316d2039c1829ba7.png",
+   "source": "labelled-109",
+   "script": "sipho-and-siphokazi",
+   "shot": "9.2",
+   "attempt": 3,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/db902674a59853345e15ec14ee688aa1a77ee819008f782932fd805c4c46e10d.png",
+   "source": "labelled-109",
+   "script": "the-bread-van",
+   "shot": "1.3",
+   "attempt": 2,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/de50dcc491e113358e60a90375bfcd38d30731bf4c53067569aa53ad951c3623.png",
+   "source": "labelled-109",
+   "script": "stormwater",
+   "shot": "5.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_leg"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/df4fbe12bf2be7ff7257c5b49d819ebb95bb05d57aa5978138a335683b373f4e.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "4.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/e0af624cb1eeaa3890050c0bad8004770a27e68b75a07c58907a041f755494f1.png",
+   "source": "labelled-109",
+   "script": "the-borrowed-bicycle",
+   "shot": "2.3",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/e221be206f75eff9a85e89c94b375f9eadd7b8fb25b5852ecb10006950761b2e.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "3.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/e3f3a9800fe40cda25c0163bc87591b7c9d33b76090d35aa71fb7c6a5cef6b53.png",
+   "source": "labelled-109",
+   "script": "the-bread-van",
+   "shot": "2.4",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "two_heads"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/f0f0a410faf6eb35fd0b069802cb70090432e549cac57d47b0d387de95c77448.png",
+   "source": "labelled-109",
+   "script": "the-night-taxi",
+   "shot": "5.4",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/f3525242222d7b70699d476413f6bd8dbb5c9cbfd6ff19019bc98e1cb2746729.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "3.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/f36614ce4c54e1168733175fbfeb20ef2f75771a40e39e27af3ff170986f1242.png",
+   "source": "labelled-109",
+   "script": "the-night-taxi",
+   "shot": "5.1",
+   "attempt": 2,
+   "framing": "medium",
+   "verdict": "defect",
+   "faults": [],
+   "note": "phased out person"
+  },
+  {
+   "asset": "frames/f3b8cfad66f9b2737e73a13190ac5dd49d01c356ee480b8e4698f67f11e04f48.png",
+   "source": "labelled-109",
+   "script": "the-red-kite",
+   "shot": "5.2",
+   "attempt": 1,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/f866cffb434fa41b58412761eb727a234c4022b2f3b6de91f77ff00ed53e4852.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "7.2",
+   "attempt": 1,
+   "framing": "medium (describer)",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/fb91e99ab307ae6b3e27c1456fe3f87d1e2812f5607a1a6ceb204b5b7a0764e6.png",
+   "source": "labelled-109",
+   "script": "the-lighthouse-inspector",
+   "shot": "5.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/02665c4787189dca88dcc1d4f1a78fa60c1029512beb1ff2fffd2acf6c2c9377.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.4",
+   "attempt": 2,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/3424fed754e9b7570ff96389ddec5c81c9b7d78fd34b8583dcdea601a333cad6.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.2",
+   "attempt": 3,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/4b709900c0bb2161a1033e973fccca287a13a71f01c97d57d17d662071ac74bb.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/4d392d35380ba6000ac55e9b6a691481df27ffb0820b54600cf5b94270aa5c6f.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "1.2",
+   "attempt": 3,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/59ca8fdfdf7a4f158cb1f2c9b8d155ede2ff9a752c2aed01a64601548f0e5bad.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "1.1",
+   "attempt": 2,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/5f2c1a11591c52ee53c5845cee5fd3b660232c73f31f0922b2fce06243a083db.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.1",
+   "attempt": 1,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/5f89705e6afc67e5897da36bfdf6a2614d70add24079ceefd2f42a14e38db807.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.1",
+   "attempt": 2,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/614dacd32a2603773dd4fda366ea82bd0c72c9a3b8630c8a3c7aa6c2976c96fa.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "1.1",
+   "attempt": 3,
+   "framing": "medium",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/69fd0fcec1464a5a48afecd9f9999c102e2d7a55ac3a84e0a77d7649afde36a7.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "1.2",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/8a3634f6ba6d1ee61a1441035f51f3e0ad6a19767a700bab67de381eabccf979.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.4",
+   "attempt": 1,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/8e009b7ffecc1f1d781ff7eecd52065860eba98c2b5a53cd8520ab221ae09392.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.3",
+   "attempt": 2,
+   "framing": "medium",
+   "verdict": "unclear",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/a4cbf6b5c3cf3c94e455bdd4b69e299cc7bddd5fb22004b4a2f2c59f8acf59a2.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.3",
+   "attempt": 3,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/cc62244bee4c27eb6b3e4fa1321a29093770caa1474e9251457d02387c915055.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.3",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "defect",
+   "faults": [
+    {
+     "where": null,
+     "defect": "extra_arm"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "asset": "frames/cf5ae7a25a8269d9113bd95d4123dc130fa466a5da6477a940d56d2fb589386c.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "1.1",
+   "attempt": 1,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/ee718edc5fea2eb0594d2f3dc349cbd50717f3d7dd2f1597f72a9a947e90180f.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.4",
+   "attempt": 3,
+   "framing": "close_up",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/ef2fce6407bf2fd03bd261528e60ebdf909eb1d50d6ef1ef0874449067f30361.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.2",
+   "attempt": 2,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/fc056eb7803262001c885872d55437850cb7ecea002cabb5a405dc1c305860dc.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "0.1",
+   "attempt": 3,
+   "framing": "wide",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  },
+  {
+   "asset": "frames/ffb9a922e97e01d7ae8d062408e02fa279a8b83c26c44b78c92209498341782e.png",
+   "source": "probe-14oct",
+   "script": "the-red-kite",
+   "shot": "1.2",
+   "attempt": 2,
+   "framing": "medium",
+   "verdict": "normal",
+   "faults": [],
+   "note": ""
+  }
+ ]
+}

@@ -1,0 +1,499 @@
+{
+ "_about": "The hunt (2026-10-18): four Claude agents looked at all 1,382 drawings in the dev bucket on contact sheets and picked those where a body might be drawn wrong; Claude then looked at each pick at full size (claude_look). Written after Katlego's labels, which never saw any of it. The picks' claims are a model's, kept only to compare with the labels.",
+ "picks": [
+  {
+   "id": "H0031",
+   "asset": "frames/04bc908bbc6ae221ff3e3f21186ab68279f6ad69e7b2a8896297a86fdf440383.png",
+   "defect": "limb_fused_to_object",
+   "where": "left",
+   "confidence": "medium",
+   "what": "The arm holding the umbrella is a long, oversized sleeve that hangs down from the umbrella handle instead of clearly coming from the man's shoulder."
+  },
+  {
+   "id": "H0095",
+   "asset": "frames/1008fbcad0f906f80211695bfccd88f0a108327e859a28c3f2b4d2165aeb68dd.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "Three girls in a tight huddle merge into one mass, and the torsos and legs can't be matched to separate bodies."
+  },
+  {
+   "id": "H0199",
+   "asset": "frames/249660e1551658564d9592255638085b0c0c0f869b7494e47f3401744b78b029.png",
+   "defect": "two_heads",
+   "where": "left",
+   "confidence": "high",
+   "what": "A boy lying face-down on the floor has two heads stacked at the shoulders on one body with one pair of legs."
+  },
+  {
+   "id": "H0202",
+   "asset": "frames/24f4f6e0b5b8df0a01709954b8cab658828e519a5d632bfabbb7a38739ba9d67.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The two women's arms tangle at waist height: a forearm crosses from the left woman into the right woman's torso and can't be traced to either."
+  },
+  {
+   "id": "H0217",
+   "asset": "frames/266ce2c9009f2707425f62d67d36f841f4e99e83a5e8361bc9431fb6c5212620.png",
+   "defect": "missing_limb",
+   "where": "left",
+   "confidence": "high",
+   "what": "A boy's head floats in mid-air over the street with no body or neck under it."
+  },
+  {
+   "id": "H0235",
+   "asset": "frames/2ae24ab626b438e54b0f420d044b4743db27643e78bb106c396f713a8c7737d6.png",
+   "defect": "missing_limb",
+   "where": "left",
+   "confidence": "medium",
+   "what": "A girl's head sticks out of the alley wall beside the window with no body behind it."
+  },
+  {
+   "id": "H0241",
+   "asset": "frames/2c7a54ad9ab5da4aa6dd756ecaad92435bb9e0f0ed2f9c4426d0d43506512900.png",
+   "defect": "fused_bodies",
+   "where": "right",
+   "confidence": "medium",
+   "what": "The saluting arm can't be placed: the front man's arm runs up into the head of the half-hidden man behind him, so the two figures merge."
+  },
+  {
+   "id": "H0261",
+   "asset": "frames/315677c8759f51e3aa8181e35dcf6fd90342a0d2c8a8f839f118d399f888a352.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "A second figure with a hair bun grows out of the back of the boy at the wheel, and its arms tangle with his."
+  },
+  {
+   "id": "H0318",
+   "asset": "frames/3be984f8ce1ca9189b0ffcf70fea442c3c596e3cd8550909198f074c4c9cd9dc.png",
+   "defect": "two_heads",
+   "where": "centre",
+   "confidence": "high",
+   "what": "The boy lying face-down has two heads, one face-down on the floor and one with closed eyes at his shoulder, on a single body."
+  },
+  {
+   "id": "H0331",
+   "asset": "frames/3f2f5074e856112b36edc3670bdc5ab29c3e455ca40ab54d80cbad4ac85b6107.png",
+   "defect": "fused_bodies",
+   "where": "left",
+   "confidence": "medium",
+   "what": "The girl's face is taken over by a dog's head, and the dog's body melts into her coat with its tail sticking out by her legs."
+  },
+  {
+   "id": "H0366",
+   "asset": "frames/468c9b0e5c82178d3a8e65a313044eeec33ad28fb51b17cda6fdd8955e74b369.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The man in the doorway has no lower body of his own and seems to merge into the giraffe's body and legs."
+  },
+  {
+   "id": "H0369",
+   "asset": "frames/472c1030633f8d3b194f26b1caba7e2bc699b58eebfc592284d55248512840b8.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The boy and the driver share one seat and their torsos run together, so the boy seems to grow out of the man's side."
+  },
+  {
+   "id": "H0388",
+   "asset": "frames/49bb0650deeac4802ca72b83b344fd84f2d760dc1939c6abadfa1e321cd7da12.png",
+   "defect": "deformed_hands",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "In the handshake, the man's and girl's hands form one tangled mass with no clear fingers."
+  },
+  {
+   "id": "H0393",
+   "asset": "frames/4a350da7c6f0e93842b18ab838b431dee77885ad07c8470d581c3b3eefa3af1a.png",
+   "defect": "extra_leg",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The walking boy beside the truck seems to have a third leg trailing behind his stride."
+  },
+  {
+   "id": "H0400",
+   "asset": "frames/4c118c986256449556c5140c8e7223de67e4c78e10ad1fd1a8177330ac75c9dc.png",
+   "defect": "limb_fused_to_object",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The boy's torso and arm come out through the car door panel as if part of the car body."
+  },
+  {
+   "id": "H0411",
+   "asset": "frames/4ed8e4521c81904d00ed66afdd496a319bcbd8b463482f808ea0f51d4debc13d.png",
+   "defect": "extra_leg",
+   "where": "right",
+   "confidence": "high",
+   "what": "The diving girl has three legs: one stretched to the lower left, a bent knee under her, and a third kicked up to the upper right."
+  },
+  {
+   "id": "H0419",
+   "asset": "frames/4fa9f3d57342a88dd082f850c95a117e98073e5553781a73203b9b3b5734b791.png",
+   "defect": "extra_leg",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The seated boy seems to have a third lower leg between his own legs and the man's."
+  },
+  {
+   "id": "H0441",
+   "asset": "frames/5361113c76b93445323003a896c107879adc2a910a1f0f9329d644aa9c230d97.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "In the pile of celebrating boys, legs and torsos tangle together and don't add up to separate bodies."
+  },
+  {
+   "id": "H0455",
+   "asset": "frames/557079797a9f56ca3a1eaebceeb9f804e14cb90673636287071e2c4e92f047c2.png",
+   "defect": "fused_bodies",
+   "where": "right",
+   "confidence": "medium",
+   "what": "The headscarfed woman's head sits on the boy's shoulder and apron with no body of her own, like a second head on his body."
+  },
+  {
+   "id": "H0541",
+   "asset": "frames/64ccbb0b03a93f73d269c26dd844091905b3aa6574b1655f83e86fadeac08ca6.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The girl hugging the giraffe merges into it; her body and the giraffe's front legs run together."
+  },
+  {
+   "id": "H0568",
+   "asset": "frames/69275b189333ab34ba4e6855f9ff5add2b9c49edbdae1810c7c6fbb00d0ccd17.png",
+   "defect": "limb_fused_to_object",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The old woman at the front of the van seems to melt into the bonnet and grille, with only one leg showing below."
+  },
+  {
+   "id": "H0615",
+   "asset": "frames/7189821db6b0439c3a22ed07453e31ebccee35d59def947c0990083ebe728429.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The giraffe's head and neck come down straight into the reaching man's arm and shoulder, and the giraffe has no body."
+  },
+  {
+   "id": "H0645",
+   "asset": "frames/75fa1bf09cde4e187fca8b958cbd670713e70c1a95898db70ef7ab48c262c512.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "In the main panel, the left boy's raised arm and elbow merge into the second boy's chest."
+  },
+  {
+   "id": "H0668",
+   "asset": "frames/7a4f773d3f7894f02747b670f52b7cb8997c148406ac39e0cc601cb3688c9bb7.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The woman in the doorway has a hooded, cloaked figure where her torso should be, like two figures stacked into one."
+  },
+  {
+   "id": "H0694",
+   "asset": "frames/7f60f2be809c59dee50ee328d667c1b060f1aed5bddfc0abe17e770351ee84f6.png",
+   "defect": "impossible_twist",
+   "where": "left",
+   "confidence": "high",
+   "what": "The woman leaning into the van is seen from behind (back and jeans), but her face looks straight at the viewer, so her head is on backwards."
+  },
+  {
+   "id": "H0706",
+   "asset": "frames/8182f201583d64fee1e18ecc61e1bbf1313f6652771d734401de895a9c431ba4.png",
+   "defect": "fused_bodies",
+   "where": "right",
+   "confidence": "medium",
+   "what": "A second child's head pokes out between the boy and the old man with no clear body of its own, as if merged into the old man's shoulder."
+  },
+  {
+   "id": "H0709",
+   "asset": "frames/830370583e090af94b2a46ef5c180afd269d8b3bfc94ed65404059d2cdf9b538.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "Three players in a stacked pile whose torsos and legs run together, so the limbs can't be matched to bodies."
+  },
+  {
+   "id": "H0717",
+   "asset": "frames/83d0f1aaa8d2785f2f4942ce6125b2e35b9165a3913d6e16dcde0957ad871d4c.png",
+   "defect": "misplaced_limb",
+   "where": "right",
+   "confidence": "medium",
+   "what": "A disembodied hand floats in mid-air at the right of the second panel, with no arm or body attached."
+  },
+  {
+   "id": "H0800",
+   "asset": "frames/940c3525db6b7695d6b5c94a23ca66fb09435d00b1be77f9665ea76ccbef839a.png",
+   "defect": "limb_fused_to_object",
+   "where": "right",
+   "confidence": "medium",
+   "what": "A boy gripping a steering wheel sits outside the cab on the truck's front, and his lower body disappears into the hood."
+  },
+  {
+   "id": "H0803",
+   "asset": "frames/94438cfe94a35ad65026b0be12d6cf0b65c517216773f1690068d37db5be9e1e.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "Three boys on one bicycle with merged torsos and an unclear leg count; the rear boy's body blends into the middle boy's."
+  },
+  {
+   "id": "H0850",
+   "asset": "frames/9d353158350db692c41b51fd44e2e4d341b47f28f6142ee8573eb00604615417.png",
+   "defect": "limb_fused_to_object",
+   "where": "left",
+   "confidence": "high",
+   "what": "The boy's torso comes up out of the truck's front fender and bumper, with no legs or lower body."
+  },
+  {
+   "id": "H0867",
+   "asset": "frames/a02759c116bc515eec16a9476f295cce01ff5c5015d75dbb1158107b5bdc45fa.png",
+   "defect": "limb_fused_to_object",
+   "where": "right",
+   "confidence": "medium",
+   "what": "The man in the doorway has his arm and side merged into a large dripping blob he is carrying."
+  },
+  {
+   "id": "H0878",
+   "asset": "frames/a233a274371cd1f93438efa363fd07df2cc1396ba8c506fadc725ec08a336e1a.png",
+   "defect": "two_heads",
+   "where": "left",
+   "confidence": "medium",
+   "what": "A dark bald second head sits directly behind and above the old man's head on the same shoulders."
+  },
+  {
+   "id": "H0901",
+   "asset": "frames/a5515367a0c8619f70a3b966c9233257b8460d9634765b89cc1701cb226bbdf3.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The woman's torso grows out of the lying boy's body; she has no lower body, and the jeans and bare feet are shared between them."
+  },
+  {
+   "id": "H0904",
+   "asset": "frames/a6170740105aa95c6e3e168545dfef6941547d26c1d1e6f412d7a178b0f49b71.png",
+   "defect": "misplaced_limb",
+   "where": "centre",
+   "confidence": "high",
+   "what": "A sleeved arm reaches across the counter from empty space and is attached to no visible body."
+  },
+  {
+   "id": "H0912",
+   "asset": "frames/a6ff6e46bc81001935906cf5e3ab02417d902f3344f4ea0a003df51d774bb29a.png",
+   "defect": "limb_fused_to_object",
+   "where": "left",
+   "confidence": "medium",
+   "what": "The boy's legs tangle with and pass through the folding chair and the skateboard."
+  },
+  {
+   "id": "H0969",
+   "asset": "frames/b1b1613eff06cbf6c041a35a8e2d38262be714dc88f373ab9f399a880aa42da2.png",
+   "defect": "deformed_hands",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The man's and girl's clasped hands form one lumpy mass where you can't count the fingers or tell whose hand is whose."
+  },
+  {
+   "id": "H1069",
+   "asset": "frames/c2a73781445dabb159465e5f99c252e0d504b41c733eb8beef2eff77a32641b4.png",
+   "defect": "extra_leg",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The man hugging the giraffe has two standing legs plus a third bent leg kicked up behind, and the giraffe's front legs end in shoes, so the two bodies run together."
+  },
+  {
+   "id": "H1087",
+   "asset": "frames/c569b5b4c325cf79637b195390e2d9daea5fe3598c9ba6e94d19c6358f8e6479.png",
+   "defect": "missing_head",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The umbrella canopy sits right on the walking woman's shoulders, so no head is drawn where it should show."
+  },
+  {
+   "id": "H1103",
+   "asset": "frames/c8bf79e93a9f8ed7595dfcdfb77a1eba3ca56bf651c3ae884c307ccc2018206f.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "In the huddle the two central girls' arms and torsos tangle together, and it is unclear whose arm belongs to whom."
+  },
+  {
+   "id": "H1119",
+   "asset": "frames/cc62244bee4c27eb6b3e4fa1321a29093770caa1474e9251457d02387c915055.png",
+   "defect": "extra_arm",
+   "where": "right",
+   "confidence": "high",
+   "what": "The man on the rooftop has three arms: one raised high, one reaching down to his left, and a third hanging at his hip with a wristband."
+  },
+  {
+   "id": "H1144",
+   "asset": "frames/d17464291043a84af31cabce77b95c0f278af5cafba5384e3c6773ae8ddd8088.png",
+   "defect": "extra_arm",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The waving man has his raised arm, an arm reaching to the boy's shoulder, and what looks like a third hand hanging at his hip."
+  },
+  {
+   "id": "H1192",
+   "asset": "frames/db5ba0744c614c8b1391b23fb385b7d2210163c762753db13e7abdee16bf5335.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "A crouching man's head and back merge into the standing boy's legs and lower body."
+  },
+  {
+   "id": "H1205",
+   "asset": "frames/ddebe5d425ff201415478b24116fa5812ba36943e7f68f5f781fbf6e03c1e725.png",
+   "defect": "fused_bodies",
+   "where": "right",
+   "confidence": "medium",
+   "what": "The two boys at the back desks are drawn as one tangled mass, one bent over the other, with limbs that don't separate."
+  },
+  {
+   "id": "H1240",
+   "asset": "frames/e3f3a9800fe40cda25c0163bc87591b7c9d33b76090d35aa71fb7c6a5cef6b53.png",
+   "defect": "fused_bodies",
+   "where": "right",
+   "confidence": "medium",
+   "what": "The smaller laughing boy's head grows out of the taller boy's shoulder with no body of its own, and the reaching arm's owner is unclear."
+  },
+  {
+   "id": "H1243",
+   "asset": "frames/e4c4b396ecdb9bef7061d563e7838c24672d5ab13db89ad64a27caa05751474c.png",
+   "defect": "fused_bodies",
+   "where": "right",
+   "confidence": "medium",
+   "what": "As in H1240, the smaller boy's head sits on the bigger boy's shoulder and the two boys share one body."
+  },
+  {
+   "id": "H1250",
+   "asset": "frames/e5fb66bfbe4802b2e491d279c7dae8c58055cc55b72fe5cfc2e708bebf05345d.png",
+   "defect": "fused_bodies",
+   "where": "left",
+   "confidence": "medium",
+   "what": "A dog's head comes out of the boy's chest and a tail out of the bottom of his coat, so the dog and boy read as one body."
+  },
+  {
+   "id": "H1293",
+   "asset": "frames/ef19e6d64a950cc97afc43918aa78c400296a8b36535177c9af9b7ddc3e462a2.png",
+   "defect": "limb_fused_to_object",
+   "where": "centre",
+   "confidence": "high",
+   "what": "A pair of legs and shoes lies on the floor and runs straight into a sewing machine, with no torso or head."
+  },
+  {
+   "id": "H1313",
+   "asset": "frames/f399458f534ae63b11f4039f421996b800f4426c10d10513a18627746034aa0c.png",
+   "defect": "fused_bodies",
+   "where": "right",
+   "confidence": "medium",
+   "what": "The bearded old man's body merges into the middle man's torso and vest, so they seem to share one body."
+  },
+  {
+   "id": "H1316",
+   "asset": "frames/f3d6383339954f79776ebc768dfac5a4e3bb79c91f8c07edeefc1bb5fd68c12c.png",
+   "defect": "misplaced_limb",
+   "where": "right",
+   "confidence": "medium",
+   "what": "A large raised arm and a second reaching arm come into the top-right corner with no body attached behind the young man."
+  },
+  {
+   "id": "H1346",
+   "asset": "frames/f9fd425fd14a294d729f61efc472dcfb02b87e512767b09616f26b5b00a9479e.png",
+   "defect": "two_heads",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "In the leaping-celebration pile, laughing faces are stacked down one torso (top head, a second face at chest level) and the bodies can't be told apart."
+  },
+  {
+   "id": "H1363",
+   "asset": "frames/fc311bb95cacfb01f2659ab10530e05d6ff94ea45ba9882ceb4a723bbf5836c5.png",
+   "defect": "misplaced_limb",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The standing girl's arm stretches down behind her far enough to put her hand flat on the floor, which is impossibly long."
+  },
+  {
+   "id": "H1374",
+   "asset": "frames/fe89cf462ca37b975dca7ecb3a9cb1fc13f02c82cf49fe1bc4a8a083abed1970.png",
+   "defect": "fused_bodies",
+   "where": "centre",
+   "confidence": "medium",
+   "what": "The giraffe's neck rises straight out of the top of the waving woman's head, as if growing from her."
+  },
+  {
+   "id": "H1376",
+   "asset": "frames/ff026ed8049ac775258ef38bf07a9c1fe30819c23176e0724f4abf0fb9cb2d50.png",
+   "defect": "two_heads",
+   "where": "right",
+   "confidence": "medium",
+   "what": "The hugged boy has a laughing face on top and a back-of-head below it on the same body, and the old woman's arm stretches impossibly far around him."
+  }
+ ],
+ "claude_look": {
+  "clear": [
+   "H0199",
+   "H0217",
+   "H0235",
+   "H0241",
+   "H0261",
+   "H0318",
+   "H0331",
+   "H0366",
+   "H0400",
+   "H0411",
+   "H0455",
+   "H0568",
+   "H0615",
+   "H0645",
+   "H0717",
+   "H0800",
+   "H0850",
+   "H0867",
+   "H0904",
+   "H1069",
+   "H1087",
+   "H1119",
+   "H1144",
+   "H1240",
+   "H1243",
+   "H1250",
+   "H1293",
+   "H1346",
+   "H1363",
+   "H1374",
+   "H1376"
+  ],
+  "borderline": [
+   "H0031",
+   "H0369",
+   "H0694",
+   "H0803",
+   "H0878",
+   "H0901",
+   "H1192",
+   "H1205",
+   "H1313",
+   "H1316"
+  ],
+  "looks_normal": [
+   "H0095",
+   "H0202",
+   "H0388",
+   "H0393",
+   "H0419",
+   "H0441",
+   "H0541",
+   "H0668",
+   "H0706",
+   "H0709",
+   "H0912",
+   "H0969",
+   "H1103"
+  ]
+ }
+}

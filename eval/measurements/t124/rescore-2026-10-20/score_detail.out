@@ -1,0 +1,47 @@
+    unscripted_person: person 0 (left, a teenager in a light shirt and dark shorts): its support is about a character; person 1 (centre, a teenager in a dark shirt and dark shorts): its support is about a character
+    drawn_twice: person 0 (left, a teenager in a light shirt and dark shorts) and person 1 (centre, a teenager in a dark shirt and dark shorts): described alike, one of them no character
+    verdict: fail
+    judge: [(0, None), (1, None)]  layout: FrameLayout(panels=1, copies=(), reason='The drawing is a single continuous scene with no panel divisions. The two numbered people are different individuals: one wears a light shirt and the other a dark shirt, with different faces, hair, and builds, so they are not the same person drawn twice.')
+final-whistle          2.1   a1 right WITHHELD unscripted_person,drawn_twice
+    verdict: warn
+    judge: [(0, 'LINDI'), (1, 'PALESA')]  layout: FrameLayout(panels=1, copies=((0, 1),), reason='The image is a single panel. The two children have the same shoulder-length dark hair, same short-sleeved collared shirt, same skirt, same socks and shoes, and same build, so they are the same person shown twice.')
+final-whistle          6.1   a1 right shown    -
+    verdict: warn
+    judge: [(0, 'PALESA'), (1, 'LINDI')]  layout: FrameLayout(panels=1, copies=(), reason='The drawing is a single continuous scene with one panel. The two children are different individuals: they face opposite directions, have different hair parting and ponytail placement, and wear different bottoms (shorts versus a skirt) and different socks.')
+final-whistle          6.2   a1 right shown    -
+    unscripted_person: person 0 (left, an adult with short dark hair, seen from behind, wearing a light shirt): no shot character, no support; person 1 (left, an adult with short dark hair, facing forward, wearing a light shirt): no shot character, no support; person 2 (left, an adult with short dark hair, facing forward, wearing a light shirt): no shot character, no support; person 3 (left, an adult with short dark hai
+    drawn_twice: person 0 (left, an adult with short dark hair, seen from behind, wearing a light shirt) and person 1 (left, an adult with short dark hair, facing forward, wearing a light shirt): described alike, one of them no character; person 0 (left, an adult with short dark hair, seen from behind, wearing a light shirt) and person 2 (left, an adult with short dark hair, facing forward, wearing a light shirt):
+    verdict: fail
+    judge: [(0, None), (1, None), (2, None), (3, None), (4, None), (5, None), (6, None), (7, None), (8, None), (9, None), (10, None), (11, 'KAMO'), (12, None), (13, None), (14, None), (15, None), (16, None), (17, None), (18, None), (19, None), (20, None), (21, None), (22, None), (23, None)]  layout: FrameLayout(panels=1, copies=(), reason='The drawing is a single continuous scene, not a strip or grid, so there is one panel. The numbered descriptions are generic and many people are only seen from behind with identical clothing; without matching faces, hair, and clothes, no pair can be confirmed as the same person drawn twice.')
+market-day             3.2   a1 right WITHHELD unscripted_person,drawn_twice
+    verdict: error
+    judge: [(0, 'AUNTIE PRECIOUS'), (1, 'YUSUF'), (2, None), (3, None), (4, None), (5, None), (6, None), (7, None), (8, None), (9, None), (10, None), (11, None), (12, None), (13, None), (14, None), (15, None), (16, None), (17, None), (18, None), (19, None), (20, None), (21, None)]  layout: None
+market-day             5.2   a1 wrong WITHHELD -
+    unscripted_person: person 0 (left, a child in a hooded jacket and pants): its support is about a character; person 1 (centre, a child in a hooded jacket and pants holding a long tool): its support is about a character
+    drawn_twice: person 0 (left, a child in a hooded jacket and pants) and person 1 (centre, a child in a hooded jacket and pants holding a long tool): the same person drawn twice
+    verdict: fail
+    judge: [(0, None), (1, None), (2, None)]  layout: FrameLayout(panels=1, copies=((0, 1),), reason='The drawing is a single continuous scene, not divided into panels. The two children on the left share the same face, hair, hooded jacket, and pants, so they are the same child shown twice; the adult man is a different person.')
+stormwater             3.1   a2 wrong WITHHELD unscripted_person,drawn_twice
+    unscripted_person: person 1 (centre, an adult person seen from the back, wearing a work uniform): its support points at someone else; person 2 (right, an adult man with dark hair, wearing a work uniform): no shot character, no support
+    verdict: fail
+    judge: [(0, 'NOMSA'), (1, None), (2, None)]  layout: FrameLayout(panels=2, copies=(), reason='The image is a two-panel strip. The three numbered people are all different: a woman with a ponytail, a person seen from the back, and a man with dark hair; none share the same face, hair, build and clothes.')
+the-bread-van          1.2   a3 wrong WITHHELD unscripted_person,split_panels
+    unscripted_person: person 1 (centre, a child in a light shirt and shorts): its support is about a character
+    drawn_twice: person 0 (centre, an adult man in a light shirt and dark trousers) and person 2 (right, an old man in a light shirt and dark trousers): described alike, one of them no character
+    verdict: fail
+    judge: [(0, 'BONGANI'), (1, None), (2, None), (3, None)]  layout: FrameLayout(panels=1, copies=(), reason='The drawing is a single continuous scene, not divided into separate panels. The four listed people are distinct individuals: two different adult men, one child, and one partly visible person behind a counter; none share matching face, hair, build, and clothes.')
+the-night-taxi         1.1   a1 right WITHHELD unscripted_person,drawn_twice
+    drawn_twice: person 3 (right, an adult man holding a bucket) and person 4 (right, an adult man holding a bucket): the same person drawn twice
+    verdict: fail
+    judge: [(0, None), (1, None), (2, 'THABO'), (3, None), (4, None), (5, None), (6, None)]  layout: FrameLayout(panels=1, copies=((3, 4),), reason='The drawing is a single continuous scene, not divided into separate panels. The two numbered people on the right holding a bucket are the same individual shown twice, with matching beret, jacket, and bucket.')
+the-night-taxi         2.1   a1 right WITHHELD drawn_twice
+
+wrong:   3 frames, caught 3, shown 0
+right:   6 frames, false alarms 4, shown 2
+weak :   0 frames, withheld 0, shown 0
+
+fault: frames, withheld, the hard checks that failed on them
+  drawn_sex         1   1  unscripted_person 1, drawn_twice 1
+  split_panels      2   2  unscripted_person 1, split_panels 1
+
+ladder: drawn_sex,drawn_twice,no_character,split_panels; models nvidia/Nemotron-3.5-Super-VL,nvidia/nemotron-3-super-120b-a12b

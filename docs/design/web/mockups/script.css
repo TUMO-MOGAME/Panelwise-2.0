@@ -1,0 +1,45 @@
+/* Script screen: what was read from the screenplay, each thing with its quote (web.md §4.2). */
+.script {
+  display: grid; grid-template-columns: 260px minmax(0, 1fr) 300px; gap: 32px 40px;
+  grid-template-areas: "scenes intro report" "scenes entities report";
+  max-width: 1440px; margin: 0 auto; padding: 32px 24px 64px; align-items: start;
+}
+.intro { grid-area: intro; }
+.intro h1 { margin: 6px 0 8px; font-size: 48px; }
+.meta { margin: 0; color: var(--ink-2); }
+.report { grid-area: report; position: sticky; top: 16px; display: grid; gap: 14px; }
+.score { background: var(--paper); box-shadow: var(--shadow-page); padding: 16px 18px; border-left: 4px solid var(--pass); }
+.score b { display: block; font: 800 44px/1 var(--font-display); }
+.score span { font: 600 13px var(--font-display); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); }
+.score p { margin: 8px 0 0; font-size: 14px; }
+.models { margin: 0; font-size: 12px; color: var(--ink-2); }
+.entities { grid-area: entities; }
+.entities h2 { margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
+.entities h2:first-child { margin-top: 0; }
+.entity { background: var(--paper); box-shadow: var(--shadow-page); padding: 14px 16px; margin-bottom: 14px; }
+.entity header { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.entity h3 { margin: 0; font: 700 18px var(--font-body); }
+.entity.small h3 { font-size: 15px; }
+.tag { font-size: 12px; font-weight: 700; color: var(--pencil); background: var(--pencil-soft); padding: 2px 8px; border-radius: 10px; }
+.where { margin-left: auto; font-size: 13px; color: var(--ink-2); }
+.quotes { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 4px; }
+.row { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+.row .entity { margin: 0; }
+.scenes { grid-area: scenes; position: sticky; top: 16px; }
+.scenes h2 { font-size: 18px; margin-bottom: 10px; }
+.scenes ol { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 10px; }
+.scenes li { display: grid; grid-template-columns: 28px 1fr; gap: 2px 8px; }
+.scenes li b { grid-row: span 2; font: 800 22px/1 var(--font-display); color: var(--ink-2); }
+.scenes li span { font: 700 13px var(--font-script); }
+.scenes li em { font-style: normal; font-size: 12px; color: var(--ink-2); }
+@media (max-width: 1100px) {
+  .script { grid-template-columns: 1fr; grid-template-areas: "intro" "report" "entities" "scenes"; }
+  .report, .scenes { position: static; }
+  .report { grid-template-columns: 1fr 1fr; }
+  .models { grid-column: 1 / -1; }
+}
+@media (max-width: 640px) {
+  .script { padding: 20px 16px 48px; }
+  .intro h1 { font-size: 36px; }
+  .report { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,128 @@
+final-whistle          1.4   a1 right shown    unscripted_person
+final-whistle          2.1   a1 right WITHHELD unscripted_person,drawn_twice
+final-whistle          2.2   a1 right shown    -
+final-whistle          2.3   a1 wrong shown    unscripted_person
+final-whistle          3.3   a1 wrong shown    unscripted_person
+final-whistle          4.3   a1 wrong shown    unscripted_person
+final-whistle          5.3   a1 right shown    unscripted_person
+final-whistle          6.1   a1 right WITHHELD unscripted_person,drawn_twice
+final-whistle          6.2   a1 right WITHHELD unscripted_person,drawn_twice
+load-shedding          2.1   a1 wrong shown    -
+load-shedding          5.2   a1 right shown    -
+lost-property          2.1   a1 right shown    -
+lost-property          2.2   a2 wrong WITHHELD unscripted_person,split_panels
+lost-property          3.2   a1 wrong WITHHELD unscripted_person,drawn_twice
+lost-property          5.1   a1 right shown    unscripted_person
+lost-property          5.3   a1 right shown    -
+lost-property          7.3   a1 wrong shown    unscripted_person,setting
+lost-property          7.4   a1 wrong shown    -
+lost-property          9.1   a3 wrong shown    unscripted_person
+lost-property          9.2   a3 wrong WITHHELD unscripted_person,split_panels
+lost-property          9.4   a1 wrong WITHHELD unscripted_person,split_panels
+lost-property          9.4   a2 wrong WITHHELD unscripted_person,split_panels
+lost-property          9.6   a2 wrong WITHHELD unscripted_person,split_panels
+lost-property          11.5  a1 wrong WITHHELD unscripted_person,split_panels
+lost-property          11.5  a2 wrong WITHHELD unscripted_person,split_panels
+lost-property          11.5  a3 wrong WITHHELD unscripted_person,split_panels
+lost-property          12.2  a1 right shown    unscripted_person,setting
+lost-property          12.2  a2 wrong WITHHELD split_panels
+market-day             2.1   a1 right WITHHELD unscripted_person,no_character
+market-day             3.2   a1 right WITHHELD unscripted_person,drawn_twice
+market-day             4.2   a1 wrong WITHHELD unscripted_person,split_panels
+market-day             5.2   a1 wrong WITHHELD -
+sipho-and-siphokazi    2.1   a1 right shown    unscripted_person,setting
+sipho-and-siphokazi    2.1   a2 wrong shown    unscripted_person,setting
+sipho-and-siphokazi    2.3   a1 right shown    unscripted_person
+sipho-and-siphokazi    7.1   a1 wrong WITHHELD split_panels
+sipho-and-siphokazi    7.1   a3 wrong WITHHELD unscripted_person,setting,split_panels
+sipho-and-siphokazi    9.2   a3 wrong WITHHELD unscripted_person,split_panels
+stormwater             2.2   a1 right shown    -
+stormwater             3.1   a2 wrong WITHHELD -
+stormwater             5.1   a1 wrong WITHHELD setting,no_character
+stormwater             6.1   a1 right shown    -
+stormwater             6.4   a1 wrong WITHHELD unscripted_person,no_character
+the-borrowed-bicycle   1.1   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   1.2   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   1.3   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   2.1   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   2.2   a1 right shown    -
+the-borrowed-bicycle   2.3   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   3.1   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   3.2   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   3.3   a1 right shown    -
+the-borrowed-bicycle   4.1   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   4.2   a1 wrong shown    unscripted_person
+the-borrowed-bicycle   4.3   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   5.1   a1 wrong WITHHELD unscripted_person,drawn_sex
+the-borrowed-bicycle   5.2   a1 wrong WITHHELD unscripted_person,drawn_sex,drawn_twice
+the-borrowed-bicycle   5.4   a1 right shown    -
+the-borrowed-bicycle   5.5   a1 weak  shown    -
+the-bread-van          1.2   a3 wrong WITHHELD -
+the-bread-van          1.3   a1 wrong WITHHELD unscripted_person,split_panels
+the-bread-van          1.3   a2 wrong WITHHELD unscripted_person,split_panels
+the-bread-van          2.2   a1 wrong shown    setting
+the-bread-van          2.4   a1 wrong WITHHELD unscripted_person,setting,drawn_twice
+the-bread-van          3.1   a1 right shown    unscripted_person
+the-bread-van          3.3   a1 right shown    unscripted_person
+the-bread-van          4.1   a1 wrong shown    unscripted_person
+the-bread-van          4.4   a1 wrong WITHHELD unscripted_person,drawn_twice
+the-bread-van          4.5   a1 wrong shown    unscripted_person,setting
+the-lighthouse-inspect 1.1   a1 right shown    -
+the-lighthouse-inspect 2.1   a1 right shown    -
+the-lighthouse-inspect 2.2   a1 weak  shown    -
+the-lighthouse-inspect 2.3   a1 weak  shown    -
+the-lighthouse-inspect 3.1   a1 right shown    -
+the-lighthouse-inspect 3.2   a1 right shown    -
+the-lighthouse-inspect 3.3   a1 right shown    -
+the-lighthouse-inspect 3.4   a1 right shown    -
+the-lighthouse-inspect 4.1   a1 weak  shown    unscripted_person
+the-lighthouse-inspect 4.2   a1 weak  WITHHELD unscripted_person,drawn_twice
+the-lighthouse-inspect 4.3   a1 right shown    -
+the-lighthouse-inspect 5.1   a1 weak  shown    -
+the-lighthouse-inspect 5.2   a1 right shown    -
+the-lighthouse-inspect 5.3   a1 right shown    -
+the-lighthouse-inspect 6.1   a1 weak  shown    -
+the-lighthouse-inspect 6.2   a1 right shown    -
+the-lighthouse-inspect 6.3   a1 right shown    -
+the-lighthouse-inspect 7.1   a1 weak  shown    -
+the-lighthouse-inspect 7.2   a1 right shown    -
+the-lighthouse-inspect 7.3   a1 weak  WITHHELD unscripted_person,drawn_twice
+the-lighthouse-inspect 7.4   a1 weak  shown    -
+the-lighthouse-inspect 7.5   a1 wrong shown    unscripted_person
+the-lighthouse-inspect 8.1   a1 weak  shown    unscripted_person
+the-lighthouse-inspect 9.1   a1 weak  shown    -
+the-lighthouse-inspect 9.2   a1 right shown    -
+the-lighthouse-inspect 9.3   a1 right shown    -
+the-night-taxi         1.1   a1 right WITHHELD unscripted_person,drawn_twice
+the-night-taxi         1.2   a3 wrong WITHHELD unscripted_person,split_panels
+the-night-taxi         1.4   a1 wrong WITHHELD unscripted_person,drawn_twice
+the-night-taxi         2.1   a1 right WITHHELD drawn_twice
+the-night-taxi         2.3   a2 wrong shown    unscripted_person
+the-night-taxi         2.4   a1 right shown    -
+the-night-taxi         5.1   a1 wrong WITHHELD split_panels
+the-night-taxi         5.1   a2 wrong WITHHELD setting,split_panels
+the-night-taxi         5.4   a1 wrong WITHHELD unscripted_person,no_character
+the-night-taxi         6.3   a1 wrong WITHHELD unscripted_person,split_panels
+the-night-taxi         6.3   a2 wrong WITHHELD unscripted_person,split_panels
+the-red-kite           2.2   a1 right shown    -
+the-red-kite           4.1   a1 wrong WITHHELD unscripted_person,drawn_twice
+the-red-kite           5.2   a1 wrong WITHHELD split_panels
+
+wrong:  57 frames, caught 43, shown 14
+right:  40 frames, false alarms 7, shown 33
+weak :  12 frames, withheld 2, shown 10
+
+fault: frames, withheld, the hard checks that failed on them
+  absent            8   2  unscripted_person 5, split_panels 1, setting 1, no_character 1
+  age               2   2  unscripted_person 2, no_character 2
+  drawn_sex        15  13  drawn_sex 11, unscripted_person 5, drawn_twice 2, setting 1
+  drawn_twice       8   6  unscripted_person 8, drawn_twice 6, setting 1, drawn_sex 1
+  empty_frame       3   0  
+  extra_person      3   1  unscripted_person 3, drawn_sex 1
+  missing_action    4   0  unscripted_person 1
+  missing_prop      5   0  unscripted_person 1
+  setting           3   1  setting 3, unscripted_person 2, drawn_twice 1
+  split_panels     23  23  split_panels 21, unscripted_person 16, setting 2
+  unclear_sex       2   0  unscripted_person 1
+
+ladder: drawn_sex,drawn_twice,no_character,split_panels; models nvidia/Nemotron-3.5-Super-VL,nvidia/nemotron-3-super-120b-a12b

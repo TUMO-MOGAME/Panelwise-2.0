@@ -1,0 +1,42 @@
+# The API on Render (docs/design/deploy.md §6). Secrets are entered once, in Render's
+# dashboard, when the Blueprint is first applied; never here.
+services:
+  - type: web
+    name: panelwise-api
+    runtime: docker
+    plan: 1c-2g
+    region: frankfurt
+    rootDir: services/api
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/v1/health
+    autoDeployTrigger: checksPass
+    numInstances: 1
+    buildFilter:
+      paths:
+        - services/api/**
+      ignoredPaths:
+        - services/api/tests/**
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: NEBIUS_API_KEY
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+      - key: FAL_KEY
+        sync: false
+      # The hosted demo's settings (T030): decided, so written here.
+      - key: AUDIT_WITHHOLD_CHECKS
+        value: drawn_sex,no_character,split_panels
+      - key: UPLOADS_PER_DAY
+        value: "3"
+      - key: UPLOAD_MAX_PAGES
+        value: "15"
+      # The two money caps (limits.md §10): figures entered in the dashboard, recorded below.
+      - key: LLM_MONTHLY_TOKEN_CAP
+        sync: false
+      - key: IMAGE_MONTHLY_GENERATION_CAP
+        sync: false

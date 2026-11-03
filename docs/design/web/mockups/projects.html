@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Screenplays — Panelwise</title>
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="projects.css"></head>
+<body>
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="spacer"></span>
+  <span class="who">judge@panelwise.demo</span>
+  <a class="btn quiet" href="#">Sign out</a>
+</header>
+<main class="projects">
+  <section class="upload" aria-labelledby="upload-title">
+    <h1 id="upload-title">Board your script</h1>
+    <p>Upload a screenplay and Panelwise draws one frame for every shot. Each frame shows only what the lines it cites say.</p>
+    <label class="drop">
+      <input type="file" accept="application/pdf">
+      <span class="sheet-icon" aria-hidden="true"><span>INT. KITCHEN - NIGHT</span></span>
+      <b>Drop a screenplay PDF here, or choose a file</b>
+      <small>Export it from your screenwriting app so the text can be read. Scanned pages can't be.</small>
+    </label>
+  </section>
+
+  <section class="list" aria-labelledby="list-title">
+    <h2 id="list-title">Your screenplays</h2>
+    <ul>
+      <li class="project running">
+        <a href="storyboard.html"><h3>The Keeper's Light</h3></a>
+        <p class="facts">2 pages · 3 scenes · 7 shots</p>
+        <p class="state"><span class="verdict pending">Rendering frames</span> 6 of 7 settled</p>
+        <span class="meter"><span style="width:86%"></span></span>
+      </li>
+      <li class="project done">
+        <a href="storyboard.html"><h3>Harbour Lights</h3></a>
+        <p class="facts">6 pages · 9 scenes · 23 shots</p>
+        <p class="state"><span class="verdict pass">Storyboard ready</span> 23 frames · 1 withheld</p>
+      </li>
+      <li class="project failed">
+        <h3>saltpan-draft-3</h3>
+        <p class="facts">Uploaded 30 Sep, 14:02</p>
+        <p class="state"><span class="verdict withheld">Couldn't read the script</span></p>
+        <p class="error">This PDF has no text layer. It looks like a scan. Export the script from your screenwriting app as a PDF and upload that.</p>
+      </li>
+    </ul>
+  </section>
+</main>
+</body></html>

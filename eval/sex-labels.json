@@ -1,0 +1,83 @@
+{
+  "_about": "T082: each person character's sex as the script itself states it (a pronoun about them, a noun for them, a title in their name), labelled by reading the script; null when the script never states it. A character_sex that differs from a non-null label is WRONG; one that is non-null where the label is null is INVENTED; null where the label is non-null is a MISS. lost-property is held out: T082 was found on sipho-and-siphokazi.",
+  "the-red-kite": {
+    "LERATO": {"sex": "female", "evidence": "grips a RED KITE almost as tall as she is"},
+    "MOKGOSI": {"sex": "male", "evidence": "reading glasses pushed up on his forehead"},
+    "RADIO ANNOUNCER": {"sex": null, "evidence": "never stated"}
+  },
+  "sipho-and-siphokazi": {
+    "SIPHO": {"sex": "male", "evidence": "a salt-and-pepper-bearded fisherman ... This is SIPHO (50s)"},
+    "SIPHOKAZI": {"sex": "female", "evidence": "Siphokazi nods. She cannot stop the smile."},
+    "MAMA THEMBI": {"sex": "female", "evidence": "the title MAMA"},
+    "Gogo": {"sex": "female", "evidence": "\"your grandmother's tide book\" (dialogue) and the title GOGO"},
+    "COASTGUARD": {"sex": null, "evidence": "never stated"}
+  },
+  "lost-property": {
+    "ZANELE": {"sex": "female", "evidence": "cardigan over her railway uniform"},
+    "MR. DUBE": {"sex": "male", "evidence": "the title MR; He peers at the ledger over his spectacles"},
+    "PRIYA": {"sex": "female", "evidence": "She spots the hand-painted sign"},
+    "KOOS": {"sex": "male", "evidence": "He wears headphones over a woolly hat"},
+    "TEBOGO": {"sex": "male", "evidence": "A black case lies open at his feet"},
+    "GRACE": {"sex": "female", "evidence": "a nurse still in her scrubs"},
+    "AMAHLE": {"sex": "female", "evidence": "Amahle tugs at her mother's scrubs"},
+    "OFFICER MOLOI": {"sex": "male", "evidence": "(closing his notebook), a parenthetical only"},
+    "OFFICER VAN WYK": {"sex": null, "evidence": "never stated"},
+    "SAM": {"sex": null, "evidence": "never stated (\"He signs\" is Mr. Dube)"},
+    "ANNOUNCER": {"sex": null, "evidence": "never stated"},
+    "SLEEPING COMMUTER": {"sex": "male", "evidence": "snores under his newspaper"}
+  },
+  "the-bread-van": {
+    "NOMSA": {"sex": "female", "evidence": "flour up to her elbows"},
+    "THEO": {"sex": "male", "evidence": "sleeps across his feet; (rubbing his eyes); Is that Nomsa's boy?"},
+    "DANIEL": {"sex": "male", "evidence": "He stretches until his back cracks"},
+    "AUNTIE BETTY": {"sex": "female", "evidence": "the title AUNTIE; She presses one loaf"},
+    "TAXI DRIVER": {"sex": "male", "evidence": "leans on his taxi across the road"}
+  },
+  "load-shedding": {
+    "MS. MOLEFE": {"sex": "female", "evidence": "the title MS; She lights a CANDLE"},
+    "AYANDA": {"sex": "female", "evidence": "chews her pencil"},
+    "JABU": {"sex": "male", "evidence": "Jabu covers it with his arm"},
+    "FATIMA": {"sex": "female", "evidence": "calculator lined up with her ruler"},
+    "PIETER": {"sex": "male", "evidence": "Pieter pulls his hood down"},
+    "NOMSA": {"sex": "female", "evidence": "praying with her eyes closed"},
+    "LUCKY": {"sex": "male", "evidence": "He looks across at Jabu's paper"}
+  },
+  "final-whistle": {
+    "COACH DLAMINI": {"sex": null, "evidence": "never stated"},
+    "PALESA": {"sex": "female", "evidence": "lands on her bad wrist"},
+    "LINDI": {"sex": "female", "evidence": "The ball smacks into her chest. She holds on."},
+    "REFEREE": {"sex": "male", "evidence": "blows his whistle"},
+    "STRIKER": {"sex": null, "evidence": "never stated"}
+  },
+  "stormwater": {
+    "REFILWE": {"sex": "female", "evidence": "She drops to her knees at the drain."},
+    "MR. VAN DER MERWE": {"sex": "male", "evidence": "MR.; He answers with his mouth full."},
+    "SIBUSISO": {"sex": "male", "evidence": "Sibusiso climbs out of the hole with Biscuit inside his overalls"}
+  },
+  "the-night-taxi": {
+    "BONGANI": {"sex": "male", "evidence": "He counts coins into a tin."},
+    "THABO": {"sex": "male", "evidence": "A boy in a too-big school blazer, THABO (9), stands alone by the queue barrier."},
+    "UNCLE SIZWE": {"sex": "male", "evidence": "UNCLE; He kneels in front of the boy."},
+    "RADIO PRESENTER": {"sex": null, "evidence": "never stated"}
+  },
+  "market-day": {
+    "AUNTIE PRECIOUS": {"sex": "female", "evidence": "AUNTIE; Auntie Precious lowers her glasses and reads it."},
+    "YUSUF": {"sex": "male", "evidence": "Yusuf throws his hands up."},
+    "WOMAN WITH A PRAM": {"sex": "female", "evidence": "A WOMAN WITH A PRAM stops between the two stalls. She looks left."},
+    "KAMO": {"sex": "male", "evidence": "A small boy, KAMO (7), tugs at her skirt."}
+  },
+  "the-lighthouse-inspector": {
+    "MS. NAIDOO": {"sex": "female", "evidence": "MS.; Wind tugs at her jacket."},
+    "NAIDOO": {"sex": "female", "evidence": "the same person as MS. NAIDOO (an extraction duplicate)"},
+    "SUPERVISOR": {"sex": null, "evidence": "never stated"},
+    "FORTUIN": {"sex": "male", "evidence": "the same person as MR. FORTUIN (an extraction duplicate)"},
+    "MR. FORTUIN": {"sex": "male", "evidence": "MR.; He doesn't ask what."},
+    "RESCUE OFFICER": {"sex": null, "evidence": "never stated"}
+  },
+  "the-borrowed-bicycle": {
+    "NALEDI": {"sex": "female", "evidence": "Her little brother TSHEPO (8), shorts down past his knees, stands beside her."},
+    "TSHEPO": {"sex": "male", "evidence": "Tshepo polishes the bell with the hem of his shirt."},
+    "SHOPKEEPER": {"sex": "male", "evidence": "The SHOPKEEPER (60s) looks up from his newspaper."},
+    "MR. KEKANA": {"sex": "male", "evidence": "MR.; He takes off his hat and hangs it on the handlebars."}
+  }
+}

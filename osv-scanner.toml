@@ -1,0 +1,2 @@
+# Known vulnerabilities the gate accepts for now. Each block names the task that will close it
+# (scripts/gate.sh refuses a reason without one), and ignoreUntil makes it expire on its own.

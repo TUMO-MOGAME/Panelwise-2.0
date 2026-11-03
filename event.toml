@@ -1,0 +1,82 @@
+# event.toml: the one place the facts of this event live.
+# Copied from the organisers' pages, with where each came from.
+# Nobody, human or AI, carries a deadline in their head: ./hack status reads it from here.
+# A blank value below is an open item: its comment names the task that fills it.
+
+name = "Nebius x NVIDIA Global AI Hackathon"
+medium = "virtual"           # online on Devpost; judged from the repo, hosted demo and video
+
+[time]                       # ISO 8601 with a UTC offset; the team works in SAST (+02:00)
+start = "2026-09-28T00:00:00+02:00"      # the team's week 1 (STATUS.md timeline); Devpost's submission period opened 2026-08-26 09:00 PT
+deadline = "2026-10-30T19:00:00+02:00"   # = 2026-10-30 10:00 PDT; the team submits by 29 Oct (one day of buffer)
+freeze = ""                  # blank = from the phase table (.hack/format.toml): Wed 28 Oct 00:00 SAST
+source = "Devpost overview page (Deadline: 30 Oct 2026 @ 7:00pm GMT+2), saved 2026-09-25; start from STATUS.md's timeline"
+
+[provenance]
+# The Cultivation-kit scaffold, template only (7d5277d, 2026-09-27). The whole repo was created
+# inside the submission period; FrameFlow code ported into it is disclosed in CHANGES-FROM-FRAMEFLOW.md.
+baseline = "7d5277d760b799a927fbb6acdfce386dc33435c2"
+
+[checks]
+# Panelwise's scripts/gate.sh does NOT read this table: it discovers every project and runs its
+# checks itself (ruff, pyright, pytest, eslint+tsc, vitest, next build, placeholder, secrets,
+# osv-scanner, jscpd). These entries say which command covers each kind of check.
+lint = "bash scripts/gate.sh"
+test = "bash scripts/gate.sh"
+smoke = ""                   # open item: no single smoke command is declared (T009 is done and did not set one). Today's nearest: cd services/api && uv run python -m app.grounding.run <script.pdf>
+
+[links]
+devpost = "https://nebiusglobalaihackathon.devpost.com/"
+rules = "https://nebiusglobalaihackathon.devpost.com/rules"
+resources = "https://nebiusglobalaihackathon.devpost.com/resources"
+repo = "https://github.com/Katlego-tech/Panelwise"   # public since 2026-10-05
+track = "Best Apps and Agents"
+demo = "https://panelwise.vercel.app"   # web on Vercel, API on Render (live since 2026-10-16); up until 15 Dec 2026
+video = "https://youtu.be/vIjz9RHnLPM"   # T034: the public YouTube video, 3 minutes or shorter (no music; uploaded 2026-10-30)
+judging = "2026-12-01 to 2026-12-15"   # the demo must stay up, free and unrestricted, until 15 Dec
+
+[rubric]
+# Devpost's four judging criteria, equal weights. Two of them (Technological Implementation and
+# Quality of the Idea) name "Nebius Token Factory or AI Cloud model(s), and NVIDIA Nemotron".
+# The map from criterion to evidence is RUBRIC.md.
+technological_implementation = 25
+design = 25
+potential_impact = 25
+quality_of_the_idea = 25
+source = "Devpost overview page, Judging Criteria (the four criteria); equal weights per /rules, as recorded in frameflow-nebius-hackathon/PLAN.md §0"
+
+[scope]
+# The core differentiator (grounding + the audit loop). Never mocked.
+# Note: Panelwise's gate does not check mock imports (MOCKS.md).
+core = ["services/api/app/script", "services/api/app/grounding", "services/api/app/llm", "services/api/app/verify"]
+
+[team]
+presenter = "ElevenLabs voice"   # T034: the team's script voiced through the ElevenLabs API (Jedediah); Tumo Mogame produced the video
+
+[[team.members]]
+name = "Katlego Thapelo Tlhapiso"
+role = "Project leader"      # AGENTS.md §1
+ai = "Claude, Gemini"
+
+[[team.members]]
+name = "Tumo Olorato Mogame"
+role = "Co-builder"          # AGENTS.md §1
+ai = "Claude"
+
+[demo]
+url = "https://panelwise.vercel.app"   # the hosted demo (T030); the judge account is in the Devpost testing notes
+limit_seconds = 180          # Devpost: "a 3-minute or shorter public YouTube video"
+
+# One [[sponsors]] block per sponsor technology the rules require; each must be load-bearing.
+# used_in is file:line where it runs; ./hack preflight checks every reference resolves.
+[[sponsors]]
+name = "Nebius Token Factory"
+sdk = "OpenAI-compatible HTTP API over httpx (no SDK)"
+bounty = "Best Apps and Agents track: must make a runtime call to the Token Factory inference API"
+used_in = ["services/api/app/core/config.py:27", "services/api/app/llm/client.py:185"]
+
+[[sponsors]]
+name = "NVIDIA Nemotron"
+sdk = "nvidia/Nemotron-3_5-Lightning (fast tier), nvidia/nemotron-3-super-120b-a12b (reasoning tier), nvidia/Nemotron-3.5-Super-VL (vision tier, since 2026-10-17)"
+bounty = "rules: use at least one NVIDIA open source model; two judging criteria name Nemotron"
+used_in = ["services/api/app/core/config.py:28", "services/api/app/core/config.py:29", "services/api/app/core/config.py:32", "services/api/app/grounding/extract.py:104"]

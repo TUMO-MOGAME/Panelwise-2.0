@@ -1,0 +1,1733 @@
+[
+ {
+  "title": "final-whistle",
+  "shot": "1.4",
+  "attempt": 1,
+  "asset": "frames/8768dc81aee2386835414eb6ab47da01254f12c5b0d624fb0fbd6b818b359229.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an old man standing facing the viewer, with short hair, hands at his sides"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "1.4",
+  "attempt": 2,
+  "asset": "frames/bbfa17edb9fac1068a196bc89243428de5a6381f966fee963330a200a808701c.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an old man standing facing the viewer with a neutral expression, short hair, hands at his sides"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "1.4",
+  "attempt": 3,
+  "asset": "frames/05891f5ca396cd16c8664ddbd5bce9fd0171e5356b042d5c94b21c3448f4fc9e.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult man with short hair, standing facing forward with his arms at his sides"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "2.1",
+  "attempt": 1,
+  "asset": "frames/c25187a30ab6346b001bdc2e1f18854e23949d1e4296748161719f821238ca07.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an adult man in a light short-sleeved shirt and dark shorts, leaning forward with one leg extended toward the ball",
+   "centre: an adult man in a dark short-sleeved shirt and dark shorts, arms spread, running toward the ball"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "2.2",
+  "attempt": 1,
+  "asset": "frames/147de8ef36c51ad13d98f0867521ff5bf04853da189ab2663d87dac547e4e0ba.png",
+  "asked": [
+   [
+    0,
+    "LINDI"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "LINDI",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "LINDI": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a child with long hair, kneeling and leaning forward, looking down"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "2.2",
+  "attempt": 2,
+  "asset": "frames/27738eb0cf9da15ef071758e81702d3ed0cd565a5c3e056edb0aba899c0e2fbe.png",
+  "asked": [
+   [
+    0,
+    "LINDI"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "LINDI",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "LINDI": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a child with a ponytail, diving forward horizontally with arms wrapped around a ball"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "2.3",
+  "attempt": 1,
+  "asset": "frames/1c969d3bf2a420d14ba40f06fb05673eada2e1c81d4066ae86d7220e55119679.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult in a short-sleeved top and shorts, leaning forward mid-stride as if kicking a ball",
+   "right: an adult standing small in the distance near the fence, in a top and shorts"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "2.3",
+  "attempt": 2,
+  "asset": "frames/c9e1cc967d78a0a1ad24fb6230f3362c64a42007c47baa7925bdaedef11970f6.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a child, small figure seen from behind, standing alone on the pitch"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "2.4",
+  "attempt": 3,
+  "asset": "frames/ade0fd16341ad25ef93cec2831749b64b36bcddb7a8f5ba64fd08c4cac2fcf72.png",
+  "asked": [
+   [
+    0,
+    "LINDI"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "LINDI",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "LINDI": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: a child, a girl with a ponytail, leaning forward mid-stride as she kicks the ball",
+   "right: a child, a boy standing facing her with arms slightly out, watching the ball"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "3.3",
+  "attempt": 1,
+  "asset": "frames/3ad0b91e02335a738064f1bdffd2443c25f5a126cbd4ba70917b41de3a0df7b1.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an old man with short grey hair, standing facing the viewer with a calm expression"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "4.3",
+  "attempt": 1,
+  "asset": "frames/c0fc2eecee50e9b317bc9d90217878ba2f721fe5e270f7a14d6607cb3028b793.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "PALESA": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "right: a child with a ponytail, standing with one knee raised, looking to the left"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "5.3",
+  "attempt": 1,
+  "asset": "frames/64a51b4fbaf2e1fcebd0a52cabd4eae1485f7b7783543402711d1855b42ce9cd.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a teenager with a ponytail, running with one arm bent and the other raised"
+  ]
+ },
+ {
+  "title": "final-whistle",
+  "shot": "6.2",
+  "attempt": 1,
+  "asset": "frames/c53bf31d0150898f463c7b990face304c8a3f2f0ca2e125e0977883234f3b4dd.png",
+  "asked": [
+   [
+    0,
+    "PALESA"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "PALESA",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "PALESA": "female",
+   "LINDI": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: a child with long dark hair blowing back, walking with arms swinging",
+   "right: a child with dark hair in a ponytail, walking in profile facing right"
+  ]
+ },
+ {
+  "title": "load-shedding",
+  "shot": "2.1",
+  "attempt": 1,
+  "asset": "frames/a3ac50e433ab8efc4430c3d13510073d62407a0ad164c58e502eca1725233231.png",
+  "asked": [
+   [
+    0,
+    "LUCKY"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "LUCKY",
+    "unclear"
+   ]
+  ],
+  "sexes": {
+   "LUCKY": "male",
+   "JABU": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult seen from behind, standing in the aisle between the desks, one arm slightly raised"
+  ]
+ },
+ {
+  "title": "load-shedding",
+  "shot": "5.2",
+  "attempt": 1,
+  "asset": "frames/3855c68f97aa0e14885e6e9c0ee9f0a332a8707ad19e25c154ce0620aebc1192.png",
+  "asked": [
+   [
+    0,
+    "JABU"
+   ],
+   [
+    0,
+    "PIETER"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "JABU",
+    "male"
+   ],
+   [
+    0,
+    "PIETER",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "JABU": "male",
+   "PIETER": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a teenager with dark hair, eyes closed and head bowed, standing with arms at his sides",
+   "left: a teenager girl with long dark hair sitting at a desk, eyes closed, hands resting on a notebook",
+   "left: a teenager boy with glasses sitting at a desk, mouth open",
+   "left: a teenager boy sitting at a desk at the far left edge of the frame",
+   "left: a teenager girl sitting at a desk behind the others",
+   "centre: a teenager boy sitting at a desk in the middle background, looking forward",
+   "right: a teenager boy with glasses sitting at a desk, writing in an open notebook",
+   "right: a teenager boy sitting with his head lowered and eyes closed",
+   "right: a teenager boy sitting at a desk with his mouth open, hands on an open book",
+   "right: a teenager boy sitting at a desk behind the front row",
+   "right: a teenager girl sitting at a desk in the background",
+   "right: a teenager boy with glasses sitting at a desk at the far right"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "2.1",
+  "attempt": 1,
+  "asset": "frames/549b95bf1b91388be46b65ee140b95f58a780ae288114c4519c5df154a21a015.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "ZANELE": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult seen from behind with short hair, walking away down the aisle"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "2.1",
+  "attempt": 2,
+  "asset": "frames/a3385b63f6a5ae1086458cff69e04e4f400d796ebac575cc9efc2353f92c59ce.png",
+  "asked": [
+   [
+    0,
+    "ZANELE"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "ZANELE",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "ZANELE": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult woman with short light hair, walking toward the viewer"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "2.3",
+  "attempt": 3,
+  "asset": "frames/747a66b088ad0d58ea364e9a11742b6107af6872654acd12fdb4f82a5a1c77bf.png",
+  "asked": [
+   [
+    0,
+    "ZANELE"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "ZANELE",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "ZANELE": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult woman with glasses, hair tied back, looking down at an open book"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "3.2",
+  "attempt": 1,
+  "asset": "frames/420df6aa83f217b14aa16a8e87d219b970c27beb760151c80a70a553bfbc4a80.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: adult man seen from behind, standing at a counter",
+   "left: adult woman with light hair behind the counter, facing forward",
+   "left: adult man behind the counter, turned toward the woman",
+   "right: adult man standing with his back to the viewer, head bowed, dripping wet"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "4.4",
+  "attempt": 2,
+  "asset": "frames/fc44598c1596889fcd176686ffbd650b5b2df93247ad211547af24c4e901990d.png",
+  "asked": [
+   [
+    0,
+    "MR. DUBE"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "MR. DUBE",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "MR. DUBE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an old man with grey hair and a moustache, mouth open, one arm raised"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "5.1",
+  "attempt": 2,
+  "asset": "frames/7ee89bf524e891b503e46331013224d29f2b0d3a0aad215c088b0b501e69a253.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult woman with short light hair, seen from behind and slightly to the side, looking up toward the man beside her, with a bag on her shoulder",
+   "centre: an adult man with dark hair, seen from behind, standing beside the woman and looking ahead down the walkway"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "5.1",
+  "attempt": 3,
+  "asset": "frames/5a132b07282371ec81eaf8d59ab106ffc7fa97b16b61afbe86da724dce63d53c.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an old man with white hair, walking with his hands at his sides",
+   "centre: an adult man in a cap, walking forward beside a woman",
+   "centre: an adult woman with long dark hair, walking forward"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "6.1",
+  "attempt": 3,
+  "asset": "frames/ebfc90b7a2989749d7b625e40061b5b15895debf6e1c7195216a674a29fb4aae.png",
+  "asked": [
+   [
+    0,
+    "MR. DUBE"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "MR. DUBE",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "MR. DUBE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an old man with grey hair, seated, looking down, holding a mug"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "6.5",
+  "attempt": 2,
+  "asset": "frames/2c7a54ad9ab5da4aa6dd756ecaad92435bb9e0f0ed2f9c4426d0d43506512900.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "MR. DUBE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "right: an adult man in a suit jacket, tie and shirt, saluting with his right hand at his forehead and his left hand in his pocket",
+   "centre: an adult man in a suit jacket, tie and knee-length shorts, standing behind the other and saluting with his right hand"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "6.5",
+  "attempt": 3,
+  "asset": "frames/a6170740105aa95c6e3e168545dfef6941547d26c1d1e6f412d7a178b0f49b71.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "MR. DUBE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult man seen from behind, standing at the counter with both hands on his head",
+   "right: an adult man seen from behind, bald, walking through the doorway",
+   "centre: an adult, only a sleeved forearm and hand visible resting on the counter"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "7.4",
+  "attempt": 1,
+  "asset": "frames/0de1f2b7633e6327ac2b5f51beefb72ed1d29dfb233546c80421f03ef4d94e25.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an old man with short grey hair, walking toward the viewer with his hands in his pockets",
+   "centre: an adult seen from behind in the distance, walking away down the corridor"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "7.4",
+  "attempt": 2,
+  "asset": "frames/51991fb788d0bf2b082f61c39bf1678f112104b3960f86d0e0dfdc8bd449c086.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an old man standing facing the viewer, hands at his sides, in a dark jacket",
+   "centre: an adult man seen from behind, walking away down the platform",
+   "left: a small distant adult figure far down the platform, seen from behind"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "8.4",
+  "attempt": 2,
+  "asset": "frames/08248d01ad4f10244dda48c585fd247b2943eaeca56883462ba062070b53d6d1.png",
+  "asked": [
+   [
+    0,
+    "ZANELE"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "ZANELE",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "ZANELE": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: adult woman with shoulder-length hair, standing facing the viewer in a cardigan over a collared shirt and trousers",
+   "left: adult seen from behind, standing at a counter",
+   "left: adult walking away with a backpack",
+   "left: adult standing further down the corridor",
+   "right: adult walking away with a backpack",
+   "right: adult walking away beside the first, with a backpack",
+   "right: adult standing at a counter in the distance"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "9.4",
+  "attempt": 1,
+  "asset": "frames/460b7cd0e811100460c1b4a26fbf1f916da0f38236a5a11eb198325eeaea45bb.png",
+  "asked": [
+   [
+    1,
+    "MR. DUBE"
+   ]
+  ],
+  "seen": [
+   [
+    1,
+    "MR. DUBE",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "MR. DUBE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: a teenager with dark hair, sweating, looking anxious",
+   "centre: an old man with grey hair, laughing with eyes closed",
+   "centre: an old man with grey hair, laughing open-mouthed",
+   "right: an old man with grey hair, laughing in the background",
+   "right: an adult seen from behind, short dark hair, standing with back to the viewer"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "9.5",
+  "attempt": 2,
+  "asset": "frames/000533f2c519ca366b08c011bbd1e31d9a6fb3aa00a1132766d7501366d2f707.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "MR. DUBE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an old man with grey hair, glasses, a collared shirt, a belt and trousers, one hand in his pocket",
+   "right: a young adult woman with long dark hair, a light long-sleeved top and jeans, one hand in her pocket"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "9.5",
+  "attempt": 3,
+  "asset": "frames/190c798515d91e850081639a934f5caaf905e51474195e8362c7ff6efc18817f.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "MR. DUBE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an old man with grey hair, a polo shirt with a small chest logo, a belt and trousers, standing with his hands down at his sides",
+   "right: an adult woman with long dark hair, seen in profile facing left, wearing a collared shirt"
+  ]
+ },
+ {
+  "title": "lost-property",
+  "shot": "9.6",
+  "attempt": 2,
+  "asset": "frames/b29850e9303a87fe4ed6368be700708d5ff286de3a87fa3d6b03881f212727c2.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "MR. DUBE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an adult man in a uniform shirt, tie and peaked cap, standing with hands near his belt",
+   "centre: an adult man in a short-sleeved uniform shirt and trousers, standing facing forward",
+   "right: an adult man in a uniform shirt seen from behind and the side, filling the right foreground",
+   "left: an adult woman with dark hair tied back, leaning forward and reaching out a hand",
+   "centre: a child boy in a short-sleeved top and shorts, reaching up to shake hands",
+   "right: an adult woman with glasses and long dark hair, standing with a hand on a boy's shoulder",
+   "centre: a child boy in a short-sleeved top and shorts, shaking hands with the other boy"
+  ]
+ },
+ {
+  "title": "market-day",
+  "shot": "2.1",
+  "attempt": 1,
+  "asset": "frames/377a8fdbd28f06c724ba00008df500b3c55e8b433e6e137d2f3aefca0c3cb683.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "AUNTIE PRECIOUS": "female",
+   "YUSUF": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: adult man in a jacket, seen from behind at the far left edge",
+   "left: adult man in a shirt gripping a shopping cart handle",
+   "left: adult man standing behind a counter, facing the aisle",
+   "left: adult man in a shirt pushing a shopping cart",
+   "left: adult woman with a shopping cart, seen in profile",
+   "left: adult man in the background crowd, small and distant",
+   "left: adult woman in the background crowd, small and distant",
+   "centre: adult woman with long dark hair walking toward the viewer in the middle of the aisle",
+   "centre: adult man in the distant background, small and facing away",
+   "centre: adult woman in the distant background, small and facing away",
+   "right: adult man in a shirt pushing a shopping cart",
+   "right: adult woman in a blouse standing beside a shopping cart",
+   "right: adult woman in a dress standing in the aisle",
+   "right: adult man in a suit at the far right edge, seen from behind",
+   "right: adult man in the background crowd, small and distant",
+   "right: adult woman in the background crowd, small and distant"
+  ]
+ },
+ {
+  "title": "market-day",
+  "shot": "3.2",
+  "attempt": 1,
+  "asset": "frames/af5d2c670d47e3c7c276e2d8594cd999bffef9d24174d8f9c5dd3701bc0dca31.png",
+  "asked": [
+   [
+    0,
+    "KAMO"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "KAMO",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "KAMO": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a child with short dark hair, seen from the chest up, looking off to the left",
+   "left: an adult man with his back turned, working at a counter",
+   "left: an adult woman standing behind a counter",
+   "left: an adult man in an apron standing at a counter",
+   "left: an adult man further back at a counter",
+   "centre: an adult woman in a dress walking away down the middle of the hall",
+   "centre: small distant adult figures standing near the far doorway",
+   "right: an old man in a cap seated at a table",
+   "right: an adult woman standing at a table on the right",
+   "right: several adult figures seated and standing along the tables on the right"
+  ]
+ },
+ {
+  "title": "sipho-and-siphokazi",
+  "shot": "2.1",
+  "attempt": 2,
+  "asset": "frames/d5745ec2a1748a64d1324d6e41f53aaaac9d633269224e7b3190246d4d80597a.png",
+  "asked": [
+   [
+    0,
+    "MAMA THEMBI"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "MAMA THEMBI",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "MAMA THEMBI": "female"
+  },
+  "drawn_sex_ok": false,
+  "detail": "person 0 (centre, an old man with white hair, hands in his pockets, looking toward the younger man): drawn male, but MAMA THEMBI is female",
+  "people": [
+   "centre: an old man with white hair, hands in his pockets, looking toward the younger man",
+   "right: a teenager with dark hair, one hand raised and pointing, the other hand in his pocket"
+  ]
+ },
+ {
+  "title": "sipho-and-siphokazi",
+  "shot": "2.3",
+  "attempt": 1,
+  "asset": "frames/a9de0670e423bae1a44a704a37101121d2c39e58ecc5ed7bd3e32a59e7cde144.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "right: a teenager with a ponytail, smiling, seen from the side in the foreground",
+   "centre: a child seen from behind, standing at a window in the background"
+  ]
+ },
+ {
+  "title": "sipho-and-siphokazi",
+  "shot": "5.3",
+  "attempt": 3,
+  "asset": "frames/5d351842028da89593983c742e4c43b14849775fbbd52eff202a1a6f4545899d.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a teenager with dark hair falling over his forehead, looking down at a book"
+  ]
+ },
+ {
+  "title": "sipho-and-siphokazi",
+  "shot": "7.1",
+  "attempt": 3,
+  "asset": "frames/d5150ac613094514561a11d76f794df1dcf74e97017ad099a787fa974fc72454.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: a teenager with dark hair, standing and looking off to the side, one hand on a rail and the other at his waist",
+   "right: an old man with short grey hair, standing on a boat deck with water dripping from his hands"
+  ]
+ },
+ {
+  "title": "stormwater",
+  "shot": "2.2",
+  "attempt": 1,
+  "asset": "frames/d8f86b352f7a49aca3d8d065a5a19400d261ba584cd9200e90aeb3e1ba40a9c6.png",
+  "asked": [
+   [
+    0,
+    "MR. VAN DER MERWE"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "MR. VAN DER MERWE",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "MR. VAN DER MERWE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "right: an old man with receding grey hair, lined face and a serious expression, seen from the waist up"
+  ]
+ },
+ {
+  "title": "stormwater",
+  "shot": "2.2",
+  "attempt": 2,
+  "asset": "frames/f01ee9752cf10d24df5486b68f79953b80fcf7a47aa79bd55eb52ec2d86dc8c8.png",
+  "asked": [
+   [
+    1,
+    "MR. VAN DER MERWE"
+   ]
+  ],
+  "seen": [
+   [
+    1,
+    "MR. VAN DER MERWE",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "MR. VAN DER MERWE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an old man with swept-back grey hair, a lined face and a short-sleeved t-shirt, standing behind a desk",
+   "right: an old man with grey hair, a lined face, a collared shirt and dark overalls with shoulder straps, standing in the foreground"
+  ]
+ },
+ {
+  "title": "stormwater",
+  "shot": "3.1",
+  "attempt": 2,
+  "asset": "frames/517cf21acecf8b4fb8af547f65a93ab8e8d71305f19bcf66ff0176e61dd11f73.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: a teenager with short dark hair, hands in his pockets, walking",
+   "centre: a teenager with short dark hair, walking and holding a long stick",
+   "right: an old man in a flat cap, stepping down from the truck"
+  ]
+ },
+ {
+  "title": "stormwater",
+  "shot": "5.1",
+  "attempt": 1,
+  "asset": "frames/de50dcc491e113358e60a90375bfcd38d30731bf4c53067569aa53ad951c3623.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "MR. VAN DER MERWE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": []
+ },
+ {
+  "title": "stormwater",
+  "shot": "5.1",
+  "attempt": 2,
+  "asset": "frames/d7f16e33d10572a42e7e69fea2a08bd643c0901b26eb8b20725951659b8cd5d2.png",
+  "asked": [
+   [
+    0,
+    "MR. VAN DER MERWE"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "MR. VAN DER MERWE",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "MR. VAN DER MERWE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "right: an adult man with short hair, standing with his hands in his pockets, looking down toward the dog"
+  ]
+ },
+ {
+  "title": "stormwater",
+  "shot": "5.1",
+  "attempt": 3,
+  "asset": "frames/d1b4a3777dd71027bc4ffa8552a448418f1eae06da8e3243d8f75b8da74abb1c.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "MR. VAN DER MERWE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": []
+ },
+ {
+  "title": "stormwater",
+  "shot": "6.1",
+  "attempt": 1,
+  "asset": "frames/1dfa19fb5b6737e2b1ff1ed034d6537a54358126e0c09f9cf5ffed28a0313e4d.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: adult man in a suit jacket holding an open umbrella",
+   "left: adult man in a jacket holding an open umbrella, standing behind the first",
+   "left: adult man in a jacket with arms crossed",
+   "left: adult man in the background holding an open umbrella",
+   "centre: teenager in a t-shirt and jeans standing in the manhole opening",
+   "right: adult man in a cap holding an open umbrella",
+   "right: adult man in a jacket holding an open umbrella"
+  ]
+ },
+ {
+  "title": "stormwater",
+  "shot": "6.1",
+  "attempt": 2,
+  "asset": "frames/b8aeaa362e5a08a224afd6bfe5939287b49e1d04ee065379113fc17d71238bc0.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: a young adult man standing with a calm expression, holding an umbrella overhead",
+   "centre: an adult woman standing with a shoulder bag, holding an umbrella overhead",
+   "right: an adult man wearing a cap and a backpack, holding an umbrella overhead and a small tote bag in one hand"
+  ]
+ },
+ {
+  "title": "stormwater",
+  "shot": "6.1",
+  "attempt": 3,
+  "asset": "frames/46e44f9d2f5c8571d840cab46d7223ebd36be8d8d9c40ba48f5fcd447b6e1134.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an adult man standing with his hands in his pockets, facing right",
+   "left: an adult woman holding an umbrella, one hand raised near her chin",
+   "centre: an adult man holding an umbrella, standing on the road",
+   "centre: an adult woman holding an umbrella, standing behind the man in the centre",
+   "centre: an adult woman standing waist-deep in an open manhole, looking up",
+   "right: an adult man holding a large umbrella with both hands"
+  ]
+ },
+ {
+  "title": "stormwater",
+  "shot": "6.4",
+  "attempt": 1,
+  "asset": "frames/65287ac9d1d83e53698cea2a49a59dc6e04b979e71dcc87f2501efa4bb7be0ce.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "MR. VAN DER MERWE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult man with short dark hair, looking down and to his left, one hand in his pocket"
+  ]
+ },
+ {
+  "title": "stormwater",
+  "shot": "6.4",
+  "attempt": 2,
+  "asset": "frames/5a6c4831cae781774ab8c7f8c2c55c68d370d8fedf8aa687947c7c7b21a84f19.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "MR. VAN DER MERWE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult man with short hair and a beard, looking down, standing with one hand in his pocket and a ball tucked under his other arm"
+  ]
+ },
+ {
+  "title": "stormwater",
+  "shot": "6.4",
+  "attempt": 3,
+  "asset": "frames/6411b367923879d59c30f605c482bbf071d61d32267efac9bff85f245a65fd2b.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "MR. VAN DER MERWE": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult man with short dark hair and a beard, standing facing forward and looking off to his left"
+  ]
+ },
+ {
+  "title": "the-borrowed-bicycle",
+  "shot": "1.4",
+  "attempt": 1,
+  "asset": "frames/1d1d5c5ee1c016ff1b3e62a3ed6d7f9a5df383b7f810041e0923fa121169b037.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "NALEDI": "female",
+   "TSHEPO": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a child with dark hair, standing facing forward with arms at his sides"
+  ]
+ },
+ {
+  "title": "the-borrowed-bicycle",
+  "shot": "4.1",
+  "attempt": 1,
+  "asset": "frames/b581abae5e48b71c213a3628c7a2cc5178018dcb15923f1b496c8e80517d2d8b.png",
+  "asked": [
+   [
+    0,
+    "NALEDI"
+   ],
+   [
+    1,
+    "TSHEPO"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "NALEDI",
+    "male"
+   ],
+   [
+    1,
+    "TSHEPO",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "NALEDI": "female",
+   "TSHEPO": "male"
+  },
+  "drawn_sex_ok": false,
+  "detail": "person 0 (left, a child with short hair, riding a bicycle and gripping the handlebars): drawn male, but NALEDI is female",
+  "people": [
+   "left: a child with short hair, riding a bicycle and gripping the handlebars",
+   "right: a child with short hair, arms flung out and legs slipping, falling backwards"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "2.4",
+  "attempt": 1,
+  "asset": "frames/e3f3a9800fe40cda25c0163bc87591b7c9d33b76090d35aa71fb7c6a5cef6b53.png",
+  "asked": [
+   [
+    0,
+    "DANIEL"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "DANIEL",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "DANIEL": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an adult man with short hair, smiling, wearing a light vest over a shirt and trousers",
+   "centre: a child with short dark hair, mouth wide open laughing, reaching out an arm",
+   "right: a child with short dark hair, laughing with mouth open, standing behind the other child"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "3.1",
+  "attempt": 1,
+  "asset": "frames/79a27d6f9052fddef86f8cff9f2af8c3f248ac6d34065a51d18c5678c0a66380.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "DANIEL": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an old man with grey hair, lined face, calm expression, seated with hands resting in his lap",
+   "right: a child with short hair and a printed animal picture on the front of the top, seated with hands on the wheel",
+   "centre: an adult seen only from the shoulders up behind the seats, partly hidden by a headrest"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "3.2",
+  "attempt": 3,
+  "asset": "frames/7ac9a4e35de24125c5f074af648db0180280eaee1524f95f13a9e3c1b1c32258.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "DANIEL": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a child with dark hair, sitting upright on the seat with hands clasped in his lap",
+   "right: an old man with grey hair, seated behind the steering wheel with both hands on it"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "3.3",
+  "attempt": 1,
+  "asset": "frames/bfd9a45ff89331992b17f458c8756db37a76eca0747fecf29dc998ca83c496b4.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a child with short hair, sitting and looking off to the right"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "3.3",
+  "attempt": 2,
+  "asset": "frames/c28893d27360b76f29c7551cd8361ea3aab0ebf9a18d71e3bbbab80e93e9a0cd.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a child with short dark hair, wide-eyed and open-mouthed, wearing a hooded top with a small crest on the chest and one hand tucked into the front pocket"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "4.1",
+  "attempt": 1,
+  "asset": "frames/9432653a503119224a3c58765bfab6e0a0a20d9ef527aa6664790787fada7a68.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "AUNTIE BETTY": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: adult standing with her back to the viewer, in a long coat, facing the window",
+   "centre: adult woman leaning at the left window counter, looking out",
+   "right: old woman with white hair standing at the right window counter, hands resting on the ledge"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "4.1",
+  "attempt": 2,
+  "asset": "frames/f60af048469d6c1109b06e59f00b58a8669f61536fcb8c028158fecaef485978.png",
+  "asked": [
+   [
+    0,
+    "AUNTIE BETTY"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "AUNTIE BETTY",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "AUNTIE BETTY": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an old woman standing on the pavement in front of the shop, hands clasped, looking towards the viewer",
+   "centre: an adult woman behind the counter inside the shop, facing out through the doorway",
+   "centre: an adult, only partly visible, standing behind the counter inside the shop",
+   "centre: an adult woman visible through the right-hand window inside the shop, looking out",
+   "right: an adult woman standing on the pavement at the corner of the building, facing away from the viewer"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "4.2",
+  "attempt": 3,
+  "asset": "frames/f9af3a19b0ce6ac317abb9172b377801d1452d921adaaf011bf625f75f586023.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "DANIEL": "male",
+   "AUNTIE BETTY": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an adult man with short dark hair, standing with hands in pockets, looking to the right",
+   "centre: an adult wearing a knit cap and long coat, stepping down from the van while holding a plate",
+   "right: an old man in a knit cap and jacket, walking forward holding a plate"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "4.3",
+  "attempt": 2,
+  "asset": "frames/f5d688c61cca1e55ccb5ef2f586c839879408ab64c9beca6cf0fbec554b3c3e0.png",
+  "asked": [
+   [
+    0,
+    "AUNTIE BETTY"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "AUNTIE BETTY",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "AUNTIE BETTY": "female",
+   "DANIEL": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an old woman in a knit cap and long coat, leaning toward a counter",
+   "centre: an adult, faintly sketched, seen from behind in the background behind the counter",
+   "right: an old man in a knit cap and buttoned shirt, holding out coins"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "4.3",
+  "attempt": 3,
+  "asset": "frames/181b87fbb4d249973b756044512d15e96e04eeff8df6706bc534b00783864c56.png",
+  "asked": [
+   [
+    0,
+    "AUNTIE BETTY"
+   ]
+  ],
+  "seen": [],
+  "sexes": {
+   "AUNTIE BETTY": "female",
+   "DANIEL": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an old woman in a knit hat and heavy coat, one hand raised to her face, looking down",
+   "right: an adult in a knit hat with a pom-pom and a heavy coat, holding banknotes in one hand",
+   "left: an adult in a cap standing behind a shelf opening in the background",
+   "right: an adult with short hair standing behind a shelf opening in the background"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "4.4",
+  "attempt": 1,
+  "asset": "frames/819455c32cd90272bbfff80acaa05b5f2922237ce69920131d0dc9b7b7d78392.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: a teenager with dark hair stepping down out of the open side door of a van, leaning forward",
+   "centre: a teenager with dark hair in a collared sweater, running forward with one arm stretched out toward the small figure",
+   "centre: a small child with short dark hair and a long curved tail, running away with arms out",
+   "centre: an adult seen from behind, standing at the shop counter",
+   "right: an adult standing behind the shop counter, facing the person in front of it"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "4.4",
+  "attempt": 2,
+  "asset": "frames/3c3a8816e00898ce68a9ae73eaecf06620558328ef8d69f56e19ec3b1eabeae5.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {},
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: a child in a tracksuit and trainers running out of the shop doorway",
+   "centre: a child in a t-shirt and shorts running toward the car with one arm stretched out",
+   "left: an adult seen from behind stepping into the shop doorway",
+   "centre: an adult behind a counter inside the shop window",
+   "right: an adult sitting in the driver's seat of the car"
+  ]
+ },
+ {
+  "title": "the-bread-van",
+  "shot": "4.5",
+  "attempt": 2,
+  "asset": "frames/c250e6def4e79a935cdfbb67a9adffffee0b8e3faec66e4311f3bd19370e0086.png",
+  "asked": [
+   [
+    0,
+    "AUNTIE BETTY"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "AUNTIE BETTY",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "AUNTIE BETTY": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an old woman in a knit cap and long coat, leaning forward",
+   "right: a child, a young boy in a collared shirt and trousers, looking up",
+   "right: an adult, a faint distant silhouette in the background"
+  ]
+ },
+ {
+  "title": "the-lighthouse-inspector",
+  "shot": "7.5",
+  "attempt": 1,
+  "asset": "frames/304a781ebc12f32bf1562cb3ee5ad5df325aa19e67c63845469943161a8bd8d3.png",
+  "asked": [
+   [
+    0,
+    "MR. FORTUIN"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "MR. FORTUIN",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "MR. FORTUIN": "male"
+  },
+  "drawn_sex_ok": false,
+  "detail": "person 0 (left, an old woman in profile facing right, with short white hair and lined features, one arm reaching forward): drawn female, but MR. FORTUIN is male",
+  "people": [
+   "left: an old woman in profile facing right, with short white hair and lined features, one arm reaching forward"
+  ]
+ },
+ {
+  "title": "the-night-taxi",
+  "shot": "1.1",
+  "attempt": 1,
+  "asset": "frames/2b0eef2a3321eb7cfead7f8e5376273b0794d38cc27382389e8de7a1577a8fc6.png",
+  "asked": [
+   [
+    1,
+    "THABO"
+   ]
+  ],
+  "seen": [
+   [
+    1,
+    "THABO",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "BONGANI": "male",
+   "THABO": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: an adult man with dark hair, walking with his hands at his sides",
+   "centre: a child holding a crate of round fruit in front of him",
+   "right: an old man with grey hair, leaning forward and holding the crate of fruit",
+   "right: an adult partly visible behind a cart at the right edge"
+  ]
+ },
+ {
+  "title": "the-night-taxi",
+  "shot": "1.1",
+  "attempt": 2,
+  "asset": "frames/419c9cb4f88690653a341680d5d1249ae77d4826ce9ccc426ed2931331533fb3.png",
+  "asked": [
+   [
+    0,
+    "BONGANI"
+   ],
+   [
+    1,
+    "THABO"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "BONGANI",
+    "male"
+   ],
+   [
+    1,
+    "THABO",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "BONGANI": "male",
+   "THABO": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an adult man with short hair, standing with arms at his sides, wearing a buttoned shirt and trousers",
+   "centre: a child with short dark hair, walking, wearing a short-sleeved top and shorts",
+   "right: an old man with a moustache, leaning over a table, wearing a shirt with rolled sleeves, an apron and trousers"
+  ]
+ },
+ {
+  "title": "the-night-taxi",
+  "shot": "1.2",
+  "attempt": 2,
+  "asset": "frames/b5e80ceada9a3390d8f2c08b5b245617eb595cd99472bccfee1327648f6f017e.png",
+  "asked": [
+   [
+    1,
+    "THABO"
+   ]
+  ],
+  "seen": [
+   [
+    1,
+    "THABO",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "BONGANI": "male",
+   "THABO": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: an old man with grey hair and a full grey beard, looking down",
+   "right: a child with short dark hair, looking down at his wrist"
+  ]
+ },
+ {
+  "title": "the-night-taxi",
+  "shot": "2.1",
+  "attempt": 1,
+  "asset": "frames/aef35390f581da77ecdf3af0cc3def40535988c8691c3ca2c85cae13e41f3775.png",
+  "asked": [
+   [
+    0,
+    "THABO"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "THABO",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "BONGANI": "male",
+   "THABO": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: a child in a hooded top, seen in profile, holding a car door open",
+   "left: an adult man standing on the pavement, seen through the car window",
+   "left: an adult man in a coat standing by a shopfront, seen through the car window",
+   "centre: an adult man in a cap leaning over a burning barrel",
+   "centre: an adult man standing beside the burning barrel",
+   "centre: an adult figure walking in the background between the car windows",
+   "right: an adult man standing on the pavement in the background",
+   "right: an adult man in the background near the shopfronts"
+  ]
+ },
+ {
+  "title": "the-night-taxi",
+  "shot": "2.1",
+  "attempt": 2,
+  "asset": "frames/4c118c986256449556c5140c8e7223de67e4c78e10ad1fd1a8177330ac75c9dc.png",
+  "asked": [
+   [
+    0,
+    "THABO"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "THABO",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "BONGANI": "male",
+   "THABO": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: a child with dark hair, seen from the side, leaning with one arm on the side of a truck bed",
+   "centre: an adult man in a light shirt, small in the distance, standing near a burning barrel",
+   "centre: an adult man in a light shirt, facing right, shaking hands with another man",
+   "centre: an adult man in a darker shirt, facing left, shaking hands with the man opposite him",
+   "centre: an adult man in a light shirt, standing and looking toward the men on the right",
+   "right: an adult man in a light shirt, holding out a small item toward the man beside him",
+   "right: an adult man in a light shirt, reaching to take the small item from the man beside him",
+   "right: an adult man seen from behind at the edge of the frame, only his head and shoulder visible"
+  ]
+ },
+ {
+  "title": "the-night-taxi",
+  "shot": "2.3",
+  "attempt": 2,
+  "asset": "frames/2244e3b490e78aeaa377556dd7ad6aa1c8627146736f080b4c516cb6e48aa956.png",
+  "asked": [
+   [
+    1,
+    "THABO"
+   ]
+  ],
+  "seen": [
+   [
+    1,
+    "THABO",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "THABO": "male"
+  },
+  "drawn_sex_ok": false,
+  "detail": "person 1 (right, a child with dark hair, leaning out of the rear side window with one arm resting on the door): drawn female, but THABO is male",
+  "people": [
+   "centre: a child with short dark hair, sitting behind the steering wheel and smiling",
+   "right: a child with dark hair, leaning out of the rear side window with one arm resting on the door"
+  ]
+ },
+ {
+  "title": "the-night-taxi",
+  "shot": "2.4",
+  "attempt": 1,
+  "asset": "frames/b01be177cdfb43c03be0294e979462c6203c1d4b6742f1063fd8066cf50a027b.png",
+  "asked": [
+   [
+    0,
+    "THABO"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "THABO",
+    "unclear"
+   ]
+  ],
+  "sexes": {
+   "BONGANI": "male",
+   "THABO": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "right: a child with dark hair, laughing with an open mouth, leaning out of the car's rear window"
+  ]
+ },
+ {
+  "title": "the-night-taxi",
+  "shot": "5.4",
+  "attempt": 1,
+  "asset": "frames/f0f0a410faf6eb35fd0b069802cb70090432e549cac57d47b0d387de95c77448.png",
+  "asked": [],
+  "seen": [],
+  "sexes": {
+   "UNCLE SIZWE": "male",
+   "BONGANI": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: a teenager with dark hair, wearing a light collared shirt under a dark buttoned waistcoat, looking off to the right",
+   "right: an old man with a full white beard and receding white hair, wearing a light buttoned shirt with a chest pocket, looking toward the left"
+  ]
+ },
+ {
+  "title": "the-night-taxi",
+  "shot": "6.3",
+  "attempt": 2,
+  "asset": "frames/082b48b582a0e52f3dac996aee42a2e0b538f074a2e87ac15757d7267120070e.png",
+  "asked": [
+   [
+    1,
+    "BONGANI"
+   ]
+  ],
+  "seen": [
+   [
+    1,
+    "BONGANI",
+    "male"
+   ]
+  ],
+  "sexes": {
+   "BONGANI": "male"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "left: adult man with a full beard and receding hair, angry, shouting expression",
+   "right: adult man with a full beard and receding hair, laughing with eyes narrowed"
+  ]
+ },
+ {
+  "title": "the-red-kite",
+  "shot": "1.1",
+  "attempt": 2,
+  "asset": "frames/3af1748b061fa20734989550b1905d7d24344d0ee6ada0636f5662684e598f2d.png",
+  "asked": [
+   [
+    0,
+    "LERATO"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "LERATO",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "LERATO": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a child standing facing the viewer, with shoulder-length hair and a short-sleeved dress"
+  ]
+ },
+ {
+  "title": "the-red-kite",
+  "shot": "1.1",
+  "attempt": 3,
+  "asset": "frames/01671324fe8c1ea01c4340f838939504201627d4991bb95655374789a543424b.png",
+  "asked": [
+   [
+    0,
+    "LERATO"
+   ]
+  ],
+  "seen": [
+   [
+    0,
+    "LERATO",
+    "female"
+   ]
+  ],
+  "sexes": {
+   "LERATO": "female"
+  },
+  "drawn_sex_ok": true,
+  "detail": "",
+  "people": [
+   "centre: a child with shoulder-length dark hair, standing facing the viewer with arms at her sides"
+  ]
+ }
+]

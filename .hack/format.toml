@@ -1,0 +1,67 @@
+# Panelwise's clock: the Hackathon kit's MARATHON format (2-4 weeks, distributed), with its phase
+# table replaced by STATUS.md's week timeline, as the kit says to do when the real agenda differs.
+#
+# Hours are real hours from event.toml [time] start (Mon 28 Sep 2026 00:00 SAST), and
+# reference_hours equals the real start-to-deadline span (787 h), so nothing is scaled: each
+# boundary below is the calendar date written beside it. Weeks 1-4 are STATUS.md's weeks; week 5
+# (26-30 Oct) is split into hardening, the freeze with the video, and the final day of buffer
+# (the team submits by 29 Oct). Change STATUS.md's timeline and this table together.
+
+[format]
+name = "marathon"
+label = "MARATHON"
+summary = "2-4 weeks, distributed: contracts first, weekly milestones, handoffs"
+order = 4
+layers = ["common", "judged", "long"]
+runner = "layers"
+
+[clock]
+reference_hours = 787        # Mon 28 Sep 00:00 -> Fri 30 Oct 19:00 SAST (10:00 PDT)
+skeleton_by = 336            # Mon 12 Oct 00:00: US1 end to end in the browser (TASKS.md Phase 2 checkpoint)
+
+[[phase]]
+name = "Week 1: foundations"
+from = 0                     # Mon 28 Sep
+to = 168                     # Mon 5 Oct
+milestone = true
+exit = "Token Factory check (T001), pinned local stack (T002), ComfyUI on a Nebius GPU (T003), llm/script/grounding ported (T004-T006): a sample script extracts on Nemotron with faithfulness and recall"
+
+[[phase]]
+name = "Week 2: US1 storyboard"
+from = 168                   # Mon 5 Oct
+to = 336                     # Mon 12 Oct
+milestone = true
+exit = "US1: script -> grounded storyboard on Nemotron, end to end in the web app (T007-T009); design docs for verify and comic (T010, T011)"
+
+[[phase]]
+name = "Week 3: US2 audit + US4 portraits"
+from = 336                   # Mon 12 Oct
+to = 504                     # Mon 19 Oct
+milestone = true
+exit = "US2: frame audit, re-render and audit log (T020, T021); US4: reference portraits (T012, T025)"
+
+[[phase]]
+name = "Week 4: US3 comic + hosted demo"
+from = 504                   # Mon 19 Oct
+to = 672                     # Mon 26 Oct
+milestone = true
+exit = "US3: comic pages and reader (T022-T024); hosted demo live on Nebius (T030)"
+
+[[phase]]
+name = "Hardening & eval"
+from = 672                   # Mon 26 Oct
+to = 720                     # Wed 28 Oct 00:00
+exit = "no new features; samples and eval numbers (T031, T032), README (T033), placeholder sweep (T036)"
+
+[[phase]]
+name = "Code freeze & video"
+from = 720                   # Wed 28 Oct 00:00
+to = 763                     # Thu 29 Oct 19:00
+freeze = true
+exit = "video on YouTube (T034), history scanned and repo public, submitted on Devpost (T035) by 29 Oct"
+
+[[phase]]
+name = "Buffer & final checks"
+from = 763                   # Thu 29 Oct 19:00
+to = 787                     # Fri 30 Oct 19:00 SAST = 10:00 PDT, submissions close
+exit = "./hack preflight passes; the submission is in before 30 Oct 10:00 PDT (19:00 SAST)"

@@ -1,0 +1,75 @@
+/* Comic reader: one lettered page on the light table, every bubble traceable to its script line
+   (docs/design/web.md §4.5). Same tokens as every screen; the page image is the API's own PNG. */
+.reader {
+  display: grid; grid-template-columns: auto 340px; justify-content: center; gap: 16px 40px;
+  grid-template-areas: "sheet intro" "sheet rail"; grid-template-rows: auto 1fr;
+  max-width: 1440px; margin: 0 auto; padding: 24px 24px 64px; align-items: start;
+}
+.intro { grid-area: intro; }
+.intro h1 { margin: 6px 0 4px; font-size: 40px; }
+.intro .meta { margin: 0; color: var(--ink-2); font-size: 14px; }
+
+/* the page: a printed comic page laid on the desk, sized to the window's height */
+.sheet { grid-area: sheet; display: grid; justify-items: center; gap: 14px; }
+.comic-page {
+  position: relative; margin: 0;
+  height: min(calc(100vh - 56px - 48px - 50px), 1100px); aspect-ratio: 1988 / 3075;
+  background: #fff; box-shadow: var(--shadow-page);
+}
+.comic-page img { display: block; width: 100%; height: 100%; }
+
+/* hit areas over the PNG, placed by the layout JSON's rects as % of the page */
+.panel-hit, .letter-hit { position: absolute; display: block; }
+.panel-hit { text-decoration: none; }
+.panel-hit:hover, .panel-hit:focus-visible { background: rgb(44 110 158 / 0.07); outline: 2px dashed var(--pencil); outline-offset: -2px; }
+.panel-hit .tag {
+  position: absolute; right: 6px; bottom: 6px; padding: 2px 6px; border-radius: var(--radius);
+  background: var(--pencil); color: #fff; font: 700 12px var(--font-body); opacity: 0;
+}
+.panel-hit:hover .tag, .panel-hit:focus-visible .tag { opacity: 1; }
+.letter-hit {
+  border: 0; padding: 0; background: transparent; cursor: pointer; border-radius: 22px;
+}
+.letter-hit.caption { border-radius: 0; }
+.letter-hit:hover { outline: 2px dashed var(--pencil); outline-offset: 3px; }
+/* the signature: the selected line is traced in the storyboard artist's pencil, with its span */
+.letter-hit[aria-pressed="true"] { outline: 3px solid var(--pencil); outline-offset: 4px; }
+.letter-hit[aria-pressed="true"]::after {
+  content: attr(data-span); position: absolute; left: -4px; bottom: calc(100% + 7px);
+  padding: 2px 6px; border-radius: var(--radius); background: var(--pencil); color: #fff;
+  font: 700 11px var(--font-body); white-space: nowrap;
+}
+
+.pager { display: flex; align-items: center; gap: 12px; font: 500 14px var(--font-body); color: var(--ink-2); }
+.pager b { color: var(--ink); }
+.pager .btn { height: 32px; padding: 0 12px; }
+
+/* the rail: where you are, what the selected line says in the script, and the page's lettering */
+.rail { grid-area: rail; position: sticky; top: 16px; display: grid; gap: 16px; }
+.traced {
+  background: var(--paper); box-shadow: var(--shadow-page); padding: 14px 16px 16px;
+  border-left: 4px solid var(--pencil);
+}
+.traced .eyebrow { margin: 0 0 10px; }
+.traced .cue { margin: 0; font: 400 14px var(--font-script); padding-left: 9ch; }
+.traced .quote { margin: 2px 0 10px; }
+.traced .facts { margin: 0 0 12px; font-size: 13px; color: var(--ink-2); }
+.lettering { background: var(--paper); box-shadow: var(--shadow-page); padding: 14px 0 6px; }
+.lettering .eyebrow { margin: 0 16px 8px; }
+.lettering ol { list-style: none; margin: 0; padding: 0; }
+.lettering li { border-top: 1px solid var(--rule); }
+.lettering button {
+  display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; width: 100%; padding: 8px 16px;
+  border: 0; background: none; text-align: left; cursor: pointer; color: var(--ink);
+}
+.lettering button[aria-pressed="true"] { background: var(--pencil-soft); box-shadow: inset 3px 0 0 var(--pencil); }
+.lettering .who { font: 700 12px var(--font-body); letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-2); }
+.lettering .quote { grid-column: 1; font-size: 13px; }
+.lettering .span-ref { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+
+@media (max-width: 900px) {
+  .reader { grid-template-columns: 1fr; grid-template-areas: "intro" "sheet" "rail"; padding: 16px 16px 48px; }
+  .intro h1 { font-size: 32px; }
+  .rail { position: static; }
+  .comic-page { height: auto; width: 100%; }
+}

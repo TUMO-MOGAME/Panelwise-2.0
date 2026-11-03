@@ -1,0 +1,57 @@
+# Local stack: docker compose up --build --wait
+# Deployed, Supabase replaces this Postgres, Render runs the api and Vercel the web app
+# (docs/design/deploy.md). No Redis: job state lives in Postgres.
+# Versions pinned per PLAN.md § Technical Context. Credentials here are local-dev only.
+# Host ports default to the standard ones; override any of them in .env when they are taken.
+
+services:
+  postgres:
+    # Matches the Supabase project's server (17.11, checked 2026-10-02): tests run on what production runs.
+    image: postgres:17.11-trixie
+    environment:
+      POSTGRES_USER: panelwise
+      POSTGRES_PASSWORD: panelwise
+      POSTGRES_DB: panelwise
+    ports: ["${POSTGRES_HOST_PORT:-5432}:5432"]
+    volumes:
+      # Postgres 17 images keep data in /var/lib/postgresql/data. A new volume name, so an old
+      # Postgres 18 volume is never mounted into a 17 server (it would refuse to start).
+      - postgres17-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U panelwise -d panelwise"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: ./services/api
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+asyncpg://panelwise:panelwise@postgres:5432/panelwise
+    ports: ["${API_HOST_PORT:-8000}:8000"]
+    # No command: the image's CMD runs the migrations, then uvicorn, exactly as on Render
+    # (docs/design/deploy.md §6).
+    depends_on:
+      postgres: { condition: service_healthy }
+
+  web:
+    # Only the publishable pair, never env_file: the web container must not hold the secret key
+    # (deploy.md §4). Compose reads them from .env; Next.js inlines NEXT_PUBLIC_* into the
+    # browser bundle at build time, and the server (proxy.ts) reads them again at run time.
+    build:
+      context: ./apps/web
+      args:
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL:-}
+        NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY:-}
+    environment:
+      API_URL: http://api:8000
+      NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL:-}
+      NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY:-}
+    ports: ["${WEB_HOST_PORT:-3000}:3000"]
+    depends_on:
+      api: { condition: service_healthy }
+
+volumes:
+  postgres17-data:

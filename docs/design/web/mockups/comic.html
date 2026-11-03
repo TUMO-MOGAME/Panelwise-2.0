@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comic — Panelwise</title>
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="comic.css">
+</head>
+<body>
+<!-- The comic reader (web.md §4.5). The page image is the-red-kite's committed reference page 1
+     (docs/design/comic/, real layout_geometry + place_lettering + render_pages over test-fixture
+     frames); the hit areas use that page's real Layout JSON rects, in tab order (each panel's link, then its
+     lettering). One line is selected. -->
+<header class="bar">
+  <a class="wordmark" href="projects.html">Panel<span>wise</span></a>
+  <span class="project">the-red-kite</span>
+  <nav aria-label="Project"><a href="script.html">Script</a><a href="storyboard.html">Storyboard</a><a href="comic.html" aria-current="page">Comic</a></nav>
+  <span class="spacer"></span>
+  <a class="btn quiet" href="#">Download PDF</a>
+  <span class="who">judge@panelwise.demo</span>
+</header>
+<main class="reader">
+  <div class="intro">
+    <p class="eyebrow">Comic</p>
+    <h1>the-red-kite</h1>
+    <p class="meta">6 pages · 21 panels · made 9 Oct 2026, 14:20</p>
+  </div>
+  <div class="sheet">
+    <figure class="comic-page" aria-label="Page 1 of 6">
+      <img src="../../comic/the-red-kite-page-1.png" alt="Comic page 1 of 6. Its lettering is listed beside the page.">
+      <a class="panel-hit" href="storyboard-frame.html" style="left:6.04%;top:3.90%;width:87.93%;height:32.07%" aria-label="Shot 1.1 in the storyboard"><span class="tag">Shot 1.1</span></a>
+      <button class="letter-hit caption" style="left:6.84%;top:4.42%;width:14.99%;height:2.24%" aria-pressed="false" data-span="p.2 l.73" aria-label="Scene: FLAT ROOF — DAY (p.2 l.73)"></button>
+      <a class="panel-hit" href="storyboard-frame.html" style="left:6.04%;top:37.14%;width:46.78%;height:25.66%" aria-label="Shot 1.2 in the storyboard"><span class="tag">Shot 1.2</span></a>
+      <button class="letter-hit" style="left:21.88%;top:37.66%;width:19.11%;height:2.24%" aria-pressed="false" data-span="p.2 l.84" aria-label="Lerato: Come on. Come on, wind. (p.2 l.84)"></button>
+      <button class="letter-hit" style="left:21.88%;top:40.72%;width:9.05%;height:2.24%" aria-pressed="false" data-span="p.2 l.90" aria-label="Lerato: No, no, no! (p.2 l.90)"></button>
+      <a class="panel-hit" href="storyboard-frame.html" style="left:54.63%;top:37.14%;width:39.34%;height:25.66%" aria-label="Shot 1.3 in the storyboard"><span class="tag">Shot 1.3</span></a>
+      <button class="letter-hit" style="left:55.43%;top:37.66%;width:16.15%;height:3.45%" aria-pressed="true" data-span="p.2 l.93–94" aria-label="Mokgosi · off panel: Is that my good shirt you are flying? (p.2 l.93–94)"></button>
+      <button class="letter-hit" style="left:55.43%;top:43.80%;width:14.79%;height:2.24%" aria-pressed="false" data-span="p.2 l.97" aria-label="Lerato: It's the wind's fault! (p.2 l.97)"></button>
+      <a class="panel-hit" href="storyboard-frame.html" style="left:6.04%;top:63.97%;width:87.93%;height:32.13%" aria-label="Shot 2.1 in the storyboard"><span class="tag">Shot 2.1</span></a>
+      <button class="letter-hit caption" style="left:6.84%;top:64.49%;width:18.81%;height:2.24%" aria-pressed="false" data-span="p.2 l.99" aria-label="Scene: MOKGOSI'S WORKSHOP (p.2 l.99)"></button>
+    </figure>
+    <nav class="pager" aria-label="Pages">
+      <button class="btn quiet" disabled>← Previous</button>
+      <span>Page <b>1</b> of 6</span>
+      <button class="btn quiet">Next →</button>
+    </nav>
+  </div>
+  <aside class="rail" aria-label="Lettering">
+    <section class="traced" aria-live="polite">
+      <p class="eyebrow">From the script</p>
+      <p class="cue">MOKGOSI (O.S.)</p>
+      <p class="quote">Is that my good shirt you are flying?</p>
+      <p class="facts"><span class="span-ref">p.2 l.93–94</span> · off panel · shot 1.3</p>
+      <a class="btn quiet" href="storyboard-frame.html">Open shot 1.3 in the storyboard</a>
+    </section>
+    <section class="lettering">
+      <p class="eyebrow">Lettering on this page</p>
+      <ol>
+          <li><button aria-pressed="false"><span class="who">Scene</span><span class="quote">FLAT ROOF — DAY</span><span class="span-ref">p.2 l.73</span></button></li>
+          <li><button aria-pressed="false"><span class="who">Lerato</span><span class="quote">Come on. Come on, wind.</span><span class="span-ref">p.2 l.84</span></button></li>
+          <li><button aria-pressed="false"><span class="who">Lerato</span><span class="quote">No, no, no!</span><span class="span-ref">p.2 l.90</span></button></li>
+          <li><button aria-pressed="true"><span class="who">Mokgosi · off panel</span><span class="quote">Is that my good shirt you are flying?</span><span class="span-ref">p.2 l.93–94</span></button></li>
+          <li><button aria-pressed="false"><span class="who">Lerato</span><span class="quote">It's the wind's fault!</span><span class="span-ref">p.2 l.97</span></button></li>
+          <li><button aria-pressed="false"><span class="who">Scene</span><span class="quote">MOKGOSI'S WORKSHOP</span><span class="span-ref">p.2 l.99</span></button></li>
+      </ol>
+    </section>
+  </aside>
+</main>
+</body></html>

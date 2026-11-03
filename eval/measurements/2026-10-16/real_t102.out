@@ -1,0 +1,48 @@
+ Container panelwise-api-run-334e29210194 Creating 
+ Container panelwise-api-run-334e29210194 Created 
+511 audits in 11 runs; the presence agent runs on 77
+presence agent on AUNTIE BETTY failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on MR. DUBE failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on OFFICER MOLOI failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on OFFICER VAN WYK failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on PRIYA failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on THEO failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on DANIEL failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+sex agent on person 0 (AUNTIE BETTY) failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on LINDI failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+presence agent on BONGANI failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+pass final-whistle      2.2   a1 asked=[(0, 'LINDI')] seen=[[0, 'LINDI', 'female']] 
+pass final-whistle      2.2   a2 asked=[(0, 'LINDI')] seen=[[0, 'LINDI', 'female']] 
+pass final-whistle      2.4   a3 asked=[(0, 'LINDI')] seen=[[0, 'LINDI', 'female']] 
+pass final-whistle      6.2   a1 asked=[(0, 'PALESA')] seen=[[0, 'PALESA', 'female']] 
+pass load-shedding      2.1   a1 asked=[(0, 'LUCKY')] seen=[[0, 'LUCKY', 'unclear']] 
+pass load-shedding      5.2   a1 asked=[(0, 'JABU'), (0, 'PIETER')] seen=[[0, 'JABU', 'male'], [0, 'PIETER', 'male']] 
+pass lost-property      2.1   a2 asked=[(0, 'ZANELE')] seen=[[0, 'ZANELE', 'female']] 
+pass lost-property      2.3   a3 asked=[(0, 'ZANELE')] seen=[[0, 'ZANELE', 'female']] 
+pass lost-property      4.4   a2 asked=[(0, 'MR. DUBE')] seen=[[0, 'MR. DUBE', 'male']] 
+pass lost-property      6.1   a3 asked=[(0, 'MR. DUBE')] seen=[[0, 'MR. DUBE', 'male']] 
+pass lost-property      8.4   a2 asked=[(0, 'ZANELE')] seen=[[0, 'ZANELE', 'female']] 
+pass lost-property      9.4   a1 asked=[(1, 'MR. DUBE')] seen=[[1, 'MR. DUBE', 'male']] 
+pass market-day         3.2   a1 asked=[(0, 'KAMO')] seen=[[0, 'KAMO', 'male']] 
+FAIL sipho-and-siphokaz 2.1   a2 asked=[(0, 'MAMA THEMBI')] seen=[[0, 'MAMA THEMBI', 'male']] person 0 (centre, an old man with white hair, hands in his pockets, looking toward the younger man): drawn male, but MAMA THEMBI is female
+pass stormwater         2.2   a1 asked=[(0, 'MR. VAN DER MERWE')] seen=[[0, 'MR. VAN DER MERWE', 'male']] 
+pass stormwater         2.2   a2 asked=[(1, 'MR. VAN DER MERWE')] seen=[[1, 'MR. VAN DER MERWE', 'male']] 
+pass stormwater         5.1   a2 asked=[(0, 'MR. VAN DER MERWE')] seen=[[0, 'MR. VAN DER MERWE', 'male']] 
+FAIL the-borrowed-bicyc 4.1   a1 asked=[(0, 'NALEDI'), (1, 'TSHEPO')] seen=[[0, 'NALEDI', 'male'], [1, 'TSHEPO', 'male']] person 0 (left, a child with short hair, riding a bicycle and gripping the handlebars): drawn male, but NALEDI is female
+pass the-bread-van      2.4   a1 asked=[(0, 'DANIEL')] seen=[[0, 'DANIEL', 'male']] 
+pass the-bread-van      4.1   a2 asked=[(0, 'AUNTIE BETTY')] seen=[[0, 'AUNTIE BETTY', 'female']] 
+pass the-bread-van      4.3   a2 asked=[(0, 'AUNTIE BETTY')] seen=[[0, 'AUNTIE BETTY', 'female']] 
+pass the-bread-van      4.3   a3 asked=[(0, 'AUNTIE BETTY')] seen=[] 
+pass the-bread-van      4.5   a2 asked=[(0, 'AUNTIE BETTY')] seen=[[0, 'AUNTIE BETTY', 'female']] 
+FAIL the-lighthouse-ins 7.5   a1 asked=[(0, 'MR. FORTUIN')] seen=[[0, 'MR. FORTUIN', 'female']] person 0 (left, an old woman in profile facing right, with short white hair and lined features, one arm reaching forward): drawn female, but MR. FORTUIN is male
+pass the-night-taxi     1.1   a1 asked=[(1, 'THABO')] seen=[[1, 'THABO', 'male']] 
+pass the-night-taxi     1.1   a2 asked=[(0, 'BONGANI'), (1, 'THABO')] seen=[[0, 'BONGANI', 'male'], [1, 'THABO', 'male']] 
+pass the-night-taxi     1.2   a2 asked=[(1, 'THABO')] seen=[[1, 'THABO', 'male']] 
+pass the-night-taxi     2.1   a1 asked=[(0, 'THABO')] seen=[[0, 'THABO', 'male']] 
+pass the-night-taxi     2.1   a2 asked=[(0, 'THABO')] seen=[[0, 'THABO', 'male']] 
+FAIL the-night-taxi     2.3   a2 asked=[(1, 'THABO')] seen=[[1, 'THABO', 'female']] person 1 (right, a child with dark hair, leaning out of the rear side window with one arm resting on the door): drawn female, but THABO is male
+pass the-night-taxi     2.4   a1 asked=[(0, 'THABO')] seen=[[0, 'THABO', 'unclear']] 
+pass the-night-taxi     6.3   a2 asked=[(1, 'BONGANI')] seen=[[1, 'BONGANI', 'male']] 
+pass the-red-kite       1.1   a2 asked=[(0, 'LERATO')] seen=[[0, 'LERATO', 'female']] 
+pass the-red-kite       1.1   a3 asked=[(0, 'LERATO')] seen=[[0, 'LERATO', 'female']] 
+frames 77; pairs asked 37, answered 36 (failed 1); DRAWN_SEX failed on 4 frames

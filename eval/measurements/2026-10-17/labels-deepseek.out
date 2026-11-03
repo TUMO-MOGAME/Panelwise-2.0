@@ -1,0 +1,138 @@
+final-whistle          1.4   a1 right WITHHELD unscripted_person,no_character
+final-whistle          2.1   a1 right shown    -
+final-whistle          2.2   a1 right shown    unscripted_person
+final-whistle          2.3   a1 wrong WITHHELD unscripted_person,no_character
+final-whistle          3.3   a1 wrong shown    -
+final-whistle          4.3   a1 wrong WITHHELD no_character
+final-whistle          5.3   a1 right shown    -
+sex agent on person 1 (PALESA) failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+final-whistle          6.1   a1 right shown    -
+final-whistle          6.2   a1 right shown    unscripted_person
+load-shedding          2.1   a1 wrong shown    -
+load-shedding          5.2   a1 right shown    -
+lost-property          2.1   a1 right WITHHELD unscripted_person,no_character
+lost-property          2.2   a2 wrong shown    unscripted_person
+lost-property          3.2   a1 wrong shown    unscripted_person
+lost-property          5.1   a1 right shown    unscripted_person,setting
+lost-property          5.3   a1 right shown    unscripted_person
+lost-property          7.3   a1 wrong shown    unscripted_person,setting
+presence agent on OFFICER MOLOI failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+lost-property          7.4   a1 wrong WITHHELD unscripted_person,no_character
+lost-property          9.1   a3 wrong shown    unscripted_person
+lost-property          9.2   a3 wrong shown    unscripted_person
+lost-property          9.4   a1 wrong shown    unscripted_person
+lost-property          9.4   a2 wrong shown    unscripted_person
+presence agent on AMAHLE failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+lost-property          9.6   a2 wrong WITHHELD unscripted_person,no_character
+lost-property          11.5  a1 wrong shown    unscripted_person,unscripted_object
+lost-property          11.5  a2 wrong shown    unscripted_person
+lost-property          11.5  a3 wrong shown    -
+lost-property          12.2  a1 right shown    unscripted_person,setting
+lost-property          12.2  a2 wrong shown    -
+market-day             2.1   a1 right WITHHELD no_character
+market-day             3.2   a1 right shown    unscripted_person
+market-day             4.2   a1 wrong shown    unscripted_person
+market-day             5.2   a1 wrong shown    unscripted_person
+sipho-and-siphokazi    2.1   a1 right shown    unscripted_person,setting
+sipho-and-siphokazi    2.1   a2 wrong shown    unscripted_person,setting
+sipho-and-siphokazi    2.3   a1 right shown    unscripted_person
+sipho-and-siphokazi    7.1   a1 wrong shown    -
+sipho-and-siphokazi    7.1   a3 wrong shown    setting
+sipho-and-siphokazi    9.2   a3 wrong shown    unscripted_person
+stormwater             2.2   a1 right shown    -
+stormwater             3.1   a2 wrong shown    unscripted_person,unscripted_object
+stormwater             5.1   a1 wrong WITHHELD setting,no_character
+stormwater             6.1   a1 right shown    -
+stormwater             6.4   a1 wrong WITHHELD unscripted_person,no_character
+the-borrowed-bicycle   1.1   a1 wrong shown    unscripted_person
+the-borrowed-bicycle   1.2   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   1.3   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   2.1   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   2.2   a1 right shown    -
+the-borrowed-bicycle   2.3   a1 wrong shown    unscripted_person
+the-borrowed-bicycle   3.1   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   3.2   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   3.3   a1 right shown    -
+the-borrowed-bicycle   4.1   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   4.2   a1 wrong shown    -
+the-borrowed-bicycle   4.3   a1 wrong WITHHELD drawn_sex
+the-borrowed-bicycle   5.1   a1 wrong WITHHELD unscripted_person,drawn_sex
+the-borrowed-bicycle   5.2   a1 wrong shown    unscripted_person
+the-borrowed-bicycle   5.4   a1 right shown    -
+the-borrowed-bicycle   5.5   a1 weak  shown    -
+the-bread-van          1.2   a3 wrong shown    unscripted_person
+the-bread-van          1.3   a1 wrong shown    -
+the-bread-van          1.3   a2 wrong shown    unscripted_person
+the-bread-van          2.2   a1 wrong shown    setting
+the-bread-van          2.4   a1 wrong shown    unscripted_person,setting
+the-bread-van          3.1   a1 right shown    unscripted_person
+the-bread-van          3.3   a1 right shown    unscripted_person
+the-bread-van          4.1   a1 wrong shown    unscripted_person
+presence agent on THEO failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+the-bread-van          4.4   a1 wrong WITHHELD unscripted_person,no_character
+sex agent on person 0 (AUNTIE BETTY) failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+the-bread-van          4.5   a1 wrong shown    unscripted_person,setting
+the-lighthouse-inspect 1.1   a1 right shown    -
+sex agent on person 0 (MS. NAIDOO) failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+the-lighthouse-inspect 2.1   a1 right shown    -
+the-lighthouse-inspect 2.2   a1 weak  shown    -
+the-lighthouse-inspect 2.3   a1 weak  shown    -
+the-lighthouse-inspect 3.1   a1 right shown    -
+the-lighthouse-inspect 3.2   a1 right shown    -
+the-lighthouse-inspect 3.3   a1 right shown    -
+the-lighthouse-inspect 3.4   a1 right shown    -
+the-lighthouse-inspect 4.1   a1 weak  shown    unscripted_person
+the-lighthouse-inspect 4.2   a1 weak  shown    unscripted_person
+the-lighthouse-inspect 4.3   a1 right shown    -
+the-lighthouse-inspect 5.1   a1 weak  shown    -
+the-lighthouse-inspect 5.2   a1 right shown    -
+the-lighthouse-inspect 5.3   a1 right shown    -
+the-lighthouse-inspect 6.1   a1 weak  shown    -
+the-lighthouse-inspect 6.2   a1 right shown    -
+the-lighthouse-inspect 6.3   a1 right shown    -
+the-lighthouse-inspect 7.1   a1 weak  shown    -
+the-lighthouse-inspect 7.2   a1 right shown    -
+the-lighthouse-inspect 7.3   a1 weak  shown    unscripted_person
+the-lighthouse-inspect 7.4   a1 weak  shown    -
+the-lighthouse-inspect 7.5   a1 wrong WITHHELD unscripted_person,no_character
+the-lighthouse-inspect 8.1   a1 weak  shown    unscripted_person
+the-lighthouse-inspect 9.1   a1 weak  shown    -
+the-lighthouse-inspect 9.2   a1 right shown    unscripted_object
+the-lighthouse-inspect 9.3   a1 right shown    -
+the-night-taxi         1.1   a1 right shown    -
+the-night-taxi         1.2   a3 wrong shown    unscripted_person
+sex agent on person 0 (THABO) failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+the-night-taxi         1.4   a1 wrong shown    unscripted_person
+sex agent on person 0 (THABO) failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+the-night-taxi         2.1   a1 right shown    -
+the-night-taxi         2.3   a2 wrong shown    unscripted_person
+sex agent on person 0 (THABO) failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+the-night-taxi         2.4   a1 right shown    -
+the-night-taxi         5.1   a1 wrong shown    unscripted_person
+sex agent on person 1 (UNCLE SIZWE) failed: deepseek-ai/DeepSeek-V4.1-Flash spent its budget thinking and returned no content (finish_reason=length). Call with thinking=False or raise max_tokens.
+the-night-taxi         5.1   a2 wrong shown    unscripted_person
+the-night-taxi         5.4   a1 wrong WITHHELD unscripted_person,no_character
+the-night-taxi         6.3   a1 wrong shown    unscripted_person
+the-night-taxi         6.3   a2 wrong shown    unscripted_person
+the-red-kite           2.2   a1 right shown    -
+the-red-kite           4.1   a1 wrong shown    unscripted_person
+the-red-kite           5.2   a1 wrong shown    -
+
+wrong:  57 frames, caught 17, shown 40
+right:  40 frames, false alarms 3, shown 37
+weak :  12 frames, withheld 0, shown 12
+
+fault: frames, withheld, the hard checks that failed on them
+  absent            8   4  unscripted_person 4, no_character 4, setting 1
+  age               2   2  unscripted_person 2, no_character 2
+  drawn_sex        15   9  unscripted_person 8, drawn_sex 8, setting 1, unscripted_object 1, no_character 1
+  drawn_twice       8   1  unscripted_person 8, setting 1, no_character 1
+  empty_frame       3   0  
+  extra_person      3   1  unscripted_person 2, drawn_sex 1
+  missing_action    4   0  unscripted_person 1
+  missing_prop      5   0  unscripted_person 1
+  setting           3   0  setting 3, unscripted_person 2
+  split_panels     23   1  unscripted_person 17, no_character 1, unscripted_object 1, setting 1
+  unclear_sex       2   0  unscripted_person 1
+
+ladder: drawn_sex,no_character; models deepseek-ai/DeepSeek-V4.1-Flash,nvidia/nemotron-3-super-120b-a12b
