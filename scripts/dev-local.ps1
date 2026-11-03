@@ -39,17 +39,23 @@ $apiEnv = @"
 "@
 if (-not $TextOnly) { $apiEnv += "; `$env:QVAC_DRAW_MODEL = 'draw'" }
 
+# Each window also writes its output to .local-data\logs\{qvac,api,web}.log, to follow a run.
+# cmd merges stderr into stdout first, so PowerShell 5.1 copies plain lines, not error records.
+$logs = "$root\.local-data\logs"
+New-Item -ItemType Directory -Force $logs | Out-Null
+function Tee-Log($name) { "2>&1\`" | Tee-Object -FilePath '$logs\$name.log' -Append" }
+
 $qvacUp = $false
 try { $qvacUp = (Invoke-WebRequest "http://127.0.0.1:$qvacPort/v1/models" -UseBasicParsing -TimeoutSec 2).StatusCode -eq 200 } catch {}
 if (-not $qvacUp) {
   Start-Process powershell -WorkingDirectory $root -ArgumentList "-NoExit", "-Command",
-    "fnm env --shell powershell | Out-String | Invoke-Expression; fnm use 22.21.1; qvac serve --openai --port $qvacPort"
+    "fnm env --shell powershell | Out-String | Invoke-Expression; fnm use 22.21.1; cmd /c \`"qvac serve --openai --port $qvacPort $(Tee-Log qvac)"
 }
 
 Start-Process powershell -WorkingDirectory "$root\services\api" -ArgumentList "-NoExit", "-Command",
-  "$apiEnv; uv run alembic upgrade head; uv run uvicorn app.main:app --host 127.0.0.1 --port 8000"
+  "$apiEnv; `$env:PYTHONUNBUFFERED = '1'; uv run alembic upgrade head; cmd /c \`"uv run uvicorn app.main:app --host 127.0.0.1 --port 8000 $(Tee-Log api)"
 
 Start-Process powershell -WorkingDirectory "$root\apps\web" -ArgumentList "-NoExit", "-Command",
-  "`$env:PANELWISE_LOCAL_TOKEN = '$token'; `$env:API_URL = 'http://localhost:8000'; pnpm dev"
+  "`$env:PANELWISE_LOCAL_TOKEN = '$token'; `$env:API_URL = 'http://localhost:8000'; cmd /c \`"pnpm dev $(Tee-Log web)"
 
 Write-Host "Starting. Open http://localhost:3000 in a few seconds (the first model call loads Qwen3)."
