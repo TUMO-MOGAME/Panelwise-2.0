@@ -28,12 +28,12 @@ docker compose -f "$root\docker-compose.yml" up -d --wait postgres
 # Every model call goes to QVAC on this machine. Local mode itself drops every cloud key a .env
 # may carry (Nebius, fal.ai, Supabase) and refuses a model server or database elsewhere
 # (app/core/config.py): `$env:X = ''` would not do it, as PowerShell deletes the variable instead.
+# Both text tiers on Qwen3 4B (eval/README.md compares it with 1.7B); one loaded model serves
+# both. One call at a time, as one local server answers one at a time.
 $apiEnv = @"
 `$env:DATABASE_URL = 'postgresql+asyncpg://panelwise:panelwise@localhost:$pgPort/panelwise'
 `$env:PANELWISE_LOCAL_TOKEN = '$token'
 `$env:NEBIUS_BASE_URL = 'http://127.0.0.1:$qvacPort/v1'
-# Both text tiers on Qwen3 4B: it extracts and plans better than 1.7B (eval/README.md), and one
-# loaded model serves both. One call at a time, as one local server answers one at a time.
 `$env:NEBIUS_MODEL_FAST = 'qwen3-4b'
 `$env:NEBIUS_MODEL_REASONING = 'qwen3-4b'
 `$env:LLM_CONCURRENCY = '1'
