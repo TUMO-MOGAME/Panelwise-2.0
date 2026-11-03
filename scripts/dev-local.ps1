@@ -6,6 +6,10 @@
 # Then open http://localhost:3000. Close the windows (and `docker compose stop postgres`) to stop.
 # Needs: Docker Desktop running, fnm with Node 22.21.1 (QVAC) and Node 24 (web), uv, pnpm.
 
+#   -TextOnly   read, extract and plan only: no drawing (e.g. before FLUX.2 klein is downloaded)
+
+param([switch]$TextOnly)
+
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
 
@@ -32,8 +36,8 @@ $apiEnv = @"
 `$env:NEBIUS_MODEL_REASONING = 'reasoning'
 `$env:LLM_THINKING_FIELD = 'reasoning_budget'
 `$env:LLM_REQUEST_TIMEOUT_S = '900'
-`$env:QVAC_DRAW_MODEL = 'draw'
 "@
+if (-not $TextOnly) { $apiEnv += "; `$env:QVAC_DRAW_MODEL = 'draw'" }
 
 $qvacUp = $false
 try { $qvacUp = (Invoke-WebRequest "http://127.0.0.1:$qvacPort/v1/models" -UseBasicParsing -TimeoutSec 2).StatusCode -eq 200 } catch {}
