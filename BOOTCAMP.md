@@ -25,13 +25,30 @@ output, never trust the model. Running it locally adds the bootcamp's three reas
 ## Steps
 
 1. **Run it as it is**, locally with `docker compose`, on cloud keys, to get a baseline. *Optional if the keys are gone.*
-2. **`qvac.config.json`** with aliases: `fast` = `QWEN3_1_7B_INST_Q4`, `reasoning` = `QWEN3_4B_INST_Q4_K_M`,
-   `vision` = `QWEN3_5_4B_MULTIMODAL_Q4_K_M`, `draw` = `FLUX_2_KLEIN_4B_Q4_0`. Run `qvac configure` to check the exact entries.
-3. **Point the LLM client at QVAC.** Make the provider name neutral, check JSON output and `<think>` handling against Qwen3,
-   and re-run the grounding and shot-planning evals (`eval/`) to **measure** faithfulness and recall against the Nemotron numbers.
+2. ✅ **`qvac.config.json`** (2026-11-03): `fast` = `QWEN3_1_7B_INST_Q4`, `reasoning` = `QWEN3_4B_INST_Q4_K_M`, both loaded
+   on first use, one load at a time. Run `qvac serve --openai --port 11435` from the repo root. Port 11435 because Ollama
+   holds QVAC's default 11434 on this laptop. Free a model's memory with `curl -X DELETE http://127.0.0.1:11435/v1/models/fast`.
+   `vision` and `draw` aren't in it yet (see steps 4 and 5).
+3. 🔄 **Point the LLM client at QVAC.** Done (2026-11-03): `LLM_THINKING_FIELD=reasoning_budget` (QVAC ignores vLLM's
+   `chat_template_kwargs`), no key needed for a loopback URL, and the QVAC block in `.env.example`.
+   `tools/qvac_smoke.py` runs a JSON call through the app's own client. **First local results** (warm call, 32 GB Intel
+   Core Ultra 7 265U, Vulkan iGPU; tok/s includes prompt processing):
+
+   | Tier | Model | Cold (load + call) | Warm | Tok/s (warm) | Answer |
+   |---|---|---|---|---|---|
+   | fast | Qwen3 1.7B Q4_0 | 40.2 s | 2.2 s | 17.3 | valid JSON, kept "(60s, oilskin coat)" in the name |
+   | reasoning | Qwen3 4B Q4_K_M | 17.6 s | 3.3 s | 8.0 | valid JSON, clean ("Mara") |
+
+   Still to do: re-run the grounding and shot-planning evals (`eval/`) to **measure** faithfulness and recall against the
+   Nemotron numbers. Make the provider name neutral (`NEBIUS_*` → `LLM_*`) once the evals are in.
+   Note: `QWEN3_4B_INST` is an instruct-only build and does no thinking, so `reasoning` thinks less than Nemotron did.
+   If the evals show it matters, try a thinking-capable Qwen3 build.
 4. **`QvacRenderer`**, then time a frame on this laptop (Intel iGPU, Vulkan). If it's too slow, drop the size or steps,
    or split the work across machines with QVAC RPC.
-5. **Frame audit on a local VL model**, re-scored on the 109 hand-labelled frames.
+4b. FLUX.2 [klein] needs two companions besides `FLUX_2_KLEIN_4B_Q4_0`: a Qwen3 4B text encoder (`QWEN3_4B_Q4_K_M`) and
+   `FLUX_2_KLEIN_4B_VAE`. See the diffusion example in `../reference/qvac-llms-full.txt`.
+5. **Frame audit on a local VL model**, re-scored on the 109 hand-labelled frames. **`qvac serve`'s chat endpoint silently
+   drops image parts**, so the vision tier can't go through it. It needs the SDK directly (a small Node sidecar) instead.
 6. **Narration** (T113) with QVAC TTS. Optional: South African languages via AfriSLM translation.
 7. **Week 2 (WDK):** to decide. One idea is to **pay a storyboard artist or co-writer in USD₮** for a finished board, with a
    human approving.

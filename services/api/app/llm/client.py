@@ -11,7 +11,7 @@ import re
 from collections.abc import Awaitable, Callable, Mapping, Sequence
 from dataclasses import dataclass
 from enum import StrEnum
-from typing import Any, Self, cast
+from typing import Any, Literal, Self, cast
 
 import httpx2
 
@@ -20,6 +20,7 @@ from app.core.config import Settings
 logger = logging.getLogger(__name__)
 
 type Message = dict[str, Any]
+type ThinkingField = Literal["chat_template_kwargs", "reasoning_budget"]
 
 _RETRYABLE = frozenset({429, 500, 502, 503, 504})
 _MAX_RETRY_AFTER_S = 30.0
@@ -95,24 +96,27 @@ class NebiusChatModel:
         sleep: Callable[[float], Awaitable[None]] = asyncio.sleep,
         on_usage: Callable[[ChatResult], Awaitable[None]] | None = None,
         vision_thinking: bool | None = None,
+        thinking_field: ThinkingField = "chat_template_kwargs",
     ) -> None:
         self._models = dict(models)
         # T105 (vision-model.md §6): the vision tier's thinking default; None sends nothing.
         self._vision_thinking = vision_thinking
+        self._thinking_field: ThinkingField = thinking_field
         # T069 (limits.md §6): awaited after each answer, to count the month's tokens.
         self.on_usage = on_usage
         self._max_attempts = max_attempts
         self._sleep = sleep
         self._client = httpx2.AsyncClient(
             base_url=base_url.rstrip("/"),
-            headers={"Authorization": f"Bearer {api_key}"},
+            # A local QVAC server takes no key, so none is sent.
+            headers={"Authorization": f"Bearer {api_key}"} if api_key else {},
             timeout=httpx2.Timeout(timeout_s, connect=connect_timeout_s),
             transport=transport,
         )
 
     @classmethod
     def from_settings(cls, settings: Settings) -> Self:
-        if not settings.nebius_api_key:
+        if not settings.nebius_api_key and not _is_loopback(settings.nebius_base_url):
             raise LLMConfigError("NEBIUS_API_KEY is not set (see .env.example).")
         return cls(
             api_key=settings.nebius_api_key,
@@ -126,6 +130,7 @@ class NebiusChatModel:
             connect_timeout_s=settings.llm_connect_timeout_s,
             max_attempts=settings.llm_max_attempts,
             vision_thinking=settings.nebius_vision_thinking,
+            thinking_field=settings.llm_thinking_field,
         )
 
     def model_for(self, tier: Tier) -> str:
@@ -157,7 +162,10 @@ class NebiusChatModel:
         default = self._vision_thinking if tier is Tier.VISION else _THINKING_DEFAULT[tier]
         think = default if thinking is None else thinking
         if think is not None:
-            body["chat_template_kwargs"] = {"enable_thinking": think}
+            if self._thinking_field == "reasoning_budget":
+                body["reasoning_budget"] = think
+            else:
+                body["chat_template_kwargs"] = {"enable_thinking": think}
 
         data = await self._post(body, model)
         try:
@@ -214,6 +222,10 @@ class NebiusChatModel:
         raise LLMRequestError(
             f"{model}: gave up after {self._max_attempts} attempts ({reason})", status
         )
+
+
+def _is_loopback(url: str) -> bool:
+    return httpx2.URL(url).host in ("localhost", "127.0.0.1", "::1")
 
 
 def _retry_after(response: httpx2.Response) -> float | None:

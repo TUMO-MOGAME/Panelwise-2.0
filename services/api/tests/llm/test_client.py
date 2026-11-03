@@ -213,6 +213,46 @@ def test_from_settings_refuses_a_missing_api_key() -> None:
         NebiusChatModel.from_settings(Settings(_env_file=None, nebius_api_key=""))  # pyright: ignore[reportCallIssue]
 
 
+# Panelwise 2.0: QVAC's `qvac serve --openai` on this machine (BOOTCAMP.md step 3).
+QVAC_URL = "http://localhost:11434/v1"
+
+
+@pytest.mark.parametrize(("tier", "think"), [(Tier.FAST, False), (Tier.REASONING, True)])
+async def test_qvac_thinking_field_sends_reasoning_budget_only(tier: Tier, think: bool) -> None:
+    rec = Recorder(ok(completion()))
+    model = NebiusChatModel(
+        api_key="",
+        base_url=QVAC_URL,
+        models=MODELS,
+        transport=httpx2.MockTransport(rec),
+        sleep=Sleeps(),
+        thinking_field="reasoning_budget",
+    )
+    await model.chat(HI, tier)
+
+    assert rec.body()["reasoning_budget"] is think
+    assert "chat_template_kwargs" not in rec.body()
+    assert "authorization" not in rec.requests[0].headers
+
+
+@pytest.mark.parametrize("url", [QVAC_URL, "http://127.0.0.1:11434/v1"])
+async def test_from_settings_needs_no_key_for_a_local_server(url: str) -> None:
+    settings = Settings(
+        _env_file=None,  # pyright: ignore[reportCallIssue]
+        nebius_api_key="",
+        nebius_base_url=url,
+        llm_thinking_field="reasoning_budget",
+    )
+    rec = Recorder(ok(completion()))
+    model = NebiusChatModel.from_settings(settings)
+    model._client = httpx2.AsyncClient(  # pyright: ignore[reportPrivateUsage]
+        base_url=url, transport=httpx2.MockTransport(rec)
+    )
+    await model.chat(HI)
+
+    assert rec.body()["reasoning_budget"] is False
+
+
 def test_from_settings_maps_each_tier_to_its_setting() -> None:
     settings = Settings(
         _env_file=None,  # pyright: ignore[reportCallIssue]

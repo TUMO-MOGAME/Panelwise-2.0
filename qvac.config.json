@@ -1,0 +1,18 @@
+{
+  "serve": {
+    "models": {
+      "fast": {
+        "model": "QWEN3_1_7B_INST_Q4",
+        "default": true,
+        "preload": false,
+        "config": { "ctx_size": 8192 }
+      },
+      "reasoning": {
+        "model": "QWEN3_4B_INST_Q4_K_M",
+        "preload": false,
+        "config": { "ctx_size": 8192 }
+      }
+    },
+    "load": { "concurrency": 1 }
+  }
+}

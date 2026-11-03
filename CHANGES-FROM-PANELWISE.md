@@ -16,7 +16,7 @@ The bootcamp plan, with what's done and what isn't yet, is in [BOOTCAMP.md](BOOT
 
 | Area | Panelwise | Panelwise 2.0 |
 |---|---|---|
-| Text models (fast / reasoning tiers) | Nemotron on Nebius Token Factory | *planned:* Qwen3 via `qvac serve --openai` on the device |
+| Text models (fast / reasoning tiers) | Nemotron on Nebius Token Factory | **Working (2026-11-03):** Qwen3 1.7B / 4B via `qvac serve --openai` on the device (`qvac.config.json`, `LLM_THINKING_FIELD`); evals not yet re-run |
 | Vision model (frame audit) | Nemotron 3.5 Super VL | *planned:* a QVAC multimodal model (Qwen3.5 / Qwen3-VL) |
 | Drawing | FLUX.2 [klein] 4B on fal.ai | *planned:* FLUX.2 [klein] 4B **locally** through QVAC diffusion |
 | Narration (was a stretch, T113, ElevenLabs) | not built | *planned:* QVAC text-to-speech |
