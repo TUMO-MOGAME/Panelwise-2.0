@@ -246,11 +246,13 @@ def result_path(day: str) -> Path:
     return path
 
 
-async def _one(model: NebiusChatModel, screenplay: Screenplay, sample: str, run: int) -> EvalRun:
+async def _one(
+    model: NebiusChatModel, screenplay: Screenplay, sample: str, run: int, concurrency: int = 4
+) -> EvalRun:
     start = time.monotonic()
     try:
-        extraction = await extract(model, screenplay)
-        plan = await plan_shots(model, screenplay, extraction)
+        extraction = await extract(model, screenplay, concurrency=concurrency)
+        plan = await plan_shots(model, screenplay, extraction, concurrency=concurrency)
     except Exception as exc:
         return failed_run(sample, run, f"{type(exc).__name__}: {exc}", time.monotonic() - start)
     seconds = round(time.monotonic() - start, 1)
@@ -309,7 +311,7 @@ async def main(argv: list[str]) -> int:
     try:
         for sample in samples:  # sequential: no rate-limit surprises
             for n in range(1, runs + 1):
-                result = await _one(model, screenplays[sample], sample, n)
+                result = await _one(model, screenplays[sample], sample, n, settings.llm_concurrency)
                 print(
                     f"{sample} run {n}: "
                     + (

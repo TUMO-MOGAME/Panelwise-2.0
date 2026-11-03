@@ -160,7 +160,7 @@ async def test_each_stage_is_announced_as_it_begins_with_the_result_before_it() 
     advances = Advances()
     result = await run_pipeline(GOOD_PDF, make(Models()), on_advance=advances)
 
-    assert advances.stages() == [
+    assert advances.stages()[:3] == [
         (Stage.PARSING, 0),
         (Stage.EXTRACTING, 5),
         (Stage.PLANNING, 40),
@@ -169,6 +169,11 @@ async def test_each_stage_is_announced_as_it_begins_with_the_result_before_it() 
     assert finished[0] is None
     assert finished[1] is result.screenplay
     assert finished[2] is result.extraction
+    # Panelwise 2.0: then planning's progress, scene by scene, inside its band and with no result.
+    during = advances.seen[3:]
+    assert during and all(stage is Stage.PLANNING and f is None for stage, _, f in during)
+    steps = [p for _, p, _ in during]
+    assert steps == sorted(steps) and 40 < steps[0] and steps[-1] < 60
     assert isinstance(finished[1], Screenplay)
     assert isinstance(finished[2], Extraction)
     assert isinstance(result.plan, ShotPlan)
@@ -269,7 +274,8 @@ async def test_a_failed_planning_call_names_its_scene() -> None:
 
     assert error.stage is Stage.PLANNING
     assert error.message == READ_FAILED.format(n="2")
-    assert advances.stages()[-1] == (Stage.PLANNING, 40)
+    assert (Stage.PLANNING, 40) in advances.stages()
+    assert all(p < 60 for _, p in advances.stages())  # never announced as planned
 
 
 async def test_an_extraction_error_without_a_scene_is_the_budget(
@@ -313,3 +319,26 @@ def test_every_string_is_in_web_md_verbatim(copy: str) -> None:
 
 def test_read_failed_takes_the_scene_number() -> None:
     assert READ_FAILED.format(n="12A").startswith("Reading the script failed at scene 12A.")
+
+
+async def test_the_pipeline_passes_its_concurrency_to_both_stages(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    import app.projects.pipeline as pipeline
+
+    seen: dict[str, int] = {}
+    real_extract, real_plan = pipeline.extract, pipeline.plan_shots
+
+    async def extract(*args: Any, **kw: Any) -> Any:
+        seen["extract"] = kw["concurrency"]
+        return await real_extract(*args, **kw)
+
+    async def plan_shots(*args: Any, **kw: Any) -> Any:
+        seen["plan"] = kw["concurrency"]
+        return await real_plan(*args, **kw)
+
+    monkeypatch.setattr(pipeline, "extract", extract)
+    monkeypatch.setattr(pipeline, "plan_shots", plan_shots)
+    await run_pipeline(GOOD_PDF, make(Models()), on_advance=Advances(), concurrency=1)
+
+    assert seen == {"extract": 1, "plan": 1}

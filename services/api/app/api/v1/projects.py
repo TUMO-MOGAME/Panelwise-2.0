@@ -91,6 +91,7 @@ def start(request: Request, job_id: uuid.UUID) -> None:
             model=state.model,
             factory=state.renderer_factory,
             concurrency=state.settings.fal_concurrency,
+            llm_concurrency=state.settings.llm_concurrency,
             max_renders=state.settings.render_max_attempts,
             withholding=withholding(state.settings),
         )

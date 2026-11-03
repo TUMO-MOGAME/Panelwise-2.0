@@ -32,8 +32,11 @@ $apiEnv = @"
 `$env:DATABASE_URL = 'postgresql+asyncpg://panelwise:panelwise@localhost:$pgPort/panelwise'
 `$env:PANELWISE_LOCAL_TOKEN = '$token'
 `$env:NEBIUS_BASE_URL = 'http://127.0.0.1:$qvacPort/v1'
-`$env:NEBIUS_MODEL_FAST = 'fast'
-`$env:NEBIUS_MODEL_REASONING = 'reasoning'
+# Both text tiers on Qwen3 4B: it extracts and plans better than 1.7B (eval/README.md), and one
+# loaded model serves both. One call at a time, as one local server answers one at a time.
+`$env:NEBIUS_MODEL_FAST = 'qwen3-4b'
+`$env:NEBIUS_MODEL_REASONING = 'qwen3-4b'
+`$env:LLM_CONCURRENCY = '1'
 `$env:LLM_THINKING_FIELD = 'reasoning_budget'
 `$env:LLM_REQUEST_TIMEOUT_S = '900'
 "@

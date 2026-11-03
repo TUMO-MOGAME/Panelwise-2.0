@@ -8,7 +8,7 @@ placeholder), and the Redis cache (Redis is gone).
 """
 
 import asyncio
-from collections.abc import Sequence
+from collections.abc import Awaitable, Callable, Sequence
 
 from pydantic import ValidationError
 
@@ -148,9 +148,12 @@ async def plan_shots(
     *,
     concurrency: int = 4,
     temperature: float = 0.0,
+    on_scene: Callable[[int, int], Awaitable[None]] | None = None,
 ) -> ShotPlan:
+    """`on_scene(done, total)` is awaited as each scene's plan comes back (a progress hook)."""
     times = resolve_times(screenplay.scenes)
     gate = asyncio.Semaphore(concurrency)
+    done = 0
 
     async def one(scene: Scene) -> StructuredResult[ScenePlan]:
         characters = _allowed(extraction, EntityKind.CHARACTER, scene.index)
@@ -159,9 +162,10 @@ async def plan_shots(
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": render_scene(scene, characters, props, times[scene.index])},
         ]
+        nonlocal done
         async with gate:
             try:
-                return await structured_chat(
+                result = await structured_chat(
                     model, messages, ScenePlan, Tier.FAST, temperature=temperature, max_tokens=2048
                 )
             except (LLMError, ValidationError) as exc:
@@ -170,6 +174,10 @@ async def plan_shots(
                 raise ShotError(
                     f"Planning scene {scene.number} failed: {detail}", scene=scene.number
                 ) from exc
+        done += 1
+        if on_scene is not None:
+            await on_scene(done, len(to_plan))
+        return result
 
     to_plan = [s for s in screenplay.scenes if s.elements]
     try:

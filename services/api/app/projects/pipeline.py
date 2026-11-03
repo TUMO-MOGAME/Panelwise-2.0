@@ -89,10 +89,13 @@ async def run_pipeline(
     on_advance: OnAdvance,
     chunk_chars: int = 12_000,
     max_chunks: int = 40,
+    concurrency: int = 4,
 ) -> PipelineResult:
     """Parse, extract and plan, awaiting `on_advance(stage, progress, finished)` as each stage
     begins -- with its band's start and the result of the stage before it -- and starts the
-    stage only once the hook has returned."""
+    stage only once the hook has returned. Planning also reports progress through its band as
+    each scene is planned, with `finished` None. `concurrency`: model calls a stage sends at once
+    (LLM_CONCURRENCY)."""
     await on_advance(Stage.PARSING, BANDS[Stage.PARSING][0], None)
     try:
         # pdfplumber is synchronous and CPU-bound; keep the event loop free for other requests.
@@ -107,15 +110,27 @@ async def run_pipeline(
         raise PipelineError(Stage.EXTRACTING, TOO_LONG)
     try:
         extraction = await extract(
-            model, screenplay, chunk_chars=chunk_chars, max_chunks=max_chunks
+            model,
+            screenplay,
+            chunk_chars=chunk_chars,
+            max_chunks=max_chunks,
+            concurrency=concurrency,
         )
     except ExtractionError as exc:
         copy = TOO_LONG if exc.scene is None else READ_FAILED.format(n=exc.scene)
         raise PipelineError(Stage.EXTRACTING, copy) from exc
 
     await on_advance(Stage.PLANNING, BANDS[Stage.PLANNING][0], extraction)
+    start, end = BANDS[Stage.PLANNING]
+
+    async def on_scene(done: int, total: int) -> None:
+        # Through the band, never to its end: that is the plan stored, which run_job reports.
+        await on_advance(Stage.PLANNING, start + (end - start - 1) * done // total, None)
+
     try:
-        plan = await plan_shots(model, screenplay, extraction)
+        plan = await plan_shots(
+            model, screenplay, extraction, concurrency=concurrency, on_scene=on_scene
+        )
     except ShotError as exc:
         raise PipelineError(Stage.PLANNING, READ_FAILED.format(n=exc.scene)) from exc
 

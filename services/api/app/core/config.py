@@ -36,6 +36,10 @@ class Settings(BaseSettings):
     # How a call turns thinking on or off. Token Factory (vLLM) reads chat_template_kwargs;
     # QVAC's `qvac serve --openai` reads reasoning_budget (true/false) and ignores the other.
     llm_thinking_field: Literal["chat_template_kwargs", "reasoning_budget"] = "chat_template_kwargs"
+    # Model calls a stage (extraction, shot planning) sends at once: 4 suits a cloud provider;
+    # one local QVAC server answers one at a time, so 1 there (a queued call would otherwise
+    # spend its request timeout waiting behind the others).
+    llm_concurrency: int = Field(default=4, ge=1, le=16)
     llm_request_timeout_s: float = 120.0
     # T075: a dead connection fails in 10 s, and 5 attempts ride out about 80 s of drops.
     llm_connect_timeout_s: float = 10.0

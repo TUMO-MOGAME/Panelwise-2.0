@@ -96,6 +96,7 @@ async def run_job(
     model: NebiusChatModel,
     factory: RendererFactory | None = None,
     concurrency: int = 2,
+    llm_concurrency: int = 4,
     max_renders: int = MAX_RENDERS,
     withholding: frozenset[Check] | None = None,
 ) -> None:
@@ -124,7 +125,7 @@ async def run_job(
                     value=value,
                 )
 
-        result = await run_pipeline(pdf, model, on_advance=on_advance)
+        result = await run_pipeline(pdf, model, on_advance=on_advance, concurrency=llm_concurrency)
         async with sessions() as session, session.begin():
             await advance(
                 session,

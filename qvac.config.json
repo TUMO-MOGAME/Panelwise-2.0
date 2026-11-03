@@ -3,14 +3,14 @@
   "registryDownloadMaxRetries": 10,
   "serve": {
     "models": {
-      "fast": {
+      "qwen3-1.7b": {
         "model": "QWEN3_1_7B_INST_Q4",
-        "default": true,
         "preload": false,
         "config": { "ctx_size": 8192 }
       },
-      "reasoning": {
+      "qwen3-4b": {
         "model": "QWEN3_4B_INST_Q4_K_M",
+        "default": true,
         "preload": false,
         "config": { "ctx_size": 8192 }
       },
