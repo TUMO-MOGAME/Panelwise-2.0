@@ -32,6 +32,7 @@ $apiEnv = @"
 `$env:NEBIUS_MODEL_REASONING = 'reasoning'
 `$env:LLM_THINKING_FIELD = 'reasoning_budget'
 `$env:LLM_REQUEST_TIMEOUT_S = '900'
+`$env:QVAC_DRAW_MODEL = 'draw'
 "@
 
 $qvacUp = $false

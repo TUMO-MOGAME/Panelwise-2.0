@@ -133,6 +133,9 @@ class NebiusChatModel:
             thinking_field=settings.llm_thinking_field,
         )
 
+    def has_tier(self, tier: Tier) -> bool:
+        return bool(self._models.get(tier))
+
     def model_for(self, tier: Tier) -> str:
         model = self._models.get(tier, "")
         if not model:

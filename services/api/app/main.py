@@ -23,6 +23,7 @@ from app.limits.usage import record_usage
 from app.llm import LLMConfigError, NebiusChatModel
 from app.storage import AssetStore, LocalStore, SupabaseStore
 from app.storyboard.fal import fal_factory
+from app.storyboard.qvac import qvac_factory
 from app.storyboard.styles import PUBLIC_STYLES, StyleError, StyleRegistry, load_styles
 
 log = logging.getLogger(__name__)
@@ -65,6 +66,22 @@ def default_store(settings: Settings, client: httpx2.AsyncClient) -> AssetStore 
     return SupabaseStore(
         url=url, secret_key=key, bucket=settings.supabase_storage_bucket, client=client
     )
+
+
+def default_renderer(
+    settings: Settings,
+    styles: StyleRegistry | None,
+    store: AssetStore | None,
+    client: httpx2.AsyncClient,
+) -> RendererFactory | None:
+    """Local mode: FLUX.2 [klein] on this machine through QVAC, when QVAC_DRAW_MODEL names it, and
+    never fal.ai, whatever FAL_KEY a .env carries. Otherwise fal.ai, when FAL_KEY is set. None
+    without a store or styles."""
+    if store is None or styles is None:
+        return None
+    if settings.panelwise_local_token:
+        return qvac_factory(styles, store, client, settings) if settings.qvac_draw_model else None
+    return fal_factory(styles, store, client, settings) if settings.fal_key else None
 
 
 class _Unset:
@@ -128,14 +145,10 @@ def create_app(
         except StyleError, OSError:
             log.exception("the styles didn't load: no renderer and no storyboard PDF")
         app.state.renderer_factory = renderer_factory
-        styles: StyleRegistry | None = app.state.styles
-        store_ = app.state.store
-        # Local mode never draws in the cloud, whatever FAL_KEY a .env carries: fal.ai is a paid
-        # cloud service, and Panelwise 2.0 runs on this machine (a local renderer is BOOTCAMP.md
-        # step 4).
-        cloud_ok = not settings.panelwise_local_token
-        if renderer_factory is None and fal and cloud_ok and settings.fal_key and store_ and styles:
-            app.state.renderer_factory = fal_factory(styles, store_, client, settings)
+        if renderer_factory is None and fal:
+            app.state.renderer_factory = default_renderer(
+                settings, app.state.styles, app.state.store, client
+            )
         tasks: set[asyncio.Task[None]] = set()  # running jobs: one reference each, never GC'd
         app.state.tasks = tasks
         await sweep(sessions)

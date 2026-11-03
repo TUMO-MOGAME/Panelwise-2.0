@@ -1,4 +1,6 @@
 {
+  "registryStreamTimeoutMs": 600000,
+  "registryDownloadMaxRetries": 10,
   "serve": {
     "models": {
       "fast": {
@@ -11,6 +13,15 @@
         "model": "QWEN3_4B_INST_Q4_K_M",
         "preload": false,
         "config": { "ctx_size": 8192 }
+      },
+      "draw": {
+        "model": "FLUX_2_KLEIN_4B_Q4_0",
+        "preload": false,
+        "config": {
+          "device": "gpu",
+          "llmModelSrc": "QWEN3_4B_INST_Q4_K_M",
+          "vaeModelSrc": "FLUX_2_KLEIN_4B_VAE"
+        }
       }
     },
     "load": { "concurrency": 1 }

@@ -76,6 +76,12 @@ class Settings(BaseSettings):
     local_data_dir: str = str(REPO_ENV.parent / ".local-data" / "assets")
     # Where the browser reaches this API, for the files links.
     local_public_url: str = "http://localhost:8000"
+    # Local mode's renderer: FLUX.2 [klein] 4B through QVAC on the NEBIUS_BASE_URL server, by its
+    # serve.models alias ("draw" in qvac.config.json); unset, nothing is drawn. Drawn at most this
+    # many pixels, then fitted to the 1280 x 720 frame: on an iGPU, time is the cost.
+    qvac_draw_model: str = ""
+    qvac_draw_max_pixels: int = Field(default=409_600, ge=65_536, le=1_000_000)
+    qvac_draw_timeout_s: float = 900.0
     # Below Vercel's ~4.5 MB function body limit, which every upload passes through (web.md §4.1);
     # T030 may lower it.
     upload_max_bytes: int = 4_000_000

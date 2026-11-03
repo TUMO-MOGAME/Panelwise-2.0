@@ -1059,6 +1059,25 @@ async def _ask_layout(
     return frame_layout(layout, len(description.people))
 
 
+def unaudited(frame: RenderedFrame) -> Audit:
+    """Panelwise 2.0's local mode before a QVAC vision path exists: no vision model is configured,
+    so nothing looked at the frame. It is shown, as a warning with no checks and no model, rather
+    than withheld for an audit that never ran or sent to a model outside the rules."""
+    logger.info("shot %s attempt %d shown unaudited: no vision model", frame.shot, frame.attempt)
+    return Audit(
+        shot=frame.shot,
+        attempt=frame.attempt,
+        seed=frame.seed,
+        description=None,
+        judgement=None,
+        checks=(),
+        verdict=Verdict.WARN,
+        positions={},
+        models=(),
+        usage=Usage(prompt_tokens=0, completion_tokens=0, reasoning_tokens=0),
+    )
+
+
 async def audit_frame(
     model: NebiusChatModel,
     frame: RenderedFrame,
@@ -1066,6 +1085,8 @@ async def audit_frame(
     screenplay: Screenplay,
     extraction: Extraction,
 ) -> Audit:
+    if not model.has_tier(Tier.VISION):
+        return unaudited(frame)
     scene = screenplay.scenes[shot.scene_index]
     chats: list[ChatResult] = []
     description: FrameDescription | None = None
