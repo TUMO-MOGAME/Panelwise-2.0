@@ -20,7 +20,17 @@ output, never trust the model. Running it locally adds the bootcamp's three reas
 |---|---|---|---|
 | Chat, 3 tiers (fast / reasoning / vision) | `services/api/app/llm/client.py` (`NebiusChatModel`, OpenAI-compatible) | Nemotron on Token Factory | **`qvac serve --openai`** at `http://localhost:11434/v1`. Mostly config: `NEBIUS_BASE_URL` + model aliases |
 | Drawing | `services/api/app/storyboard/fal.py` (`FalRenderer`, via `fal_factory`) | FLUX.2 [klein] 4B on fal.ai | A `QvacRenderer` posting to `/v1/images/generations` with the **same model**, `FLUX_2_KLEIN_4B_Q4_0` |
-| Storage, Postgres, Auth | Supabase | hosted | Local Postgres from `docker-compose.yml` for now. Holepunch (Hyperdrive/Hyperbee) is a later question |
+| Storage, Postgres, Auth | Supabase | hosted | ✅ **Local mode** (2026-11-03): `PANELWISE_LOCAL_TOKEN` swaps Supabase Auth for one local user (`LocalVerifier`) and Storage for files on disk (`LocalStore`, HMAC-signed links served by `/api/v1/files`); Postgres from `docker-compose.yml`. Holepunch (Hyperdrive/Hyperbee) is a later question |
+
+## Run it on this laptop
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\dev-local.ps1
+```
+
+It starts Postgres (Docker, port 5433), `qvac serve` (port 11435) if it isn't running, the API (:8000) and the web
+app (:3000), each in its own window, with a fresh local token and no Supabase or fal.ai. Open <http://localhost:3000>:
+there's no sign-in. An upload reads, extracts and plans on Qwen3; drawing waits for step 4.
 
 ## Steps
 

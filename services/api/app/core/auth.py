@@ -6,6 +6,7 @@ token stays valid until its `exp` (at most an hour) after the user signs out.
 """
 
 import asyncio
+import hmac
 import time
 import uuid
 from collections.abc import Callable
@@ -129,6 +130,26 @@ class SupabaseJwtVerifier:
             if not keys:
                 return
             self._keys, self._fetched_at = keys, now
+
+
+# Panelwise 2.0's local mode: one user, the laptop's owner. A fixed id, so their projects survive
+# a restart.
+LOCAL_USER_ID = uuid.uuid5(uuid.NAMESPACE_URL, "https://panelwise.local/user")
+
+
+class LocalVerifier:
+    """Local mode (PANELWISE_LOCAL_TOKEN): the web server and the API share one secret, and the
+    only caller is the laptop's owner. No Supabase, no network."""
+
+    def __init__(self, token: str) -> None:
+        if not token:
+            raise ValueError("the local token is empty")
+        self._token = token.encode()
+
+    async def verify(self, token: str) -> Caller:
+        if not hmac.compare_digest(token.encode(), self._token):
+            raise AuthError("not the local token")
+        return Caller(user_id=LOCAL_USER_ID)
 
 
 async def current_caller(request: Request) -> Caller:

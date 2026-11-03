@@ -101,3 +101,22 @@ describe("updateSession", () => {
     expect(res.headers.get("location")).toBe("http://web.test/sign-in");
   });
 });
+
+describe("local mode (Panelwise 2.0, PANELWISE_LOCAL_TOKEN)", () => {
+  it("is signed in without asking Supabase: / goes to /projects, /sign-in too", async () => {
+    vi.stubEnv("PANELWISE_LOCAL_TOKEN", "local-token");
+
+    const home = await updateSession(req("/"));
+    const signIn = await updateSession(req("/sign-in"));
+
+    expect(new URL(home.headers.get("location") ?? "").pathname).toBe("/projects");
+    expect(new URL(signIn.headers.get("location") ?? "").pathname).toBe("/projects");
+    expect(getClaims).not.toHaveBeenCalled();
+  });
+
+  it("lets a page through", async () => {
+    vi.stubEnv("PANELWISE_LOCAL_TOKEN", "local-token");
+    const res = await updateSession(req("/projects"));
+    expect(res.headers.get("location")).toBeNull();
+  });
+});

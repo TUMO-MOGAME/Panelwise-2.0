@@ -4,6 +4,8 @@
 import { createServerClient } from "@supabase/ssr";
 import { type NextRequest, NextResponse } from "next/server";
 
+import { localToken } from "@/lib/local";
+
 import { supabaseEnv } from "./env";
 
 /** Where a request goes instead, or null to let it through. /api/* is never redirected. */
@@ -21,8 +23,8 @@ export async function updateSession(request: NextRequest): Promise<NextResponse>
   let written: Written[] = [];
   let headers: Record<string, string> = {};
 
-  let signedIn = false;
-  const env = supabaseEnv();
+  let signedIn = localToken() !== null; // local mode: always the laptop's owner
+  const env = signedIn ? null : supabaseEnv();
   if (env) {
     const supabase = createServerClient(env.url, env.key, {
       cookies: {

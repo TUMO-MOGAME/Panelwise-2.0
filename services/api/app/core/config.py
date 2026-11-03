@@ -69,6 +69,13 @@ class Settings(BaseSettings):
     supabase_url: str = ""
     supabase_secret_key: str = ""
     supabase_storage_bucket: str = "panelwise"  # panelwise-dev in a local .env
+    # Panelwise 2.0's local mode: set, it replaces Supabase Auth and Storage. The web server sends
+    # this as its bearer token (one user, the laptop's owner), and assets live on disk under
+    # local_data_dir, served by /api/v1/files through links signed with it. A long random string.
+    panelwise_local_token: str = ""
+    local_data_dir: str = str(REPO_ENV.parent / ".local-data" / "assets")
+    # Where the browser reaches this API, for the files links.
+    local_public_url: str = "http://localhost:8000"
     # Below Vercel's ~4.5 MB function body limit, which every upload passes through (web.md §4.1);
     # T030 may lower it.
     upload_max_bytes: int = 4_000_000

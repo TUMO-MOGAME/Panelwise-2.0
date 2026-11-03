@@ -20,4 +20,4 @@ The bootcamp plan, with what's done and what isn't yet, is in [BOOTCAMP.md](BOOT
 | Vision model (frame audit) | Nemotron 3.5 Super VL | *planned:* a QVAC multimodal model (Qwen3.5 / Qwen3-VL) |
 | Drawing | FLUX.2 [klein] 4B on fal.ai | *planned:* FLUX.2 [klein] 4B **locally** through QVAC diffusion |
 | Narration (was a stretch, T113, ElevenLabs) | not built | *planned:* QVAC text-to-speech |
-| Hosting | Vercel + Render + Supabase | *to decide:* local-first |
+| Hosting | Vercel + Render + Supabase | **Local mode (2026-11-03):** one user, files on disk, local Postgres, no Supabase (`PANELWISE_LOCAL_TOKEN`, `scripts/dev-local.ps1`). The Supabase path still works when the token is unset |

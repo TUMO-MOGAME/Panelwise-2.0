@@ -48,3 +48,6 @@ services/api/styles/private/
 
 # Agent worktrees (Claude Code isolation) live inside the repo; never commit them
 .claude/worktrees/
+
+# Panelwise 2.0 local mode: uploaded scripts and drawn frames on this machine
+.local-data/

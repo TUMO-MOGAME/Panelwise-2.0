@@ -5,6 +5,8 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
+import { localToken } from "@/lib/local";
+
 import { supabaseEnv } from "./env";
 
 export async function createClient() {
@@ -33,6 +35,11 @@ export interface CurrentUser {
 }
 
 export async function currentUser(): Promise<CurrentUser | null> {
+  const local = localToken();
+  if (local) {
+    await cookies(); // per request, as with Supabase
+    return { email: null, accessToken: local };
+  }
   const supabase = await createClient();
   if (!supabase) return null;
   const { data, error } = await supabase.auth.getClaims();

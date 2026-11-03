@@ -13,15 +13,15 @@ from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker
 
 from app.api import errors
-from app.api.v1 import health, projects
-from app.core.auth import SupabaseJwtVerifier, TokenVerifier
+from app.api.v1 import files, health, projects
+from app.core.auth import LocalVerifier, SupabaseJwtVerifier, TokenVerifier
 from app.core.config import Settings
 from app.db import make_engine, make_sessions
 from app.frames.attempt import RendererFactory
 from app.jobs import fail_interrupted, fail_interrupted_frames
 from app.limits.usage import record_usage
 from app.llm import LLMConfigError, NebiusChatModel
-from app.storage import AssetStore, SupabaseStore
+from app.storage import AssetStore, LocalStore, SupabaseStore
 from app.storyboard.fal import fal_factory
 from app.storyboard.styles import PUBLIC_STYLES, StyleError, StyleRegistry, load_styles
 
@@ -41,6 +41,30 @@ async def sweep(sessions: async_sessionmaker[AsyncSession]) -> None:
         return
     if count or frames:
         log.info("restart sweep: %d job(s) and %d frame(s) marked failed", count, frames)
+
+
+def default_verifier(settings: Settings, client: httpx2.AsyncClient) -> TokenVerifier | None:
+    """Panelwise 2.0's local mode (PANELWISE_LOCAL_TOKEN) first, else Supabase's, else None."""
+    if settings.panelwise_local_token:
+        return LocalVerifier(settings.panelwise_local_token)
+    url = settings.supabase_url
+    return SupabaseJwtVerifier(supabase_url=url, client=client) if url else None
+
+
+def default_store(settings: Settings, client: httpx2.AsyncClient) -> AssetStore | None:
+    """As default_verifier: this machine's disk in local mode, else Supabase Storage, else None."""
+    if settings.panelwise_local_token:
+        return LocalStore(
+            root=Path(settings.local_data_dir),
+            secret=settings.panelwise_local_token,
+            public_url=settings.local_public_url,
+        )
+    url, key = settings.supabase_url, settings.supabase_secret_key
+    if not (url and key):
+        return None
+    return SupabaseStore(
+        url=url, secret_key=key, bucket=settings.supabase_storage_bucket, client=client
+    )
 
 
 class _Unset:
@@ -82,23 +106,10 @@ def create_app(
         app.state.health_checks = {"postgres": postgres}
         app.state.sessions = sessions
         client = httpx2.AsyncClient(timeout=30)
-        url, key = settings.supabase_url, settings.supabase_secret_key
         app.state.verifier = (
-            (SupabaseJwtVerifier(supabase_url=url, client=client) if url else None)
-            if isinstance(verifier, _Unset)
-            else verifier
+            default_verifier(settings, client) if isinstance(verifier, _Unset) else verifier
         )
-        app.state.store = (
-            (
-                SupabaseStore(
-                    url=url, secret_key=key, bucket=settings.supabase_storage_bucket, client=client
-                )
-                if url and key
-                else None
-            )
-            if isinstance(store, _Unset)
-            else store
-        )
+        app.state.store = default_store(settings, client) if isinstance(store, _Unset) else store
         if isinstance(model, _Unset):
             try:
                 app.state.model = NebiusChatModel.from_settings(settings)
@@ -141,6 +152,7 @@ def create_app(
     errors.install(app)
     app.include_router(health.router, prefix="/api/v1")
     app.include_router(projects.router, prefix="/api/v1")
+    app.include_router(files.router, prefix="/api/v1")
     return app
 
 
