@@ -87,8 +87,8 @@ def test_a_local_token_replaces_supabase(tmp_path: Path) -> None:
         _env_file=None,  # pyright: ignore[reportCallIssue]
         panelwise_local_token="tok",
         local_data_dir=str(tmp_path),
-        supabase_url="https://example.supabase.co",
-        supabase_secret_key="sb-secret",
+        nebius_base_url="http://127.0.0.1:11435/v1",
+        database_url="postgresql+asyncpg://panelwise:panelwise@localhost:5433/panelwise",
     )
     client = None  # local mode never uses the HTTP client
     assert isinstance(default_verifier(settings, client), LocalVerifier)  # pyright: ignore[reportArgumentType]
@@ -146,3 +146,57 @@ def test_without_local_mode_the_route_is_404(tmp_path: Path) -> None:
     app.state.store = None
     client = TestClient(app)
     assert client.get("/api/v1/files/frames/a.png?expires=1&sig=00").status_code == 404
+
+
+LOCAL_DB = "postgresql+asyncpg://panelwise:panelwise@localhost:5433/panelwise"
+
+
+def test_local_mode_never_draws_in_the_cloud_even_with_a_fal_key(tmp_path: Path) -> None:
+    # 2026-11-03: a FAL_KEY left in .env drew 36 frames on fal.ai from a "local" run.
+    settings = Settings(
+        _env_file=None,  # pyright: ignore[reportCallIssue]
+        panelwise_local_token="tok",
+        local_data_dir=str(tmp_path),
+        fal_key="fal-key-that-must-not-be-used",
+        nebius_base_url="http://127.0.0.1:1/v1",
+        database_url="postgresql+asyncpg://nobody:nothing@127.0.0.1:1/none",
+    )
+    app = create_app(settings, fal=True)
+    with TestClient(app):
+        assert isinstance(app.state.store, LocalStore)
+        assert app.state.renderer_factory is None
+
+
+def test_local_mode_drops_every_cloud_key() -> None:
+    settings = Settings(
+        _env_file=None,  # pyright: ignore[reportCallIssue]
+        panelwise_local_token="tok",
+        nebius_base_url="http://127.0.0.1:11435/v1",
+        database_url=LOCAL_DB,
+        nebius_api_key="nb-key",
+        fal_key="fal-key",
+        supabase_url="https://x.supabase.co",
+        supabase_secret_key="sb-key",
+    )
+    assert (settings.nebius_api_key, settings.fal_key) == ("", "")
+    assert (settings.supabase_url, settings.supabase_secret_key) == ("", "")
+    assert settings.nebius_model_vision == ""  # no QVAC vision path yet: never another model
+
+
+@pytest.mark.parametrize(
+    ("base_url", "database_url"),
+    [
+        ("https://api.tokenfactory.nebius.com/v1", LOCAL_DB),
+        ("http://127.0.0.1:11435/v1", "postgresql://u:p@db.supabase.co:5432/postgres"),
+    ],
+)
+def test_local_mode_refuses_a_model_server_or_database_elsewhere(
+    base_url: str, database_url: str
+) -> None:
+    with pytest.raises(ValueError, match="must point at this machine"):
+        Settings(
+            _env_file=None,  # pyright: ignore[reportCallIssue]
+            panelwise_local_token="tok",
+            nebius_base_url=base_url,
+            database_url=database_url,
+        )

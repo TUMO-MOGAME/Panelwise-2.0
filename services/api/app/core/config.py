@@ -118,10 +118,36 @@ class Settings(BaseSettings):
         return parsed.render_as_string(hide_password=False)
 
     @model_validator(mode="after")
+    def _local_mode_is_tether_only(self) -> Settings:
+        """Panelwise 2.0's rule: in local mode every model is a Tether (QVAC) model on this
+        machine, and nothing from the original project's cloud is used, whatever a .env carries.
+        Cloud keys are dropped; a model server or database that isn't on this machine stops the
+        API starting. The vision tier has no QVAC path yet (`qvac serve` drops images), so it is
+        unset: a vision call fails rather than reach any other model."""
+        if not self.panelwise_local_token:
+            return self
+        for name, url in (
+            ("NEBIUS_BASE_URL", self.nebius_base_url),
+            ("DATABASE_URL", self.database_url),
+        ):
+            if not _on_this_machine(url):
+                raise ValueError(f"local mode: {name} must point at this machine")
+        self.nebius_api_key = ""
+        self.nebius_model_vision = ""
+        self.fal_key = ""
+        self.supabase_url = ""
+        self.supabase_secret_key = ""
+        return self
+
+    @model_validator(mode="after")
     def _ladder_names_hard_checks(self) -> Settings:
         """T094: a misspelt AUDIT_WITHHOLD_CHECKS stops the API starting, never a request."""
         withholding(self)
         return self
+
+
+def _on_this_machine(url: str) -> bool:
+    return make_url(url).host in ("localhost", "127.0.0.1", "::1")
 
 
 def withholding(settings: Settings) -> frozenset[Check] | None:

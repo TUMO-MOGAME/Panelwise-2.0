@@ -21,19 +21,17 @@ $token = -join ($bytes | ForEach-Object { $_.ToString("x2") })
 $env:POSTGRES_HOST_PORT = "$pgPort"
 docker compose -f "$root\docker-compose.yml" up -d --wait postgres
 
-# Every model call goes to QVAC on this machine; FAL_KEY blank, so nothing is drawn in the cloud.
+# Every model call goes to QVAC on this machine. Local mode itself drops every cloud key a .env
+# may carry (Nebius, fal.ai, Supabase) and refuses a model server or database elsewhere
+# (app/core/config.py): `$env:X = ''` would not do it, as PowerShell deletes the variable instead.
 $apiEnv = @"
 `$env:DATABASE_URL = 'postgresql+asyncpg://panelwise:panelwise@localhost:$pgPort/panelwise'
 `$env:PANELWISE_LOCAL_TOKEN = '$token'
-`$env:NEBIUS_API_KEY = ''
 `$env:NEBIUS_BASE_URL = 'http://127.0.0.1:$qvacPort/v1'
 `$env:NEBIUS_MODEL_FAST = 'fast'
 `$env:NEBIUS_MODEL_REASONING = 'reasoning'
 `$env:LLM_THINKING_FIELD = 'reasoning_budget'
 `$env:LLM_REQUEST_TIMEOUT_S = '900'
-`$env:FAL_KEY = ''
-`$env:SUPABASE_URL = ''
-`$env:SUPABASE_SECRET_KEY = ''
 "@
 
 $qvacUp = $false

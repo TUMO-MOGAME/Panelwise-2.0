@@ -130,7 +130,11 @@ def create_app(
         app.state.renderer_factory = renderer_factory
         styles: StyleRegistry | None = app.state.styles
         store_ = app.state.store
-        if renderer_factory is None and fal and settings.fal_key and store_ and styles:
+        # Local mode never draws in the cloud, whatever FAL_KEY a .env carries: fal.ai is a paid
+        # cloud service, and Panelwise 2.0 runs on this machine (a local renderer is BOOTCAMP.md
+        # step 4).
+        cloud_ok = not settings.panelwise_local_token
+        if renderer_factory is None and fal and cloud_ok and settings.fal_key and store_ and styles:
             app.state.renderer_factory = fal_factory(styles, store_, client, settings)
         tasks: set[asyncio.Task[None]] = set()  # running jobs: one reference each, never GC'd
         app.state.tasks = tasks
