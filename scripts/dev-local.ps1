@@ -17,6 +17,38 @@ $root = Split-Path -Parent $PSScriptRoot
 $pgPort = 5433
 $qvacPort = 11435
 
+# --- Preflight: what stopped earlier runs, caught before anything starts ----------------------
+# A port held by something else (another project's dev server on 3000) makes the web app move to
+# 3001 or the API fail; stop here and name what holds it.
+foreach ($port in 3000, 8000) {
+  $held = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue
+  if ($held) {
+    $holder = Get-CimInstance Win32_Process -Filter "ProcessId=$($held[0].OwningProcess)"
+    Write-Host "Port $port is in use by $($holder.Name): $($holder.CommandLine)" -ForegroundColor Red
+    Write-Host "Stop it (or close Panelwise's old windows) and run this again." -ForegroundColor Red
+    exit 1
+  }
+}
+# Docker Desktop must be up for Postgres; start it and wait for its engine.
+cmd /c "docker info >nul 2>&1"
+if ($LASTEXITCODE -ne 0) {
+  Write-Host "Starting Docker Desktop..."
+  Start-Process "C:\Program Files\Docker\Docker\Docker Desktop.exe"
+  for ($i = 0; $i -lt 90; $i++) {
+    Start-Sleep 2
+    cmd /c "docker info >nul 2>&1"
+    if ($LASTEXITCODE -eq 0) { break }
+  }
+  if ($LASTEXITCODE -ne 0) { Write-Host "Docker did not start." -ForegroundColor Red; exit 1 }
+}
+# Memory: Qwen3 4B needs ~3.6 GB; FLUX.2 [klein] with its encoder ~6 GB (the renderer unloads the
+# text model before drawing, so not both). A warning, not a stop: QVAC's own check decides.
+$freeGb = (Get-CimInstance Win32_OperatingSystem).FreePhysicalMemory / 1MB
+$needGb = if ($TextOnly) { 4 } else { 7 }
+if ($freeGb -lt $needGb) {
+  Write-Host ("Only {0:N1} GB of RAM is free; about {1} GB is needed. Close browsers or other dev servers first." -f $freeGb, $needGb) -ForegroundColor Yellow
+}
+
 # One secret shared by the web server and the API, new each run (local mode, no sign-in).
 $bytes = New-Object byte[] 32
 [System.Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($bytes)
@@ -40,7 +72,8 @@ $apiEnv = @"
 `$env:LLM_THINKING_FIELD = 'reasoning_budget'
 `$env:LLM_REQUEST_TIMEOUT_S = '900'
 "@
-if (-not $TextOnly) { $apiEnv += "; `$env:QVAC_DRAW_MODEL = 'draw'" }
+# Drawing: FLUX.2 [klein] through QVAC, one frame at a time (one local server draws one at a time).
+if (-not $TextOnly) { $apiEnv += "; `$env:QVAC_DRAW_MODEL = 'draw'; `$env:FAL_CONCURRENCY = '1'" }
 
 # Each window also writes its output to .local-data\logs\{qvac,api,web}.log, to follow a run.
 # cmd merges stderr into stdout first, so PowerShell 5.1 copies plain lines, not error records.

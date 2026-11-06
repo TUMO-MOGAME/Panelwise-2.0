@@ -41,8 +41,12 @@ class Qvac:
         self.bodies: list[dict[str, object]] = []
         self.blacks: list[bool] = []
         self.status = 200
+        self.unloaded: list[str] = []
 
     def __call__(self, request: httpx2.Request) -> httpx2.Response:
+        if request.method == "DELETE":
+            self.unloaded.append(str(request.url).removeprefix(f"{URL}/models/"))
+            return httpx2.Response(200, json={"deleted": True})
         assert str(request.url) == f"{URL}/images/generations"
         body = json.loads(request.content)
         self.bodies.append(body)
@@ -64,7 +68,13 @@ def cast(lighthouse: Screenplay) -> Extraction:
     return extraction_of(lighthouse, [("NANDI", "NANDI (60s, oilskin coat)")])
 
 
-def renderer(qvac: Qvac, store: MemoryStore, screenplay: Screenplay, extraction: Extraction):
+def renderer(
+    qvac: Qvac,
+    store: MemoryStore,
+    screenplay: Screenplay,
+    extraction: Extraction,
+    free_first: tuple[str, ...] = (),
+) -> QvacRenderer:
     return QvacRenderer(
         style=STYLE,
         store=store,
@@ -74,6 +84,7 @@ def renderer(qvac: Qvac, store: MemoryStore, screenplay: Screenplay, extraction:
         base_url=URL,
         model="draw",
         max_pixels=409_600,
+        free_first=free_first,
     )
 
 
@@ -191,3 +202,28 @@ async def test_with_no_vision_model_a_frame_is_shown_unaudited_and_nothing_is_ca
 
     assert audit.verdict is Verdict.WARN and audit.checks == () and audit.models == ()
     assert calls == []
+
+
+async def test_the_text_models_are_unloaded_once_before_the_first_drawing(
+    lighthouse: Screenplay, cast: Extraction
+) -> None:
+    qvac, store = Qvac(), MemoryStore()
+    drawer = renderer(qvac, store, lighthouse, cast, free_first=("qwen3-4b", "qwen3-4b"))
+
+    await drawer.render(shot_of(lighthouse, 0, [0]), 1, 42, 1280, 720)
+    await drawer.render(shot_of(lighthouse, 0, [0]), 2, 43, 1280, 720)
+
+    assert qvac.unloaded == ["qwen3-4b"]  # once, and the alias named twice only once
+    assert len(qvac.bodies) == 2
+
+
+async def test_a_cached_frame_unloads_nothing(lighthouse: Screenplay, cast: Extraction) -> None:
+    qvac, store = Qvac(), MemoryStore()
+    shot = shot_of(lighthouse, 0, [0])
+    await renderer(qvac, store, lighthouse, cast).render(shot, 1, 42, 1280, 720)
+
+    await renderer(qvac, store, lighthouse, cast, free_first=("qwen3-4b",)).render(
+        shot, 1, 42, 1280, 720
+    )
+
+    assert qvac.unloaded == []

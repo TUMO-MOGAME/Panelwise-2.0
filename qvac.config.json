@@ -1,6 +1,7 @@
 {
   "registryStreamTimeoutMs": 600000,
   "registryDownloadMaxRetries": 10,
+  "rpcInitTimeoutMs": 180000,
   "serve": {
     "models": {
       "qwen3-1.7b": {

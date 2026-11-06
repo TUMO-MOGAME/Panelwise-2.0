@@ -56,7 +56,7 @@ def qvac_request(model: str, prompt: str, seed: int, draw: tuple[int, int]) -> d
     }
 
 
-def _finish(raw: bytes, width: int, height: int, style: Style) -> tuple[bytes, bool]:
+def finish_frame(raw: bytes, width: int, height: int, style: Style) -> tuple[bytes, bool]:
     """CPU work, run in a thread: fitted and post-processed PNG, and whether it is all black."""
     image = postprocess(fit(raw, width, height), style.grayscale)
     _, brightest = image.convert("L").getextrema()
@@ -79,14 +79,20 @@ class QvacRenderer:
         max_pixels: int,
         max_words: int = 55,
         timeout_s: float = 900.0,
+        free_first: tuple[str, ...] = (),
     ) -> None:
         self.style = style
         self.store = store
         self.screenplay = screenplay
         self.extraction = extraction
         self.client = client
-        self.url = f"{base_url.rstrip('/')}/images/generations"
+        self.base_url = base_url.rstrip("/")
+        self.url = f"{self.base_url}/images/generations"
         self.model = model
+        # The text models' aliases, unloaded before the first drawing: QVAC keeps a model loaded
+        # until told otherwise, and Qwen3 4B beside FLUX.2 [klein] and its encoder is ~9 GB.
+        self.free_first = free_first
+        self.freed = False
         self.max_pixels = max_pixels
         self.max_words = max_words
         self.timeout_s = timeout_s
@@ -124,8 +130,8 @@ class QvacRenderer:
                 break
         if drawn is None:
             for k, body in enumerate(bodies):
-                raw = await self._draw(body)
-                png, black = await asyncio.to_thread(_finish, raw, width, height, self.style)
+                raw = await self.draw_one(body)
+                png, black = await asyncio.to_thread(finish_frame, raw, width, height, self.style)
                 if black:
                     log.warning("QVAC drew shot %s attempt %d black (redraw %d)", key, attempt, k)
                     continue
@@ -145,9 +151,26 @@ class QvacRenderer:
         )
         return RenderedFrame(key, attempt, bodies[k]["seed"], png, width, height, text)
 
-    async def _draw(self, body: dict[str, Any]) -> bytes:
+    async def _free_text_models(self) -> None:
+        """Once per renderer: unload the text models (`DELETE /v1/models/{alias}`), so drawing
+        has the memory. Best effort: an alias not loaded, or a failed call, only logs; the next
+        text call loads its model again (a cold start)."""
+        if self.freed:
+            return
+        self.freed = True
+        for alias in dict.fromkeys(self.free_first):
+            try:
+                response = await self.client.delete(f"{self.base_url}/models/{alias}", timeout=60.0)
+            except httpx2.TransportError as exc:
+                log.warning("QVAC: could not unload %s (%s)", alias, type(exc).__name__)
+                continue
+            if response.status_code == 200:
+                log.info("QVAC: unloaded %s before drawing", alias)
+
+    async def draw_one(self, body: dict[str, Any]) -> bytes:
         """One drawing. No retry: a local server that fails will fail the same way again. No
         message carries the prompt."""
+        await self._free_text_models()
         try:
             response = await self.client.post(self.url, json=body, timeout=self.timeout_s)
         except httpx2.TransportError as exc:
@@ -184,6 +207,7 @@ def qvac_factory(
             model=settings.qvac_draw_model,
             max_pixels=settings.qvac_draw_max_pixels,
             max_words=settings.comfyui_max_words,
+            free_first=(settings.nebius_model_fast, settings.nebius_model_reasoning),
             timeout_s=settings.qvac_draw_timeout_s,
         )
 
