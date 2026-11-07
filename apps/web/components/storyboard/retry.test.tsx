@@ -12,7 +12,7 @@ vi.mock("next/navigation", () => ({
   useSearchParams: () => params,
 }));
 
-import { attemptsTitle, checkLines, judgedWords, modelsWords, seenWords } from "./audit";
+import { attemptsTitle, checkLines, judgedWords, modelsWords, seenWords, verdictOf } from "./audit";
 import { AuditLog } from "./AuditLog";
 import { cardState } from "./cards";
 import { frame, keeper, lines, shots } from "./fixtures";
@@ -79,6 +79,13 @@ describe("the audit log's words (web.md §4.4 step 5)", () => {
     const none = audit({ description: { ...audit().description!, people: [], setting: "unclear", light: "unclear", shot_size: "unclear" } });
     expect(seenWords(none)).toBe("No one. Setting unclear, light unclear, size unclear.");
     expect(seenWords(audit({ verdict: "error", description: null, judgement: null, checks: [] }))).toBe("The audit couldn't run.");
+  });
+
+  it("an attempt no vision model looked at reads Not checked (Panelwise 2.0 local mode)", () => {
+    const none = audit({ verdict: "warn", description: null, judgement: null, checks: [], positions: {}, models: [] });
+    expect(verdictOf(none)).toEqual({ label: "Not checked", tone: "warn" });
+    expect(seenWords(none)).toBe("No vision model looked at this frame, so it wasn't checked against the script.");
+    expect(verdictOf(audit({ verdict: "warn" }))).toEqual({ label: "Passed with a warning", tone: "warn" });
   });
 
   it("who the judge called each person", () => {

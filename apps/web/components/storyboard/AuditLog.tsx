@@ -5,7 +5,7 @@ import { Verdict } from "@/components/shared/Verdict";
 import type { AuditView } from "@/lib/api/types";
 import { cn } from "@/lib/utils";
 
-import { accepted, attemptsTitle, checkLines, judgedWords, modelsWords, seenWords, VERDICTS } from "./audit";
+import { accepted, attemptsTitle, checkLines, judgedWords, modelsWords, seenWords, verdictOf } from "./audit";
 
 function CheckList({ audit }: { audit: AuditView }) {
   const { failed, rest } = checkLines(audit);
@@ -24,7 +24,7 @@ function CheckList({ audit }: { audit: AuditView }) {
 }
 
 function AttemptItem({ audit }: { audit: AuditView }) {
-  const verdict = VERDICTS[audit.verdict];
+  const verdict = verdictOf(audit);
   const judged = judgedWords(audit);
   const models = modelsWords(audit);
   return (

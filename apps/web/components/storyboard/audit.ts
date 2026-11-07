@@ -5,7 +5,7 @@ import { modelName } from "@/components/script/report";
 import type { VerdictTone } from "@/components/shared/Verdict";
 import type { AuditView } from "@/lib/api/types";
 
-import { checkWords, sentence } from "./cards";
+import { checkWords, NOT_CHECKED, sentence, unchecked } from "./cards";
 
 export const VERDICTS: Record<AuditView["verdict"], { label: string; tone: VerdictTone }> = {
   pass: { label: "Passed", tone: "pass" },
@@ -13,6 +13,9 @@ export const VERDICTS: Record<AuditView["verdict"], { label: string; tone: Verdi
   fail: { label: "Failed", tone: "withheld" },
   error: { label: "Audit error", tone: "withheld" },
 };
+
+/** The verdict words for one attempt: "Not checked" for one no vision model looked at. */
+export const verdictOf = (a: AuditView) => (unchecked(a) ? { label: NOT_CHECKED, tone: "warn" as const } : VERDICTS[a.verdict]);
 
 /** The attempt's left edge: pass for an accepted attempt, withheld otherwise. */
 export const accepted = (a: AuditView) => a.verdict === "pass" || a.verdict === "warn";
@@ -31,6 +34,7 @@ const SIZE: Record<string, string> = {
 /** "Two people: left, an older woman; right, a man. Interior, night, medium." */
 export function seenWords(a: AuditView): string {
   const d = a.description;
+  if (unchecked(a)) return "No vision model looked at this frame, so it wasn't checked against the script.";
   if (d === null) return "The audit couldn't run.";
   const n = d.people.length;
   const count = n === 0 ? "No one" : `${NUMBERS[n] ?? n} ${n === 1 ? "person" : "people"}`;

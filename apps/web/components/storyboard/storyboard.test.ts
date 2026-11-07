@@ -113,6 +113,14 @@ describe("card text (web.md §4.3)", () => {
       ],
     });
     expect(cardState(warned)).toMatchObject({ verdict: { tone: "warn", label: "Passed with a warning" }, notes: ["Light: day light in a night scene"] });
+    // Panelwise 2.0 with no vision model: shown with no check and no model, so never "passed".
+    const unaudited = frame({
+      shot_id: "1.6",
+      state: "warned",
+      image_url: "https://s/6",
+      audits: [{ attempt: 1, seed: 1, verdict: "warn", description: null, judgement: null, positions: {}, models: [], created_at: "", checks: [] }],
+    });
+    expect(cardState(unaudited)).toEqual({ media: { kind: "image", url: "https://s/6" }, verdict: { tone: "warn", label: "Not checked" }, notes: [] });
     // T094: a hard check off the rule ladder fails but warns, and the card names it.
     const laddered = frame({
       shot_id: "1.5",

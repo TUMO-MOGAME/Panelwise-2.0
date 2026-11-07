@@ -73,7 +73,8 @@ $apiEnv = @"
 `$env:LLM_REQUEST_TIMEOUT_S = '900'
 "@
 # Drawing: FLUX.2 [klein] through QVAC, one frame at a time (one local server draws one at a time).
-if (-not $TextOnly) { $apiEnv += "; `$env:QVAC_DRAW_MODEL = 'draw'; `$env:FAL_CONCURRENCY = '1'" }
+# 512x288 (147,456 px) on this laptop's Intel iGPU: 6.8 min a frame; 848x480 took 15.4 min (2026-11-06).
+if (-not $TextOnly) { $apiEnv += "; `$env:QVAC_DRAW_MODEL = 'draw'; `$env:FAL_CONCURRENCY = '1'; `$env:QVAC_DRAW_MAX_PIXELS = '147456'; `$env:QVAC_DRAW_TIMEOUT_S = '1800'" }
 
 # Each window also writes its output to .local-data\logs\{qvac,api,web}.log, to follow a run.
 # cmd merges stderr into stdout first, so PowerShell 5.1 copies plain lines, not error records.

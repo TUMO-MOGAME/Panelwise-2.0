@@ -2,7 +2,7 @@
 // what is in frame, the source, and the state of its frame.
 
 import type { VerdictTone } from "@/components/shared/Verdict";
-import type { FrameView, ShotView } from "@/lib/api/types";
+import type { AuditView, FrameView, ShotView } from "@/lib/api/types";
 
 const FRAMING: Record<ShotView["framing"], string> = {
   wide: "Wide",
@@ -65,7 +65,13 @@ export interface CardState {
   notes: string[]; // the extra lines under the source
 }
 
-export const RENDERER_FAILED = "The renderer failed on this frame.";
+/** Panelwise 2.0's local mode with no vision model (the API's `unaudited`): shown with no check
+ * run and no model, so it reads "Not checked", never as a frame that passed anything. */
+export const NOT_CHECKED = "Not checked";
+export const unchecked = (a: AuditView | undefined) =>
+  a !== undefined && a.verdict === "warn" && a.checks.length === 0 && a.models.length === 0;
+
+export const RENDERER_FAILED ="The renderer failed on this frame.";
 export const RESTART_FAILED = "Rendering was interrupted by a restart.";
 
 export function cardState(frame: FrameView | undefined): CardState {
@@ -102,6 +108,7 @@ export function cardState(frame: FrameView | undefined): CardState {
         };
       }
       const audit = frame.audits.at(-1);
+      if (unchecked(audit)) return { media, verdict: { tone: "warn", label: NOT_CHECKED }, notes: [] };
       // Every failed check: with the rule ladder (T094) a hard one off it is shown, not withheld.
       const failed = (audit?.checks ?? []).filter((c) => !c.ok);
       return {
