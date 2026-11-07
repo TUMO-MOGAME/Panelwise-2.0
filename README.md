@@ -1,8 +1,80 @@
 # Panelwise 2.0
 
-> **Panelwise, moving to on-device AI with Tether's QVAC** for the Tether × GAIC Advanced AI Foundations Bootcamp.
-> This README still describes the original cloud version. What is changing, and the plan: [BOOTCAMP.md](BOOTCAMP.md).
-> Provenance: [CHANGES-FROM-PANELWISE.md](CHANGES-FROM-PANELWISE.md) (from [Katlego-tech/Panelwise](https://github.com/Katlego-tech/Panelwise), Apache-2.0).
+**Panelwise on Tether's QVAC: a screenplay becomes a storyboard on your own laptop, with no cloud model.**
+
+Panelwise 2.0 is our entry to the Tether × GAIC Advanced AI Foundations Bootcamp (Cohort 1, 2–14 Nov 2026). It takes
+[Panelwise](https://github.com/Katlego-tech/Panelwise) (Apache-2.0), which ran on Nemotron and fal.ai in the cloud, and
+runs every model on the device through **QVAC**. An unreleased script never leaves the writer's machine, there's no
+per-token or per-image bill, and it works offline once the models are cached. The plan and progress:
+[BOOTCAMP.md](BOOTCAMP.md). What changed from Panelwise: [CHANGES-FROM-PANELWISE.md](CHANGES-FROM-PANELWISE.md).
+
+## The models (all QVAC, all on this machine)
+
+| Job | Model | Runs through |
+| --- | --- | --- |
+| Reading the script, extracting characters and props, planning shots | Qwen3 4B Instruct (`QWEN3_4B_INST_Q4_K_M`) | `qvac serve --openai` (`@qvac/cli` 0.18.0), port 11435 |
+| Drawing each frame | FLUX.2 [klein] 4B (`FLUX_2_KLEIN_4B_Q4_0`), with Qwen3 4B as its text encoder and `FLUX_2_KLEIN_4B_VAE` | [services/qvac-draw](services/qvac-draw/server.mjs), a small server on `@qvac/sdk` 0.23.0, port 11436 |
+| Checking each frame against the script | **none yet**: frames are shown as **"Not checked"** | (a QVAC vision path is next) |
+
+The model setup is [qvac.config.json](qvac.config.json). No Nebius, fal.ai or Supabase is used: local mode drops any
+cloud key a `.env` carries, and the API refuses to start if a model server or the database isn't on this machine
+([config.py](services/api/app/core/config.py), `_local_mode_is_tether_only`).
+
+## Drawing speed, and why there is a separate drawing server
+
+Measured on one laptop: an Intel Core Ultra 7 265U with 32 GB of RAM and its integrated GPU (Vulkan), 7 Nov 2026.
+
+| One frame of FLUX.2 [klein] | 512 × 288 | 848 × 480 |
+| --- | --- | --- |
+| Through `qvac serve` | 408 s (6.8 min) | 924 s (15.4 min) |
+| Through the SDK at 4 steps, CFG 1 | **38 s** | **120 s** |
+
+klein is distilled to draw in 4 steps without classifier-free guidance (CFG). We sent `"steps": 4` to `qvac serve`'s
+`POST /v1/images/generations`, but in `@qvac/cli` 0.18.0 `extractImageGenerationParams`
+(`dist/serve/extensions/openai/schemas/images.js`) copies only `prompt`, `size`, `seed` and `n` from the body. So
+`steps` and `cfg_scale` never reach the engine, and klein ran at the engine's default settings instead. The drawing
+server answers the same OpenAI-style request through the SDK's `diffusion()` and passes `steps` and `cfg_scale` on, as
+Tether's own example does (`@qvac/sdk` `dist/examples/diffusion-flux2-klein.js`). Text stays on `qvac serve`.
+
+- The request the app sends: `qvac_request` in [services/api/app/storyboard/qvac.py](services/api/app/storyboard/qvac.py),
+  `{"model": "draw", "prompt": "...", "size": "512x288", "seed": 42, "steps": 4, "cfg_scale": 1.0, "n": 1, "response_format": "b64_json"}`.
+- The drawing server: [services/qvac-draw/](services/qvac-draw/README.md).
+- Reproduce one timed drawing: `uv run python -m tools.qvac_smoke draw` from `services/api` ([qvac_smoke.py](services/api/tools/qvac_smoke.py)).
+
+**A whole script** (7 Nov 2026): one upload, 23 frames, drawn at 512 × 288 and fitted to 1280 × 720. Reading and
+planning took about 15 minutes, and drawing took about 17 minutes (about 47 s a frame), with no errors.
+
+## Run it on your laptop
+
+You need Docker Desktop, [fnm](https://github.com/Schniz/fnm) with Node 22.21.1 (for QVAC) and Node 24 (for the web
+app), [uv](https://docs.astral.sh/uv/) with Python 3.14, pnpm, and `@qvac/cli` 0.18.0 installed under Node 22.21.1 (`npm install -g @qvac/cli@0.18.0`). The models download
+on first use. Then, from the repo root:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\dev-local.ps1
+```
+
+It starts Postgres (Docker, port 5433), `qvac serve` (11435), the drawing server (11436), the API (8000) and the web
+app (3000), each in its own window, with logs in `.local-data/logs/`. Open <http://localhost:3000> (there's no sign-in)
+and upload a screenplay PDF from [samples/](samples/README.md). Add `-TextOnly` to read and plan without drawing.
+
+## What isn't done yet
+
+- **Checking frames.** `qvac serve`'s chat endpoint drops image parts, so no vision model can look at a frame yet.
+  Every frame says "Not checked". The next step is a vision model through the SDK, re-scored on the 109 hand-labelled
+  frames of the original.
+- **Planning speed.** Reading and planning (about 15 minutes) now takes as long as drawing. The eval has not been
+  re-run since both text tiers moved to Qwen3 4B. The first local eval (Qwen3 1.7B and 4B, 3 Nov) kept 0 ungrounded
+  quotes, with faithfulness 0.81 against Nemotron's 0.90 ([eval/README.md](eval/README.md)).
+- **Sharper frames.** 848 × 480 takes about 2 minutes a frame. Drawing small and upscaling with QVAC's Real-ESRGAN may
+  be faster, but we haven't measured it.
+- The comic and narration have not been tried on local models.
+
+---
+
+**Everything below describes the original Panelwise**, the cloud version built for the Nebius × NVIDIA Global AI
+Hackathon. It is kept as it was: the pipeline, the grounding rules and the audit are the same code in Panelwise 2.0,
+but the models, hosting and numbers below are the original's.
 
 **Script → storyboard → comic, grounded in the screenplay at every step.**
 

@@ -30,7 +30,8 @@ from app.storyboard.prompt import heading_span
 from app.storyboard.styles import Style
 from app.verify.model import Check, FrameState, Severity, Verdict
 
-DOCUMENT_VERSION = 3  # bump whenever the layout or the drawing changes (§3.4 Document key); 3: T103
+DOCUMENT_VERSION = 4  # bump whenever the layout or the drawing changes (§3.4 Document key); 3: T103
+# 4: "Not checked" for a frame no vision model looked at, and a footer that names no model
 
 PAGE_W, PAGE_H = 1240, 1754  # A4 portrait at 150 dpi
 DPI = 150
@@ -41,7 +42,10 @@ FRAME_X = MARGIN + (CONTENT_W - FRAME_W) // 2  # centred
 GAP = 40  # between blocks
 CARD_TEXT_W = FRAME_W - 80  # 40 px clear inside the 880 px box on each side
 CARD_PITCH = 34
-FOOTER_NOTE = "A vision model describes each frame; Nemotron audits it against the script."
+FOOTER_NOTE = (
+    "Each frame is drawn from its shot's own script lines; its card says how it was checked."
+)
+NOT_CHECKED = "Not checked: no vision model looked at this frame"
 FONTS = Path(__file__).resolve().parents[2] / "assets" / "fonts"
 
 ACCEPTED = (FrameState.PASSED, FrameState.WARNED)
@@ -83,9 +87,20 @@ def frames_from_rows(
                 verdict=Verdict.ERROR if audit is None else Verdict(audit.verdict),
                 noted_checks=_noted(state, audit),
                 failure=row.failure,
+                checked=not _unchecked(audit),
             )
         )
     return tuple(out)
+
+
+def _unchecked(audit: FrameAuditRow | None) -> bool:
+    """A warning with no checks run and no model named: the frame was shown unaudited."""
+    return (
+        audit is not None
+        and audit.verdict == Verdict.WARN.value
+        and not audit.checks
+        and not audit.models
+    )
 
 
 def _noted(state: FrameState, audit: FrameAuditRow | None) -> tuple[Check, ...]:
@@ -117,6 +132,7 @@ def document_key(project_id: uuid.UUID, style: Style, frames: Sequence[Storyboar
                 f.verdict.value,
                 [c.value for c in f.noted_checks],
                 f.failure,
+                f.checked,
             ]
             for f in frames
         ),
@@ -222,6 +238,8 @@ def _audit_line(frame: StoryboardFrame) -> str | None:
     if frame.state is FrameState.PASSED:
         return "Audit: pass"
     if frame.state is FrameState.WARNED:
+        if not frame.checked:
+            return NOT_CHECKED
         noted = _names(frame.noted_checks)
         return f"Audit: warn ({noted})" if noted else "Audit: warn"
     return None  # a withheld or failed frame's card says it

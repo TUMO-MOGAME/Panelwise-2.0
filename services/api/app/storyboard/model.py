@@ -19,6 +19,9 @@ class StoryboardFrame:
     verdict: Verdict
     noted_checks: tuple[Check, ...]
     failure: str | None = None  # T027: "render" or "restart" for a FAILED frame, from its row
+    # False when no vision model looked at the frame (Panelwise 2.0's local mode): its audit is a
+    # warning with no checks and no models, and the PDF says "Not checked", not "Audit: warn".
+    checked: bool = True
 
 
 @dataclass(frozen=True)

@@ -3,6 +3,7 @@
 > Source of truth for "what's going on right now." Read first, update last. Treat updating it as
 > part of "done." (This is the blank template — copy to `STATUS.md` and keep that one live.)
 
+_Last updated: 2026-11-07 — by Tumo (via Claude)_
 _Last updated: 2026-10-30 — by Katlego (via Claude)_
 _Last updated: 2026-10-29 (later) — by Tumo (via Claude)_
 _Last updated: 2026-10-29 — by Katlego (via Claude)_
@@ -14,6 +15,24 @@ _Last updated: 2026-10-20 — by Tumo (via Claude)_
 _Last updated: 2026-10-20 — by Katlego (via Claude)_
 _Last updated: 2026-10-18 — by Katlego (via Claude)_
 _Last updated: 2026-10-17 — by Tumo (via Claude)_
+
+---
+
+## Panelwise 2.0 (Tether × GAIC bootcamp), 2026-11-07
+
+> The board below is the original Panelwise's, kept as it was at submission. Panelwise 2.0's plan and steps live in
+> [BOOTCAMP.md](BOOTCAMP.md); this is where it stands.
+
+| Area | State |
+|---|---|
+| Text: Qwen3 4B Instruct on `qvac serve` | ✅ working end to end; eval to re-run on 4B alone |
+| Drawing: FLUX.2 [klein] 4B on the QVAC SDK (`services/qvac-draw`) | ✅ 38 s a frame at 512 × 288; a 23-frame script drawn live, no errors |
+| Frame check: a vision model | ⬜ not built; frames say "Not checked" (web and PDF) |
+| Local mode: no Supabase, Postgres in Docker, files on disk | ✅ `scripts/dev-local.ps1` |
+| Comic, narration, WDK | ⬜ not tried locally |
+
+**Next:** a QVAC vision path through the SDK, so frames are checked again. Then re-run the eval on Qwen3 4B, and
+measure drawing small and upscaling with Real-ESRGAN.
 
 ---
 

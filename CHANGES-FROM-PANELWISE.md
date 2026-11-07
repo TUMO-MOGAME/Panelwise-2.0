@@ -16,8 +16,9 @@ The bootcamp plan, with what's done and what isn't yet, is in [BOOTCAMP.md](BOOT
 
 | Area | Panelwise | Panelwise 2.0 |
 |---|---|---|
-| Text models (fast / reasoning tiers) | Nemotron on Nebius Token Factory | **Working (2026-11-03):** Qwen3 1.7B / 4B via `qvac serve --openai` on the device (`qvac.config.json`, `LLM_THINKING_FIELD`); evals not yet re-run |
-| Vision model (frame audit) | Nemotron 3.5 Super VL | *planned:* a QVAC multimodal model (Qwen3.5 / Qwen3-VL) |
-| Drawing | FLUX.2 [klein] 4B on fal.ai | *planned:* FLUX.2 [klein] 4B **locally** through QVAC diffusion |
+| Text models (fast / reasoning tiers) | Nemotron on Nebius Token Factory | **Working:** Qwen3 4B Instruct for both tiers via `qvac serve --openai` on the device (`qvac.config.json`, `LLM_THINKING_FIELD`); first local eval 2026-11-03 (with 1.7B as the fast tier), not yet re-run on 4B alone |
+| Vision model (frame audit) | Nemotron 3.5 Super VL | *planned:* a QVAC multimodal model through the SDK. Until then every frame is shown as **"Not checked"**, on the board and in the PDF |
+| Drawing | FLUX.2 [klein] 4B on fal.ai | **Working (2026-11-07):** FLUX.2 [klein] 4B on the device through the QVAC SDK ([services/qvac-draw](services/qvac-draw/README.md)): 38 s a frame at 512 × 288 on an Intel iGPU; 23 frames of a script drawn live with no errors |
 | Narration (was a stretch, T113, ElevenLabs) | not built | *planned:* QVAC text-to-speech |
 | Hosting | Vercel + Render + Supabase | **Local mode (2026-11-03):** one user, files on disk, local Postgres, no Supabase (`PANELWISE_LOCAL_TOKEN`, `scripts/dev-local.ps1`). The Supabase path still works when the token is unset |
+| Storyboard PDF | Footer names Nemotron | **2026-11-07:** the footer names no model, and a frame no vision model looked at says "Not checked" |

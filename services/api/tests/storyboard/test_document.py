@@ -199,6 +199,35 @@ def test_the_key_changes_with_every_input_but_not_with_frame_order(
     assert document_key(PID, STYLE, frames) != key
 
 
+def test_a_frame_no_vision_model_looked_at_is_not_checked_and_says_so() -> None:
+    sp = screenplay()
+    p = plan(sp)
+    unchecked = audit_row((0, 1), 1, "warn", [])
+    unchecked.models = []
+    checked = audit_row((0, 2), 1, "warn", [check("light", "soft", False)])
+    checked.models = ["qwen3-4b"]
+    rows = [
+        row((0, 1), "warned", 1, asset="frames/a.png"),
+        row((0, 2), "warned", 1, asset="frames/b.png"),
+    ]
+
+    got = {f.shot: f for f in frames_from_rows(rows, [unchecked, checked])}
+
+    assert not got[(0, 1)].checked and got[(0, 2)].checked
+    frames = mixed(p)
+    frames[1] = replace(frames[1], checked=False)
+    assert blocks(layout_document(frames, p, sp, STYLE))[1].audit_line == (
+        "Not checked: no vision model looked at this frame"
+    )
+    assert document_key(PID, STYLE, [got[(0, 1)]]) != document_key(
+        PID, STYLE, [replace(got[(0, 1)], checked=True)]
+    )
+
+
+def test_the_footer_names_no_model() -> None:
+    assert "Nemotron" not in document.FOOTER_NOTE
+
+
 # ------------------------------------------------------------------- layout
 
 

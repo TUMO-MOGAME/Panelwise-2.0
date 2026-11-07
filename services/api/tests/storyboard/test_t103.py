@@ -207,13 +207,13 @@ def test_a_speaker_line_is_drawn_bold(monkeypatch: pytest.MonkeyPatch) -> None:
     assert drawn.count((True, 22)) == speakers + len(pages)  # and each page's STORYBOARD
 
 
-def test_the_version_is_3_and_changes_the_key(monkeypatch: pytest.MonkeyPatch) -> None:
-    assert document.DOCUMENT_VERSION == 3
+def test_the_version_is_4_and_changes_the_key(monkeypatch: pytest.MonkeyPatch) -> None:
+    assert document.DOCUMENT_VERSION == 4
     sp = screenplay()
     frames = mixed(plan(sp))
     pid = uuid.UUID(int=103)
     now = document_key(pid, STYLE, frames)
-    monkeypatch.setattr(document, "DOCUMENT_VERSION", 2)
+    monkeypatch.setattr(document, "DOCUMENT_VERSION", 3)
     assert document_key(pid, STYLE, frames) != now
 
 
