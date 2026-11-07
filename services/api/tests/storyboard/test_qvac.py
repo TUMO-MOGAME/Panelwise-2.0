@@ -37,7 +37,8 @@ def png(width: int, height: int, shade: int = 90) -> bytes:
 class Qvac:
     """QVAC's images route as the renderer sees it: every request kept, answers scripted."""
 
-    def __init__(self) -> None:
+    def __init__(self, draw_url: str = URL) -> None:
+        self.draw_url = draw_url
         self.bodies: list[dict[str, object]] = []
         self.blacks: list[bool] = []
         self.status = 200
@@ -45,9 +46,10 @@ class Qvac:
 
     def __call__(self, request: httpx2.Request) -> httpx2.Response:
         if request.method == "DELETE":
+            assert str(request.url).startswith(f"{URL}/models/")  # text models: `qvac serve`
             self.unloaded.append(str(request.url).removeprefix(f"{URL}/models/"))
             return httpx2.Response(200, json={"deleted": True})
-        assert str(request.url) == f"{URL}/images/generations"
+        assert str(request.url) == f"{self.draw_url}/images/generations"
         body = json.loads(request.content)
         self.bodies.append(body)
         if self.status != 200:
@@ -85,6 +87,7 @@ def renderer(
         model="draw",
         max_pixels=409_600,
         free_first=free_first,
+        draw_url="" if qvac.draw_url == URL else qvac.draw_url,
     )
 
 
@@ -95,16 +98,40 @@ def test_the_drawing_size_is_capped_and_in_sixteens() -> None:
     assert w * h <= 409_600 and w % 16 == 0 and h % 16 == 0
 
 
-def test_the_request_is_klein_at_four_steps_seeded_and_inline() -> None:
+def test_the_request_is_klein_at_four_steps_without_cfg_seeded_and_inline() -> None:
     assert qvac_request("draw", "a person pours tea", 7, (848, 464)) == {
         "model": "draw",
         "prompt": "a person pours tea",
         "size": "848x464",
         "seed": 7,
         "steps": 4,
+        "cfg_scale": 1.0,
         "n": 1,
         "response_format": "b64_json",
     }
+
+
+async def test_drawings_go_to_the_drawing_server_and_unloads_to_qvac_serve(
+    lighthouse: Screenplay, cast: Extraction
+) -> None:
+    qvac, store = Qvac(draw_url="http://127.0.0.1:11436/v1"), MemoryStore()
+
+    await renderer(qvac, store, lighthouse, cast, free_first=("qwen3-4b",)).render(
+        shot_of(lighthouse, 0, [0]), 1, 42, 1280, 720
+    )
+
+    assert len(qvac.bodies) == 1 and qvac.unloaded == ["qwen3-4b"]
+
+
+def test_local_mode_refuses_a_drawing_server_elsewhere() -> None:
+    with pytest.raises(ValueError, match="QVAC_DRAW_URL"):
+        Settings(
+            _env_file=None,  # pyright: ignore[reportCallIssue]
+            panelwise_local_token="tok",
+            nebius_base_url=URL,
+            database_url="postgresql+asyncpg://p:p@localhost:5433/p",
+            qvac_draw_url="https://draw.example.com/v1",
+        )
 
 
 async def test_a_render_draws_once_and_stores_the_frame_fitted_to_the_size_asked(

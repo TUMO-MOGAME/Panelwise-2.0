@@ -82,6 +82,7 @@ async def draw(settings: Settings) -> None:
             max_pixels=settings.qvac_draw_max_pixels,
             timeout_s=settings.qvac_draw_timeout_s,
             free_first=(settings.nebius_model_fast, settings.nebius_model_reasoning),
+            draw_url=settings.qvac_draw_url,
         )
         size = qvac_draw_size(1280, 720, settings.qvac_draw_max_pixels)
         start = time.perf_counter()

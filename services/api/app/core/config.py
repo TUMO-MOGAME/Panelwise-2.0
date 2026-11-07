@@ -86,6 +86,9 @@ class Settings(BaseSettings):
     qvac_draw_model: str = ""
     qvac_draw_max_pixels: int = Field(default=409_600, ge=65_536, le=1_000_000)
     qvac_draw_timeout_s: float = 900.0
+    # The drawing server, when not NEBIUS_BASE_URL: services/qvac-draw (the QVAC SDK), as
+    # `qvac serve` drops `steps` and `cfg_scale`, so klein ran its 20-step default with CFG.
+    qvac_draw_url: str = ""
     # Below Vercel's ~4.5 MB function body limit, which every upload passes through (web.md §4.1);
     # T030 may lower it.
     upload_max_bytes: int = 4_000_000
@@ -139,6 +142,7 @@ class Settings(BaseSettings):
         for name, url in (
             ("NEBIUS_BASE_URL", self.nebius_base_url),
             ("DATABASE_URL", self.database_url),
+            ("QVAC_DRAW_URL", self.qvac_draw_url or self.nebius_base_url),
         ):
             if not _on_this_machine(url):
                 raise ValueError(f"local mode: {name} must point at this machine")

@@ -1,0 +1,15 @@
+{
+  "name": "panelwise-qvac-draw",
+  "private": true,
+  "description": "FLUX.2 [klein] through the QVAC SDK, with klein's sampling settings (see server.mjs)",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@qvac/sdk": "0.23.0"
+  },
+  "engines": {
+    "node": "22.21.x"
+  }
+}

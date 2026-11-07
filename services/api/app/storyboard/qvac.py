@@ -35,6 +35,7 @@ from app.verify.model import RenderedFrame
 log = logging.getLogger(__name__)
 
 STEPS = 4  # klein is distilled for 4 steps, as fal.ai ran it (§3.5)
+CFG_SCALE = 1.0  # and for no classifier-free guidance, which would draw every step twice
 
 
 def qvac_draw_size(width: int, height: int, max_pixels: int) -> tuple[int, int]:
@@ -51,6 +52,7 @@ def qvac_request(model: str, prompt: str, seed: int, draw: tuple[int, int]) -> d
         "size": f"{draw[0]}x{draw[1]}",
         "seed": seed,
         "steps": STEPS,
+        "cfg_scale": CFG_SCALE,
         "n": 1,
         "response_format": "b64_json",
     }
@@ -80,14 +82,17 @@ class QvacRenderer:
         max_words: int = 55,
         timeout_s: float = 900.0,
         free_first: tuple[str, ...] = (),
+        draw_url: str = "",
     ) -> None:
         self.style = style
         self.store = store
         self.screenplay = screenplay
         self.extraction = extraction
         self.client = client
+        # base_url: `qvac serve`, where the text models are freed; draw_url: where drawings are
+        # asked for (services/qvac-draw, which passes `steps` and `cfg_scale` on), else base_url.
         self.base_url = base_url.rstrip("/")
-        self.url = f"{self.base_url}/images/generations"
+        self.url = f"{(draw_url or base_url).rstrip('/')}/images/generations"
         self.model = model
         # The text models' aliases, unloaded before the first drawing: QVAC keeps a model loaded
         # until told otherwise, and Qwen3 4B beside FLUX.2 [klein] and its encoder is ~9 GB.
@@ -209,6 +214,7 @@ def qvac_factory(
             max_words=settings.comfyui_max_words,
             free_first=(settings.nebius_model_fast, settings.nebius_model_reasoning),
             timeout_s=settings.qvac_draw_timeout_s,
+            draw_url=settings.qvac_draw_url,
         )
 
     return factory

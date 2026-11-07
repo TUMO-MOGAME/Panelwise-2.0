@@ -72,9 +72,11 @@ $apiEnv = @"
 `$env:LLM_THINKING_FIELD = 'reasoning_budget'
 `$env:LLM_REQUEST_TIMEOUT_S = '900'
 "@
-# Drawing: FLUX.2 [klein] through QVAC, one frame at a time (one local server draws one at a time).
-# 512x288 (147,456 px) on this laptop's Intel iGPU: 6.8 min a frame; 848x480 took 15.4 min (2026-11-06).
-if (-not $TextOnly) { $apiEnv += "; `$env:QVAC_DRAW_MODEL = 'draw'; `$env:FAL_CONCURRENCY = '1'; `$env:QVAC_DRAW_MAX_PIXELS = '147456'; `$env:QVAC_DRAW_TIMEOUT_S = '1800'" }
+# Drawing: FLUX.2 [klein] through services/qvac-draw (the QVAC SDK, port 11436), one frame at a
+# time. `qvac serve` drops `steps` and `cfg_scale`, so it drew klein at 20 steps with CFG: 6.8 min
+# a 512x288 frame. At klein's 4 steps, no CFG: 38 s at 512x288, 2.0 min at 848x480 (2026-11-07).
+$drawPort = 11436
+if (-not $TextOnly) { $apiEnv += "; `$env:QVAC_DRAW_MODEL = 'draw'; `$env:QVAC_DRAW_URL = 'http://127.0.0.1:$drawPort/v1'; `$env:FAL_CONCURRENCY = '1'; `$env:QVAC_DRAW_MAX_PIXELS = '147456'; `$env:QVAC_DRAW_TIMEOUT_S = '900'" }
 
 # Each window also writes its output to .local-data\logs\{qvac,api,web}.log, to follow a run.
 # cmd merges stderr into stdout first, so PowerShell 5.1 copies plain lines, not error records.
@@ -87,6 +89,18 @@ try { $qvacUp = (Invoke-WebRequest "http://127.0.0.1:$qvacPort/v1/models" -UseBa
 if (-not $qvacUp) {
   Start-Process powershell -WorkingDirectory $root -ArgumentList "-NoExit", "-Command",
     "fnm env --shell powershell | Out-String | Invoke-Expression; fnm use 22.21.1; cmd /c \`"qvac serve --openai --port $qvacPort $(Tee-Log qvac)"
+}
+
+$drawUp = $false
+try { $drawUp = (Invoke-WebRequest "http://127.0.0.1:$drawPort/health" -UseBasicParsing -TimeoutSec 2).StatusCode -eq 200 } catch {}
+if (-not $TextOnly -and -not $drawUp) {
+  if (-not (Test-Path "$root\services\qvac-draw\node_modules\@qvac\sdk")) {
+    Write-Host "Installing the QVAC SDK for the drawing server (once)..."
+    cmd /c "cd /d `"$root\services\qvac-draw`" && fnm exec --using 22.21.1 npm install --no-audit --no-fund"
+  }
+  # From the repo root: the drawing server reads the `draw` alias of ./qvac.config.json.
+  Start-Process powershell -WorkingDirectory $root -ArgumentList "-NoExit", "-Command",
+    "fnm env --shell powershell | Out-String | Invoke-Expression; fnm use 22.21.1; `$env:QVAC_DRAW_PORT = '$drawPort'; cmd /c \`"node services\qvac-draw\server.mjs $(Tee-Log draw)"
 }
 
 Start-Process powershell -WorkingDirectory "$root\services\api" -ArgumentList "-NoExit", "-Command",
